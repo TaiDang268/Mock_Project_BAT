@@ -1,4 +1,4 @@
-import translation from '../i18n/en/en.json'
+import translation from '../i18n/en/translation.json'
 
 const resources = {
   translation

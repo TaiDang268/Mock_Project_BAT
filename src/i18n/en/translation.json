@@ -1,0 +1,28 @@
+{
+  "header": {
+    "home": "HOME",
+    "about_us": "ABOUT US",
+    "news": "NEW",
+    "job_opportunity": "JOB OPPORTUNITY",
+    "contact": "CONTACT"
+  },
+  "footer": {
+    "description": "At BATTECH, we are always committed to helping businesses redefine their corporate management approach for better operations, enhanced business efficiency, and improved quality of life through the integration of people and modern technology.",
+    "contact": {
+      "tilte": "Contact",
+      "phone": "Phone: 024 85 896 999",
+      "email": "E-Mail: info@batgroup.vn",
+      "address": "Address: Floor 2, HH02 Building, High-Rise Housing Combined With Commercial Services - Eco Lakeview, 32 Dai Tu, Dai Kim Ward, Hoang Mai District",
+      "name": "BATTECH TECHNOLOGY GROUP CORPORATION"
+    },
+    "linkUsefull": {
+      "tilte": "LINKS",
+      "Terms_of_use": "Terms of use",
+      "Warranty_policy": "Warranty policy",
+      "Partner_program": "Partner program",
+      "Recruitment": "Recruitment",
+      "Help_center": "Help center",
+      "Digital_marketing_solutions": "Digital marketing solutions"
+    }
+  }
+}
