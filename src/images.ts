@@ -11,11 +11,13 @@ import email_icon from './assets/images/email_icon.svg'
 import home_icon from './assets/images/home_icon.svg'
 import nameBAT_icon from './assets/images/@_icon.svg'
 import bigger_icon from './assets/images/bigger_icon.svg'
+import US_flag from './assets/images/USUK_flag.svg'
 
 const images = {
   BAT_logo_white,
   fb_icon,
   VN_Flag,
+  US_flag,
   BAT_logo,
   twitter_icon,
   youtobe_icon,
