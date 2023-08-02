@@ -1,23 +1,13 @@
 import { useRoutes } from 'react-router'
-import Input from '~/components/Input'
-import Main from '~/pages/Main'
+import HomePage from '~/pages/HomePage'
 
 const routers = [
   {
     path: '/',
-    element: <Main />
-  },
-  {
-    path: '/input',
-    element: <Input />
+    element: <HomePage />
   }
 ]
-
-
-
-
 
 export default function Routers() {
   return useRoutes(routers)
 }
-  
