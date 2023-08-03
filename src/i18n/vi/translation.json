@@ -24,5 +24,43 @@
       "Help_center": "Trung tâm hỗ trợ",
       "Digital_marketing_solutions": "Giải pháp marketing online"
     }
+  },
+  "homepage": {
+    "banner": {
+      "solution": "GIẢI PHÁP QUẢN TRỊ NGUỒN LỰC DOANH NGHIỆP",
+      "description": "Hỗ trợ Ban lãnh đạo hoạch định và điều hành toàn bộ nguồn lực của doanh nghiệp bao gồm Hàng hóa - Tài chính - Nhân sự - Truyền thông và kết nối các bộ phận thao tác nghiệp vụ hiệu quả thông qua những quy trình được thiết kế theo quy chuẩn quốc tế.",
+      "button": "ĐĂNG KÝ NHẬN TƯ VẤN"
+    },
+    "descriptionBAT": {
+      "title": "GIỚI THIỆU VỀ BATTECH",
+      "description": "Với gần 15 năm kinh nghiệm, Công ty cổ phần Quốc tế BATTECH là nhà cung cấp các giải pháp quản trị nguồn lực doanh nghiệp chuyên nghiệp. Hỗ trợ Ban lãnh đạo hoạch định và điều hành toàn bộ nguồn lực của doanh nghiệp bao gồm Hàng hóa - Tài chính - Nhân sự - Truyền thông và kết nối các bộ phận thao tác nghiệp vụ hiệu quả thông qua những quy trình được thiết kế theo quy chuẩn quốc tế.",
+      "quick_response": "Phản hồi nhanh",
+      "development_system": "Hệ thống phát triển",
+      "information_security": "Thông tin bảo mật",
+      "automation": "Tự động hóa"
+    },
+    "diffrent_pioneer": {
+      "tilte": "Khác biệt và tiên phong",
+      "item1": {
+        "id": "01",
+        "tilte": "Tư duy phát triển sản phẩm",
+        "description": "Tạo ra môi trường làm việc trực tuyến cho doanh nghiệp. Tất cả thành viên đều được cung cấp đầy đủ công cụ và tài nguyên số để phục vụ cho công việc."
+      },
+      "item2": {
+        "id": "02",
+        "tilte": "Khả năng tích hợp và Mở rộng",
+        "description": "Cung cấp các giải pháp, mở rộng thêm phần mềm theo yêu cầu của doanh nghiệp."
+      },
+      "item3": {
+        "id": "03",
+        "tilte": "Khả năng tùy biến và Tự động",
+        "description": "Battech luôn nghiên cứu đặc thù khác nhau của từng doanh nghiệp để đưa ra lời giải cho bài toán tổng quát."
+      },
+      "item4": {
+        "id": "04",
+        "tilte": "Chi phí hợp lý và Linh hoạt",
+        "description": "Khách hàng chỉ chi trả cho những dịch vụ mình sử dụng. Cam kết không phát sinh thêm các khoản phụ thu."
+      }
+    }
   }
 }

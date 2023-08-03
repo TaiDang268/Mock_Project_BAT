@@ -6,6 +6,7 @@
     "job_opportunity": "Job Opportunity ",
     "contact": "Contact"
   },
+
   "footer": {
     "description": "At BATTECH, we are always committed to helping businesses redefine their corporate management approach for better operations, enhanced business efficiency, and improved quality of life through the integration of people and modern technology.",
     "contact": {
@@ -23,6 +24,44 @@
       "Recruitment": "Recruitment",
       "Help_center": "Help center",
       "Digital_marketing_solutions": "Digital marketing solutions"
+    }
+  },
+  "homepage": {
+    "banner": {
+      "solution": "BUSINESS RESOURCES MANAGEMENT SOLUTION",
+      "description": "Support the Board of Directors in planning and operating all resources of the enterprise including Goods - Finance - Human Resources - Communication and connecting departments to operate effectively through the the process is designed according to international standards.",
+      "button": "CONTACT US"
+    },
+    "descriptionBAT": {
+      "title": "ABOUT BATTECH",
+      "description": "With nearly 15 years of experience, BATTECH International Joint Stock Company is a professional provider of enterprise resource management solutions, supporting the Board of Directors in planning and operating all resources of the company. businesses including Goods - Finance - Human Resources - Communication and connecting departments to operate effectively through processes designed according to international standards.",
+      "quick_response": "Quick Response",
+      "development_system": "Development System",
+      "information_security": "Information Security",
+      "automation": "Automation"
+    },
+    "diffrent_pioneer": {
+      "tilte": "Khác biệt và tiên phong",
+      "item1": {
+        "id": "01",
+        "tilte": "Product development mindset",
+        "description": "Creating an online working environment for businesses. All members are provided with full tools and digital resources to serve their work."
+      },
+      "item2": {
+        "id": "02",
+        "tilte": "Integrability and Extensibility",
+        "description": "Provide solutions, expand software according to business requirements"
+      },
+      "item3": {
+        "id": "03",
+        "tilte": "Customization and Automation",
+        "description": "Battech always studies the different characteristics of each business to come up with a solution to a general problem."
+      },
+      "item4": {
+        "id": "04",
+        "tilte": "Affordable and Flexible",
+        "description": "Customers only pay for the services they use. Commitment to not incur additional charges."
+      }
     }
   }
 }

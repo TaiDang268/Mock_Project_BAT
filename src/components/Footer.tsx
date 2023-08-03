@@ -1,4 +1,4 @@
-import images from '~/images'
+import images from '~/assets/images'
 import '../i18n/config'
 import { useTranslation } from 'react-i18next'
 const footerLinkUseful = [

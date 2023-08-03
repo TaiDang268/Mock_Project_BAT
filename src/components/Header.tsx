@@ -1,4 +1,4 @@
-import images from '~/images'
+import images from '~/assets/images'
 import clsx from 'clsx'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
