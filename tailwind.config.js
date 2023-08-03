@@ -16,7 +16,12 @@ export default {
         150: '150px',
         55: '55px',
         638: '638px',
-        276: '276px'
+        276: '276px',
+        1182: '1182px',
+        123: '123px',
+        144: '144px',
+        1200: '1200px',
+        257: '257px'
       },
       backgroundImage: {
         'home-gradent':
