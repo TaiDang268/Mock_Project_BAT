@@ -1,16 +1,28 @@
 import { useRoutes } from 'react-router'
 import Layout from '~/pages/Layout'
-import Blog from '~/components/Blog'
+import Home from '~/components/Home'
 import NotFound from '~/components/NotFound'
 
 const routers = [
   {
-    path: '/blog',
-    element: <Blog />
+    path: '/home',
+    element: <Home />
   },
   {
-    path: '/notfound',
+    path: '/about_us',
     element: <NotFound />
+  },
+  {
+    path: '/news',
+    element: <Home />
+  },
+  {
+    path: '/job_opportunity',
+    element: <NotFound />
+  },
+  {
+    path: '/contact',
+    element: <Home />
   }
 ]
 

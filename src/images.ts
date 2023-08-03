@@ -12,7 +12,7 @@ import home_icon from './assets/images/home_icon.svg'
 import nameBAT_icon from './assets/images/@_icon.svg'
 import bigger_icon from './assets/images/bigger_icon.svg'
 import US_flag from './assets/images/USUK_flag.svg'
-
+import image_home_1 from './assets/images/image_home_1.svg'
 const images = {
   BAT_logo_white,
   fb_icon,
@@ -27,6 +27,7 @@ const images = {
   email_icon,
   home_icon,
   nameBAT_icon,
-  bigger_icon
+  bigger_icon,
+  image_home_1
 }
 export default images
