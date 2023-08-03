@@ -15,15 +15,15 @@ const Header = () => {
     i18n.changeLanguage(!isSelectedLanguage ? 'vn' : 'en')
     setIsHidenOptionLanguage(false)
     setIsSelectedLanguage(!isSelectedLanguage)
-    console.log(i18n.language)
   }
+  //xử lý 
   return (
     <div className='px-6 py-4'>
       <div className='flex items-center justify-between '>
         <div style={{ backgroundImage: `url(${images.BAT_logo})` }} className='w-40 h-16  bg-no-repeat'></div>
         <div className='flex '>
           {links.map((link, index) => (
-            <p key={index} className='mr-8 text-2xl font-normal'>
+            <p key={index} className='mr-8 text-2xl font-normal cursor-pointer hover:text-green-600' onClick={handleClickHeader}>
               {t(`header.${link}`)}
             </p>
           ))}

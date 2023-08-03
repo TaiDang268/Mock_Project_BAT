@@ -1,10 +1,10 @@
 {
   "header": {
-    "home": "HOME",
-    "about_us": "ABOUT US",
-    "news": "NEW",
-    "job_opportunity": "JOB OPPORTUNITY",
-    "contact": "CONTACT"
+    "home": "Home",
+    "about_us": "About us",
+    "news": "New",
+    "job_opportunity": "Job Opportunity ",
+    "contact": "Contact"
   },
   "footer": {
     "description": "At BATTECH, we are always committed to helping businesses redefine their corporate management approach for better operations, enhanced business efficiency, and improved quality of life through the integration of people and modern technology.",

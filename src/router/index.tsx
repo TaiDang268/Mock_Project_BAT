@@ -1,13 +1,20 @@
 import { useRoutes } from 'react-router'
-import HomePage from '~/pages/HomePage'
+import Layout from '~/pages/Layout'
+import Blog from '~/components/Blog'
+import NotFound from '~/components/NotFound'
 
 const routers = [
   {
-    path: '/',
-    element: <HomePage />
+    path: '/blog',
+    element: <Blog />
+  },
+  {
+    path: '/notfound',
+    element: <NotFound />
   }
 ]
 
 export default function Routers() {
-  return useRoutes(routers)
+  const routing = useRoutes(routers)
+  return <Layout>{routing}</Layout>
 }
