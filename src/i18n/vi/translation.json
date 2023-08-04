@@ -61,6 +61,12 @@
         "tilte": "Chi phí hợp lý và Linh hoạt",
         "description": "Khách hàng chỉ chi trả cho những dịch vụ mình sử dụng. Cam kết không phát sinh thêm các khoản phụ thu."
       }
+    },
+    "news": {
+      "title": "Tin tức về BATTECH",
+      "solution": "BATTECH phát triển giải pháp chuyển đổi số cho doanh nghiệp",
+      "description": "Tập đoàn công nghệ BATTECH vừa cho ra mắt phần mềm quản trị doanh nghiệp BATTECH PLATFORM - một nền tảng công nghệ hợp nhất tất cả các nghiệp vụ quản trị như kế toán, bán hàng, nhân sự… trên một nền tảng, ứng dụng công nghệ tiên tiến như AI, Blockchain, linh hoạt kết nối các dịch vụ giúp nâng cao năng suất làm việc, giảm chi phí và tăng lợi nhuận. ",
+      "button": "Xem thêm "
     }
   }
 }

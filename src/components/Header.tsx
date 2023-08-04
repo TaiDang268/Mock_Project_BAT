@@ -36,7 +36,7 @@ const Header = () => {
             <p
               key={index}
               className={clsx(
-                'mr-8 text-2xl font-normal cursor-pointer hover:text-green-600 ',
+                'mr-8 text-xl font-normal cursor-pointer hover:text-green-600 uppercase',
                 isItemMenuSelected === link ? 'text-green-600 ' : 'text-black '
               )}
               onClick={() => handleClickItemHeader(link)}

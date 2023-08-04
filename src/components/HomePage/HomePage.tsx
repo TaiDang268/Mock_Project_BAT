@@ -2,6 +2,7 @@ import HomeDescriptionBAT from './HomeDescriptionBAT'
 import HomeBanner from './HomeBanner'
 import HomeDiffrentAndPioneer from './HomeDiffrentAndPioneer'
 import HomeNewsFromBAT from './HomeNewsFromBAT'
+import HomeNewsAndEvent from './HomeNewsAndEvent'
 
 const Home = () => {
   return (
@@ -15,8 +16,11 @@ const Home = () => {
       <div className='w-full'>
         <HomeDiffrentAndPioneer />
       </div>
-      <div className='w-full'>
+      <div className='w-full '>
         <HomeNewsFromBAT />
+      </div>
+      <div className='w-full '>
+        <HomeNewsAndEvent />
       </div>
     </>
   )
