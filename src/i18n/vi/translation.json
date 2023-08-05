@@ -68,6 +68,43 @@
       "description": "Tập đoàn công nghệ BATTECH vừa cho ra mắt phần mềm quản trị doanh nghiệp BATTECH PLATFORM - một nền tảng công nghệ hợp nhất tất cả các nghiệp vụ quản trị như kế toán, bán hàng, nhân sự… trên một nền tảng, ứng dụng công nghệ tiên tiến như AI, Blockchain, linh hoạt kết nối các dịch vụ giúp nâng cao năng suất làm việc, giảm chi phí và tăng lợi nhuận. ",
       "button": "Xem thêm "
     },
-    "new_and_event": "Tin tức và sự kiện"
+    "new_and_event": "Tin tức và sự kiện",
+    "service_pack": {
+      "title": "Gói dịch vụ",
+      "button": "Bắt đầu",
+      "pack_1": {
+        "title": "Chuyên nghiệp ",
+        "for": "Đối với người dùng nhiều hơn",
+        "description": {
+          "1": "Dành cho nhóm nhỏ - 15 người dùng",
+          "2": "Hỗ trợ cá nhân ",
+          "3": "Dữ liệu cá nhân - 60GB ",
+          "4": "Dành cho các nhóm lớn - không giới hạn ",
+          "5": "Lịch sử dữ liệu"
+        }
+      },
+      "pack_2": {
+        "title": "Người bắt đầu ",
+        "for": "Kế hoặch thử nghiệm cho người mới bắt đầu ",
+        "description": {
+          "1": "Dành cho nhóm nhỏ - 5 người dùng",
+          "2": "Sự đóng góp của cộng đồng ",
+          "3": "Dữ liệu cá nhân - 20GB ",
+          "4": "Dành cho các nhóm lớn - không giới hạn ",
+          "5": "Hỗ trợ cá nhân"
+        }
+      },
+      "pack_3": {
+        "title": "Tổ chức ",
+        "for": "Giải pháp tốt nhất cho pro",
+        "description": {
+          "1": "Dành cho nhóm lớn - không giới hạn",
+          "2": "Hỗ trợ cá nhân ",
+          "3": "Dữ liệu cá nhân - không giới hạn ",
+          "4": "Lịch sử dữ liệu ",
+          "5": "Hỗ trợ cá nhân"
+        }
+      }
+    }
   }
 }

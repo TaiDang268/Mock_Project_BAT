@@ -12,7 +12,6 @@ interface IDataItem {
 }
 const ItemNews = (dataItem: IDataItem) => {
   const { image, author, date, title, description } = dataItem.data
-  console.log(image, author, date, title, description)
   return (
     <>
       <div className='w-276 h-430 shadow-lg my-16 rounded-2xl'>

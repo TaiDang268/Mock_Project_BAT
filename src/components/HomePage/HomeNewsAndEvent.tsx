@@ -7,6 +7,7 @@ import 'swiper/css/autoplay'
 import 'swiper/css/navigation'
 import '../../css/Custom.css'
 import { useTranslation } from 'react-i18next'
+import images from '~/assets/images'
 
 const url = 'http://localhost:3002'
 
@@ -31,7 +32,15 @@ const HomeNewsAndEvent = () => {
         <div className=''>
           <p className='font-bold text-2xl leading-7 text-center uppercase'>{t('homepage.new_and_event')}</p>
         </div>
-        <div>
+        <div
+          className='w-1200 mx-auto'
+          // onMouseMove={() => {
+          //   setIsShowArrows(true)
+          // }}
+          // onMouseOut={() => {
+          //   setIsShowArrows(false)
+          // }}
+        >
           <Swiper
             modules={[FreeMode, Pagination, Autoplay, Navigation]}
             slidesPerView={4}
@@ -41,15 +50,27 @@ const HomeNewsAndEvent = () => {
             pagination={{
               clickable: true
             }}
-            navigation={true}
+            navigation={{ nextEl: '.arrow-right', prevEl: '.arrow-left' }}
             loop={true}
             className='mySwiper'
           >
-            {data?.map((item) => (
-              <SwiperSlide style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <ItemNews data={item} key={item} />
+            {data?.map((item, index) => (
+              <SwiperSlide key={index} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <ItemNews data={item} />
               </SwiperSlide>
             ))}
+            <>
+              <div className='  arrow arrow-left  '>
+                <button>
+                  <img src={images.arrow_left} />
+                </button>
+              </div>
+              <div className=' arrow arrow-right'>
+                <button>
+                  <img src={images.arrow_right} />
+                </button>
+              </div>
+            </>
           </Swiper>
         </div>
       </div>
