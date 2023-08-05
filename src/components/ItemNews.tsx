@@ -1,5 +1,7 @@
-import images from '~/assets/images'
 import '../css/Custom.css'
+
+import images from '~/assets/images'
+
 interface IItemNewsProps {
   image?: string
   author?: string

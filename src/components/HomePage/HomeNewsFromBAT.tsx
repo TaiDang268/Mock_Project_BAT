@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
-import Button from '../Button'
 import images from '~/assets/images'
+
+import Button from '../Button'
 
 const HomeNewsFromBAT = () => {
   const { t } = useTranslation()

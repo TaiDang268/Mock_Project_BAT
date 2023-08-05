@@ -1,8 +1,8 @@
-import HomeDescriptionBAT from './HomeDescriptionBAT'
 import HomeBanner from './HomeBanner'
+import HomeDescriptionBAT from './HomeDescriptionBAT'
 import HomeDiffrentAndPioneer from './HomeDiffrentAndPioneer'
-import HomeNewsFromBAT from './HomeNewsFromBAT'
 import HomeNewsAndEvent from './HomeNewsAndEvent'
+import HomeNewsFromBAT from './HomeNewsFromBAT'
 import HomeServicePack from './HomeServicePack'
 
 const Home = () => {

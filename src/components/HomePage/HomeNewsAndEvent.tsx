@@ -1,13 +1,15 @@
-import ItemNews from '../ItemNews'
-import axios from 'axios'
-import { useState, useEffect } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { FreeMode, Pagination, Autoplay, Navigation } from 'swiper/modules'
 import 'swiper/css/autoplay'
 import 'swiper/css/navigation'
 import '../../css/Custom.css'
+
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Autoplay, FreeMode, Navigation, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import images from '~/assets/images'
+
+import ItemNews from '../ItemNews'
 
 const url = 'http://localhost:3002'
 
