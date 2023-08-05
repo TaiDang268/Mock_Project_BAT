@@ -1,21 +1,32 @@
 /* custom class swiper */
-.swiper-button-next {
-  color: #008345 !important;
-}
-.swiper-button-next::after {
-  font-size: 20px !important;
-}
 
-.swiper-button-prev {
-  color: #008345 !important;
-}
-.swiper-button-prev::after {
-  font-size: 20px !important;
-}
+/* custom pagination color từ blue sang green */
 .swiper-pagination-bullet-active {
   background-color: #008345 !important;
 }
-/* custom three dots when over height */
+/*custom arrows cho slider  */
+.arrow {
+  position: absolute;
+
+  top: 270px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: none;
+  z-index: 100;
+}
+.arrow button {
+  background-color: transparent;
+  opacity: 0.5;
+}
+.arrow-right {
+  right: 10px;
+}
+.arrow-left {
+  left: 10px;
+}
+
+/* custom three dots khi over height */
 .cut-text {
   display: -webkit-box;
   -webkit-line-clamp: 2;

@@ -1,6 +1,8 @@
-import images from '~/assets/images'
 import '../i18n/config'
+
 import { useTranslation } from 'react-i18next'
+import images from '~/assets/images'
+
 const footerLinkUseful = [
   'Terms_of_use',
   'Warranty_policy',

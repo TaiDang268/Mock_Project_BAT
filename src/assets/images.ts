@@ -17,6 +17,9 @@ import setting_icon from './images/setting_icon.svg'
 import padlock_icon from './images/padlock_icon.svg'
 import security_icon from './images/security_icon.svg'
 import acount_icon from './images/acount_icon.svg'
+import arrow_right from './images/right-arrow.svg'
+import arrow_left from './images/left-arrow.svg'
+import check_v_icon from './images/check_v_icon.svg'
 
 import image_home_1 from './images/image_home_1.svg'
 import image_home_2 from './images/image_home2.svg'
@@ -43,6 +46,10 @@ const images = {
   padlock_icon,
   security_icon,
   acount_icon,
+  check_v_icon,
+
+  arrow_right,
+  arrow_left,
   image_home_1,
   image_home_2,
   image_home_3,

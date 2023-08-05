@@ -1,11 +1,13 @@
 import './App.css'
-import { BrowserRouter } from 'react-router-dom'
-import Routers from './router'
-
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
+
+import { BrowserRouter } from 'react-router-dom'
+
+import Routers from './router'
+
 // import { useEffect, useState } from 'react'
 // import Button from './components/Button'
 
