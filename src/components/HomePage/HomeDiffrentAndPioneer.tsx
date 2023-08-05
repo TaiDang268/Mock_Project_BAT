@@ -11,9 +11,9 @@ const HomeDiffrentAndPioneer = () => {
           <p className='uppercase font-bold text-2xl text-center'>{t('homepage.diffrent_pioneer.tilte')}</p>
         </div>
         {/* khối div chứa 4 div con */}
-        <div className='flex relative mt-16'>
+        <div className='flex relative my-20 '>
           {list.map((item) => (
-            <div className='w-1/4 rounded-2xl mx-3 h-257 shadow-md shadow-slate-400	  '>
+            <div key={item} className='w-1/4 rounded-2xl mx-3 h-257 shadow-md shadow-slate-400	  '>
               <div className='absolute top-[-50px] ml-4'>
                 <p className='font-bold text-[64px] text-[#008345]'>{t(`homepage.diffrent_pioneer.${item}.id`)}</p>
               </div>

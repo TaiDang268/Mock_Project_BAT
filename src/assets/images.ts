@@ -12,14 +12,16 @@ import home_icon from './images/home_icon.svg'
 import nameBAT_icon from './images/@_icon.svg'
 import bigger_icon from './images/bigger_icon.svg'
 import US_flag from './images/USUK_flag.svg'
-import image_home_1 from './images/image_home_1.svg'
-import image_home_2 from './images/image_home2.svg'
 import clock_icon from './images/clock.svg'
 import setting_icon from './images/setting_icon.svg'
-
 import padlock_icon from './images/padlock_icon.svg'
-
 import security_icon from './images/security_icon.svg'
+import acount_icon from './images/acount_icon.svg'
+
+import image_home_1 from './images/image_home_1.svg'
+import image_home_2 from './images/image_home2.svg'
+import image_home_3 from './images/image_home_3.svg'
+import image_home_4 from './images/image_home_4.svg'
 
 const images = {
   BAT_logo_white,
@@ -36,11 +38,14 @@ const images = {
   home_icon,
   nameBAT_icon,
   bigger_icon,
-  image_home_1,
-  image_home_2,
   clock_icon,
   setting_icon,
   padlock_icon,
-  security_icon
+  security_icon,
+  acount_icon,
+  image_home_1,
+  image_home_2,
+  image_home_3,
+  image_home_4
 }
 export default images

@@ -62,6 +62,13 @@
         "tilte": "Affordable and Flexible",
         "description": "Customers only pay for the services they use. Commitment to not incur additional charges."
       }
-    }
+    },
+    "news": {
+      "title": "News about BATTECH",
+      "solution": "BATTECH develops digital transformation solutions for businesses",
+      "description": "BATTECH Technology Group has just launched BATTECH PLATFORM business management software - a technology platform that unifies all management operations such as accounting, sales, human resources... on one platform, public application. Advanced technologies such as AI, Blockchain, flexible connection of services help improve work productivity, reduce costs and increase profits.",
+      "button": "See more"
+    },
+    "new_and_event": "News and events"
   }
 }

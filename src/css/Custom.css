@@ -1,0 +1,24 @@
+/* custom class swiper */
+.swiper-button-next {
+  color: #008345 !important;
+}
+.swiper-button-next::after {
+  font-size: 20px !important;
+}
+
+.swiper-button-prev {
+  color: #008345 !important;
+}
+.swiper-button-prev::after {
+  font-size: 20px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #008345 !important;
+}
+/* custom three dots when over height */
+.cut-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

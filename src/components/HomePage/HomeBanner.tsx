@@ -23,7 +23,7 @@ const HomeBanner = () => {
             </p>
           </div>
           <div>
-            <Button children={t('homepage.banner.button')} className='h-12 px-8 text-2xl font-semibold' />
+            <Button children={t('homepage.banner.button')} className='h-12 px-8 text-xl font-semibold' />
           </div>
         </div>
         <div className='w-1/2'>

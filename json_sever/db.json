@@ -1,0 +1,84 @@
+{
+  "news": [
+    {
+      "id": "1",
+      "image": "https://battech.vn/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fnaisucorner%2Fimage%2Fupload%2Fv1682580124%2FScreenshot_2023_04_27_142124_1bebd05f0a.png&w=1920&q=75",
+      "author": "Le Linh",
+      "date": "12/08/2023",
+      "title": "Chuyển đổi số ngành sản xuất: Làm thế nào để doanh nghiệp tối ưu lợi thế trong thị trường siêu cạnh tranh?",
+      "description": "Từ sau đại dịch Covid-19, chuyển đổi số đang phát triển nhanh chóng trong toàn bộ các ngành hàng sản xuất trên nhiều quốc gia"
+    },
+    {
+      "id": "2",
+      "image": "https://battech.vn/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fnaisucorner%2Fimage%2Fupload%2Fv1683537900%2FScreenshot_2023_05_08_162443_8263a28af2.png&w=1920&q=75",
+      "author": "Nguyen Van A",
+      "date": "15/08/2023",
+      "title": "Tận dụng công nghệ 4.0 trong sản xuất để gia tăng năng suất và hiệu quả kinh doanh",
+      "description": "Bài viết giới thiệu các giải pháp công nghệ 4.0 đang được áp dụng trong ngành sản xuất để nâng cao năng suất và tối ưu hiệu quả kinh doanh."
+    },
+    {
+      "id": "3",
+      "image": "https://battech.vn/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fnaisucorner%2Fimage%2Fupload%2Fv1683273343%2FScreenshot_2023_05_05_145023_eec8bff005.png&w=1920&q=75",
+      "author": "Tran Thi B",
+      "date": "20/08/2023",
+      "title": "Nền tảng công nghệ thông tin trong cuộc cách mạng công nghiệp 4.0",
+      "description": "Bài viết trình bày tầm quan trọng của công nghệ thông tin trong cách mạng công nghiệp 4.0 và ứng dụng trong các ngành sản xuất."
+    },
+    {
+      "id": "4",
+      "image": "https://battech.vn/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fnaisucorner%2Fimage%2Fupload%2Fv1683190937%2FScreenshot_2023_05_04_155422_4b90437eb7.png&w=1920&q=75",
+      "author": "Pham Van C",
+      "date": "25/08/2023",
+      "title": "Thách thức và cơ hội cho doanh nghiệp sản xuất trong thời đại số",
+      "description": "Bài viết đánh giá những thách thức mà doanh nghiệp sản xuất đang phải đối mặt trong thời đại số và đề xuất các cơ hội để tận dụng công nghệ."
+    },
+    {
+      "id": "5",
+      "image": "https://battech.vn/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fnaisucorner%2Fimage%2Fupload%2Fv1682500828%2FScreenshot_2023_04_26_161959_189f4fba97.png&w=1920&q=75",
+      "author": "Hoang Van D",
+      "date": "30/08/2023",
+      "title": "Tương lai sản xuất thông minh với trí tuệ nhân tạo và Internet of Things",
+      "description": "Bài viết dự đoán tương lai sản xuất thông minh sẽ sử dụng trí tuệ nhân tạo và Internet of Things để tự động hóa và tối ưu hoá quy trình sản xuất."
+    },
+    {
+      "id": "6",
+      "image": "https://battech.vn/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fnaisucorner%2Fimage%2Fupload%2Fv1682580124%2FScreenshot_2023_04_27_142124_1bebd05f0a.png&w=1920&q=75",
+      "author": "Le Linh",
+      "date": "12/08/2023",
+      "title": "Chuyển đổi số ngành sản xuất: Làm thế nào để doanh nghiệp tối ưu lợi thế trong thị trường siêu cạnh tranh?",
+      "description": "Từ sau đại dịch Covid-19, chuyển đổi số đang phát triển nhanh chóng trong toàn bộ các ngành hàng sản xuất trên nhiều quốc gia"
+    },
+    {
+      "id": "7",
+      "image": "https://battech.vn/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fnaisucorner%2Fimage%2Fupload%2Fv1683537900%2FScreenshot_2023_05_08_162443_8263a28af2.png&w=1920&q=75",
+      "author": "Nguyen Van A",
+      "date": "15/08/2023",
+      "title": "Tận dụng công nghệ 4.0 trong sản xuất để gia tăng năng suất và hiệu quả kinh doanh",
+      "description": "Bài viết giới thiệu các giải pháp công nghệ 4.0 đang được áp dụng trong ngành sản xuất để nâng cao năng suất và tối ưu hiệu quả kinh doanh."
+    },
+    {
+      "id": "8",
+      "image": "https://battech.vn/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fnaisucorner%2Fimage%2Fupload%2Fv1683273343%2FScreenshot_2023_05_05_145023_eec8bff005.png&w=1920&q=75",
+      "author": "Tran Thi B",
+      "date": "20/08/2023",
+      "title": "Nền tảng công nghệ thông tin trong cuộc cách mạng công nghiệp 4.0",
+      "description": "Bài viết trình bày tầm quan trọng của công nghệ thông tin trong cách mạng công nghiệp 4.0 và ứng dụng trong các ngành sản xuất."
+    },
+    {
+      "id": "9",
+      "image": "https://battech.vn/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fnaisucorner%2Fimage%2Fupload%2Fv1683190937%2FScreenshot_2023_05_04_155422_4b90437eb7.png&w=1920&q=75",
+      "author": "Pham Van C",
+      "date": "25/08/2023",
+      "title": "Thách thức và cơ hội cho doanh nghiệp sản xuất trong thời đại số",
+      "description": "Bài viết đánh giá những thách thức mà doanh nghiệp sản xuất đang phải đối mặt trong thời đại số và đề xuất các cơ hội để tận dụng công nghệ."
+    },
+    {
+      "id": "10",
+      "image": "https://battech.vn/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fnaisucorner%2Fimage%2Fupload%2Fv1682500828%2FScreenshot_2023_04_26_161959_189f4fba97.png&w=1920&q=75",
+      "author": "Hoang Van D",
+      "date": "30/08/2023",
+      "title": "Tương lai sản xuất thông minh với trí tuệ nhân tạo và Internet of Things",
+      "description": "Bài viết dự đoán tương lai sản xuất thông minh sẽ sử dụng trí tuệ nhân tạo và Internet of Things để tự động hóa và tối ưu hoá quy trình sản xuất."
+    }
+  ]
+}
