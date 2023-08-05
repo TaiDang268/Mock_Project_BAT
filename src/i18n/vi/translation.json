@@ -105,6 +105,13 @@
           "5": "Hỗ trợ cá nhân"
         }
       }
-    }
+    },
+    "form_register": {
+      "title": "Đăng ký nhận thông tin mới nhất về BATTECH",
+      "name_placeholder": "Nhập tên của bạn",
+      "email_placeholder": "Nhập email của bạn",
+      "button": "Đăng ký nhận thông tin "
+    },
+    "partner_title":"Đối tác"
   }
 }
