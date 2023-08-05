@@ -4,6 +4,10 @@
 .swiper-pagination-bullet-active {
   background-color: #008345 !important;
 }
+.swiper-pagination {
+  position: static !important;
+  margin-top: 25px;
+}
 /*custom arrows cho slider  */
 .arrow {
   position: absolute;

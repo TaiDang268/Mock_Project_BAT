@@ -68,7 +68,7 @@ const HomeServicePack = () => {
           ))}
         </div>
         {/* pagination three dots */}
-        <div className='flex justify-center items-center my-4'>
+        <div className='flex justify-center items-center mt-10'>
           {listPack.map((item) => (
             <button
               className={`rounded-[50%] w-[9px] h-[9px] mx-1 ${

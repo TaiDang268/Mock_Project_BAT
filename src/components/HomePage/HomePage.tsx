@@ -1,3 +1,5 @@
+import FormRegister from '../FormRegister'
+import Partner from '../Partner'
 import HomeBanner from './HomeBanner'
 import HomeDescriptionBAT from './HomeDescriptionBAT'
 import HomeDiffrentAndPioneer from './HomeDiffrentAndPioneer'
@@ -25,6 +27,12 @@ const Home = () => {
       </div>
       <div className='w-full '>
         <HomeServicePack />
+      </div>
+      <div className='w-full '>
+        <FormRegister />
+      </div>
+      <div className='w-full '>
+        <Partner />
       </div>
     </>
   )
