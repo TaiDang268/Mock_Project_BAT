@@ -1,7 +1,8 @@
 import { useRoutes } from 'react-router'
-import Layout from '~/components/Layout'
-import HomePage from '~/components/HomePage/HomePage'
+import Layout from '~/components/Layout/Layout'
+import HomePage from '~/components/HomePage'
 import NotFound from '~/components/NotFound'
+import DescriptionPage from '~/components/DescriptionPage'
 
 const routers = [
   {
@@ -10,7 +11,7 @@ const routers = [
   },
   {
     path: '/about_us',
-    element: <NotFound />
+    element: <DescriptionPage />
   },
   {
     path: '/news',
