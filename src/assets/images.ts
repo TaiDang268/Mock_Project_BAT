@@ -1,33 +1,42 @@
-import nameBAT_icon from './images/@_icon.svg'
-import BAT_logo from './images/BAT_logo.svg'
-import BAT_logo_white from './images/BAT_logo_white.svg'
-import US_flag from './images/USUK_flag.svg'
-import VN_Flag from './images/VN_flag.svg'
-import acount_icon from './images/acount_icon.svg'
-import bigger_icon from './images/bigger_icon.svg'
-import check_v_icon from './images/check_v_icon.svg'
-import clock_icon from './images/clock.svg'
-import email_icon from './images/email_icon.svg'
-import fb_icon from './images/fb_icon.svg'
-import github_icon from './images/github_icon.svg'
-import home_icon from './images/home_icon.svg'
-import image_home_2 from './images/image_home2.svg'
-import image_home_1 from './images/image_home_1.svg'
-import image_home_3 from './images/image_home_3.svg'
-import image_home_4 from './images/image_home_4.svg'
-import instagram_icon from './images/instagram_icon.svg'
-import arrow_left from './images/left-arrow.svg'
-import padlock_icon from './images/padlock_icon.svg'
-import partner_1 from './images/partner_1.svg'
-import partner_2 from './images/partner_2.svg'
-import partner_3 from './images/partner_3.svg'
-import partner_4 from './images/partner_4.svg'
-import phone_icon from './images/phone_icon.svg'
-import arrow_right from './images/right-arrow.svg'
-import security_icon from './images/security_icon.svg'
-import setting_icon from './images/setting_icon.svg'
-import twitter_icon from './images/twitter_icon.svg'
-import youtobe_icon from './images/youtobe_icon.svg'
+// footer icons
+import nameBAT_icon from './images/footer/@_icon.svg'
+import BAT_logo_white from './images/footer/BAT_logo_white.svg'
+import bigger_icon from './images/footer/bigger_icon.svg'
+import email_icon from './images/footer/email_icon.svg'
+import fb_icon from './images/footer/fb_icon.svg'
+import github_icon from './images/footer/github_icon.svg'
+import home_icon from './images/footer/home_icon.svg'
+import instagram_icon from './images/footer/instagram_icon.svg'
+import phone_icon from './images/footer/phone_icon.svg'
+import twitter_icon from './images/footer/twitter_icon.svg'
+import youtobe_icon from './images/footer/youtobe_icon.svg'
+// header icons
+import BAT_logo from './images/header/BAT_logo.svg'
+import US_flag from './images/header/USUK_flag.svg'
+import VN_Flag from './images/header/VN_flag.svg'
+// home icons
+import acount_icon from './images/HomePage/acount_icon.svg'
+import check_v_icon from './images/HomePage/check_v_icon.svg'
+import clock_icon from './images/HomePage/clock.svg'
+import image_home_2 from './images/HomePage/image_home2.svg'
+import image_home_1 from './images/HomePage/image_home_1.svg'
+import image_home_3 from './images/HomePage/image_home_3.svg'
+import image_home_4 from './images/HomePage/image_home_4.svg'
+import arrow_left from './images/HomePage/left-arrow.svg'
+import padlock_icon from './images/HomePage/padlock_icon.svg'
+import partner_1 from './images/HomePage/partner_1.svg'
+import partner_2 from './images/HomePage/partner_2.svg'
+import partner_3 from './images/HomePage/partner_3.svg'
+import partner_4 from './images/HomePage/partner_4.svg'
+import arrow_right from './images/HomePage/right-arrow.svg'
+import security_icon from './images/HomePage/security_icon.svg'
+import setting_icon from './images/HomePage/setting_icon.svg'
+// description icons
+import desc_banner_1 from './images/DescriptionPage/banner_1.svg'
+import desc_banner_2 from './images/DescriptionPage/banner_2.svg'
+import desc_banner_3 from './images/DescriptionPage/banner_3.svg'
+
+import desc_banner_4 from './images/DescriptionPage/banner_4.svg'
 
 const images = {
   BAT_logo_white,
@@ -59,6 +68,10 @@ const images = {
   image_home_1,
   image_home_2,
   image_home_3,
-  image_home_4
+  image_home_4,
+  desc_banner_1,
+  desc_banner_2,
+  desc_banner_3,
+  desc_banner_4
 }
 export default images

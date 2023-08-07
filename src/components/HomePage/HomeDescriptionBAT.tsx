@@ -5,11 +5,11 @@ const HomeDescriptionBAT = () => {
   const { t } = useTranslation()
   return (
     <>
-      <div className='w-1182  mx-auto my-20 flex'>
-        <div className='w-1/2'>
+      <div className='max-w-[1190px]  mx-auto my-20 grid grid-cols-12'>
+        <div className='xl:col-span-6 xl:block hidden'>
           <img src={images.image_home_2}></img>
         </div>
-        <div className='w-1/2 '>
+        <div className='xl:col-span-6 col-span-12 max-xl:px-[180px] max-lg:px-[100px]'>
           <div>
             <p className='font-bold text-2xl'>{t('homepage.descriptionBAT.title')}</p>
           </div>
@@ -17,9 +17,9 @@ const HomeDescriptionBAT = () => {
             <p className='font-medium'>{t('homepage.descriptionBAT.description')}</p>
           </div>
           <div className='mt-8'>
-            <div className='flex'>
+            <div className='grid grid-cols-12 gap-5'>
               {/* clock icon */}
-              <div className='w-123 h-144 border  four_icon mr-7  '>
+              <div className='col-span-3 max-md:col-span-6 max-sm:col-span-12 h-144  border  four_icon   '>
                 <div className='h-1/2 flex items-center justify-center'>
                   <img src={images.clock_icon} />
                 </div>
@@ -28,7 +28,7 @@ const HomeDescriptionBAT = () => {
                 </div>
               </div>
               {/* setting icon */}
-              <div className='w-123 h-144 border  four_icon mr-7 '>
+              <div className='col-span-3 max-md:col-span-6 max-sm:col-span-12  h-144 border  four_icon  '>
                 <div className='h-1/2 flex items-center justify-center'>
                   <img src={images.setting_icon} />
                 </div>
@@ -37,7 +37,7 @@ const HomeDescriptionBAT = () => {
                 </div>
               </div>
               {/* padlock icon */}
-              <div className='w-123 h-144 border  four_icon mr-7 '>
+              <div className='col-span-3 max-md:col-span-6 max-sm:col-span-12  h-144 border  four_icon  '>
                 <div className='h-1/2 flex items-center justify-center'>
                   <img src={images.padlock_icon} />
                 </div>
@@ -46,7 +46,7 @@ const HomeDescriptionBAT = () => {
                 </div>
               </div>
               {/* security icon */}
-              <div className='w-123 h-144 border  four_icon mr-7 '>
+              <div className='col-span-3 max-md:col-span-6 max-sm:col-span-12  h-144 border  four_icon  '>
                 <div className='h-1/2 flex items-center justify-center'>
                   <img src={images.security_icon} />
                 </div>

@@ -5,15 +5,18 @@ const HomeDiffrentAndPioneer = () => {
 
   return (
     <>
-      <div className='w-1200 mx-auto '>
+      <div className='max-w-[1200px] mx-auto '>
         {/* tilte */}
         <div>
           <p className='uppercase font-bold text-2xl text-center'>{t('homepage.diffrent_pioneer.tilte')}</p>
         </div>
         {/* khối div chứa 4 div con */}
-        <div className='flex relative my-20 '>
+        <div className='grid grid-cols-12 gap-10  my-20 '>
           {list.map((item) => (
-            <div key={item} className='w-1/4 rounded-2xl mx-3 h-257 shadow-md shadow-slate-400	  '>
+            <div
+              key={item}
+              className='xl:col-span-3 lg:col-span-6  col-span-12 rounded-2xl max-lg:mx-10  shadow-md shadow-slate-400	 py-5 relative'
+            >
               <div className='absolute top-[-50px] ml-4'>
                 <p className='font-bold text-[64px] text-[#008345]'>{t(`homepage.diffrent_pioneer.${item}.id`)}</p>
               </div>

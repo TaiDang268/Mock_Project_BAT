@@ -11,17 +11,19 @@ const HomeServicePack = () => {
   const [activePack, setActivePark] = useState<string>('pack_2')
   return (
     <>
-      <div className='w-1200  mx-auto '>
+      <div className='max-w-[1200px]  mx-auto '>
         {/* title */}
         <div>
           <p className='text-center font-bold text-[24px] uppercase mb-6'>{t('homepage.service_pack.title')}</p>
         </div>
         {/* 3 item */}
-        <div className='flex w-full'>
+        {/* <div className='flex w-full'> */}
+        {/* <div className='grid grid-cols-1 '> */}
+        <div className='grid w-full grid-cols-12 gap-5  px-4   '>
           {listPack.map((item, index) => (
             <div
               key={index}
-              className={`w-1/3   rounded-[20px] px-4 py-4 mx-3 shadow-xl cursor-pointer ${
+              className={` rounded-[20px] px-4 py-4  shadow-xl cursor-pointer lg:col-span-4 sm:col-span-6  col-span-full  ${
                 activePack === item ? 'bg-[#f1f1f1]' : 'bg-white'
               }`}
               onClick={() => setActivePark(item)}
@@ -29,8 +31,8 @@ const HomeServicePack = () => {
               <div>
                 <p className='font-bold text-[20px] mb-2'>{t(`homepage.service_pack.${item}.title`)}</p>
               </div>
-              <div>
-                <p className='font-medium text-[#7A7A7A] mb-3'>{t(`homepage.service_pack.${item}.for`)}</p>
+              <div className='sm:h-[45px]'>
+                <p className='font-medium text-[#7A7A7A] '>{t(`homepage.service_pack.${item}.for`)}</p>
               </div>
               <div className='my-8 w-full box-border'>
                 <Button

@@ -112,6 +112,73 @@
       "email_placeholder": "Nhập email của bạn",
       "button": "Đăng ký nhận thông tin "
     },
-    "partner_title":"Đối tác"
+    "partner_title": "Đối tác"
+  },
+
+  "description_page": {
+    "title": "Giới thiệu về",
+    "introduce_about_BATTECH": {
+      "title": " GIỚI THIỆU VỀ BATTECH",
+      "description": {
+        "1": "BATTECH được thành lập vào đầu năm 2009, trong bối cảnh nền kinh tế nước ta đang gặp nhiều khó khăn, thách thức. Với khát vọng thành công và ý chí mạnh mẽ đội ngũ lãnh đạo trẻ, BATTECH xác định lấy hoạt động đầu tư kinh doanh bất động sản, thi công cơ điện, phòng cháy chữa cháy làm nòng cốt trong giai đoạn đầu.",
+        "2": "Sau hơn một thập kỷ xây dựng và trưởng thành, BATTECH đã vươn mình trở thành doanh nghiệp đa lĩnh vực, có tốc độ phát triển thần tốc.",
+        "3": "Với số lượng 10 nhân viên từ lúc thành lập đến nay đã tăng lên con số hơn 300 nhân sự chính thức và gần 400 nhân sự thời vụ tại các dự án trong và ngoài nước. Từng bước khẳng định tầm vóc trên thương trường với hàng loạt công trình, dự án lớn tại Việt Nam, Lào, Cam-pu-chia, Trung Quốc, cùng nhiều bạn hàng, đối tác cung ứng thiết bị từ Nhật, Đài Loan, Pháp, Đức, Italy"
+      }
+    },
+    "vision_and_mission": {
+      "title": " TẦM NHÌN VÀ SỨ MỆNH",
+      "description": {
+        "1": "\"Vì một xã hội không có rào cản\"",
+        "2": "Dựa vào công nghệ phát triển, nhu cầu sử dụng của tất cả mọi người. BATTECH mong muốn đem tới mạng lưới thế giới ảo rộng lớn ra thị trường. Để cho tất cả mọi người có thể chia sẻ, tâm sự và gắn kết trong không gian ảo, vượt qua mọi rào cản về vị trí địa lý, dịch bệnh.",
+        "3": "Mục tiêu năm 2022-2023 công ty sẽ phát triển rộng lớn với quy mô 159 - 200 nhân sự. Ngoài phát triển xây dựng phần mềm phòng họp ảo còn bắt tay vào làm các games 3D như golf, câu cá, đua xe... Đưa công ty trở thành công ty công nghệ thuộc top đầu phát triển metaverse tại Việt Nam."
+      }
+    },
+    "core_values": {
+      "title": " Giá trị cốt lõi",
+
+      "BAT": {
+        "1": " Tận tâm với khách hàng",
+        "2": " Tận tụy với công việc",
+        "3": " Đoàn kết làm nên sức mạnh"
+      },
+      "TECH": {
+        "1": "“T” - Technology: Công nghệ",
+        "2": "“E” - Ecosystem: Hệ sinh thái",
+        "3": "“C” - Connect: Kết nối",
+        "4": "“H” - Happiness: Hạnh phúc"
+      },
+      "description": {
+        "1": "BATTECH hay còn gọi là Công ty công nghệ BATTECH, là một công ty trực thuộc BATGROUP ra đời trong giá trị cốt lõi của chữ “TÂM”:",
+        "2": "Công nghệ ngày càng phát triển, với sự ra đời của thế giới ảo metaverse giúp con người gắn kết gần nhau hơn, BATTECH mong muốn sẽ mở ra không gian trực tuyến tương tác của người dùng đa chiều hơn so với các công nghệ hiện tại, thay vì chỉ xem nội dung kỹ thuật số, người dùng trong Metaverse sẽ có thể đắm mình trong không gian của thế giới kỹ thuật số ảo."
+      }
+    },
+    "working_principle": {
+      "title": " TÔN CHỈ LÀM VIỆC",
+
+      "team_work": {
+        "title": "Teamwork: ",
+        "description": " Tinh thần đồng đội - mỗi cá nhân nhỏ tập hợp gắn kết, nâng đỡ đoàn kết vì mục tiêu chung xây dựng công ty phát triển vững mạnh."
+      },
+      "trust": {
+        "title": "Trust: ",
+        "description": " Tin cậy - giữ chữ tín, giữ đúng lời hứa."
+      },
+      "innovation": {
+        "title": "Innovation: ",
+        "description": " Sáng tạo, đổi mới - luôn học tập trao đổi cập nhật kiến thức mới để đưa vào ứng dụng trong công việc, luôn cải tiến áp dụng những công nghệ mới nhất để tạo ra sản phẩm tốt nhất."
+      },
+      "ethics": {
+        "title": "Ethics: ",
+        "description": " Đạo đức - trung thực khi phục vụ khách hàng, hiểu và tuân thủ các quy định của công ty, trách nhiệm với công việc, bình đẳng và tôn trọng mọi người."
+      },
+      "customers": {
+        "title": "Customers: ",
+        "description": " Khách hàng - đặt khách hàng là trung tâm phát triển, Battech luôn sẵn sàng lắng nghe và thay đổi theo chiều hướng tích cực để đưa ra sản phẩm phù hợp"
+      },
+      "goals": {
+        "title": "Goals: ",
+        "description": " Mục tiêu - hoàn thành sản phòng họp ảo và đưa ra thị trường. Được các doanh nghiệp lớn tin cậy sử dụng rộng rãi."
+      }
+    }
   }
 }

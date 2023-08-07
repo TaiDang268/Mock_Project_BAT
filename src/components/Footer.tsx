@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import '../i18n/config'
 
 import { useTranslation } from 'react-i18next'
@@ -14,14 +15,14 @@ const footerLinkUseful = [
 const Footer = () => {
   const { t } = useTranslation()
   return (
-    <div className='w-full h-460 bg-BAT-primary px-20 py-20 '>
-      <div className=' flex flex-row  w-full'>
+    <div className='w-full h-min-460 bg-BAT-primary px-20 py-20 '>
+      <div className={clsx('grid grid-cols-1  lg:grid-cols-3 gap-4', 'md:grid-cols-1 ')}>
         {/* column 1 */}
-        <div className='  m-3 p-3 text-white  w-full'>
+        <div className='  m-3 p-3 text-white  w-full max-lg:border-b-2 max-lg:border-white max-lg:pb-8'>
           <div className='h-16'>
             <img src={images.BAT_logo_white} alt='BAT logo' />
           </div>
-          <div className='h-24'>
+          <div>
             <p className='text-base font-medium'>{t('footer.description')}</p>
           </div>
           <div className='flex mt-14'>
@@ -33,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
         {/* column 2 */}
-        <div className='  m-3 p-3 text-white  w-full text-base font-medium'>
+        <div className='  m-3 p-3 text-white  w-full text-base font-medium max-lg:border-b-2 max-lg:border-white'>
           <div className='h-16 flex center'>
             <p className='text-2xl font-bold'>{t('footer.contact.tilte')} </p>
           </div>

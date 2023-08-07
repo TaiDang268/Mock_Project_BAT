@@ -7,7 +7,7 @@ const FormRegister = () => {
 
   return (
     <>
-      <div className='w-full h-[388px] bg-[#E9F9D6] mt-28'>
+      <div className='w-full h-[388px] bg-[#E9F9D6] mt-28 px-4'>
         <div>
           <p className='font-bold text-[24px] text-center pt-8'>{t('homepage.form_register.title')}</p>
         </div>
