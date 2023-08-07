@@ -9,7 +9,6 @@ const listPack = ['pack_1', 'pack_2', 'pack_3']
 const HomeServicePack = () => {
   const { t } = useTranslation()
   const [activePack, setActivePark] = useState<string>('pack_2')
-  console.log(activePack)
   return (
     <>
       <div className='w-1200  mx-auto '>
