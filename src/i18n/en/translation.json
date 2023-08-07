@@ -114,5 +114,71 @@
       "button": "Subscribe to receive information "
     },
     "partner_title": "Partner"
+  },
+  "description_page": {
+    "title": " about",
+    "introduce_about_BATTECH": {
+      "title": " about BATTECH",
+      "description": {
+        "1": "BATTECH was founded in early 2018, in the context of domestic IT development facing many difficulties and challenges. With the desire to succeed and the strong will of our young leaders, BATTECH determined that investment in technology and service development were the core in the early stages.",
+        "2": "After more than a decade of construction and growth, BATTECH has grown to become a multi-field enterprise with rapid growth.",
+        "3": "The number of 10 employees has now increased to more than 300 official employees and nearly 100 seasonal employees in domestic and foreign projects. Step by step asserting its stature in the market with a series of large works and projects in Vietnam, Japan, Taiwan, Australia, Germany, Italy."
+      }
+    },
+    "vision_and_mission": {
+      "title": " VISION AND MISSION",
+      "description": {
+        "1": "\"For a society without barriers\"",
+        "2": "Based on developed technologies as well as people's needs, BATTECH wishes to bring a large virtual world network to the market. So that everyone can share, confide and bond in virtual space, overcoming all barriers of geographical location and epidemics.",
+        "3": "The company has put forward a target to grow to a scale of 159 - 200 employees in 2022-2023. Besides developing software for virtual meeting rooms, they also embarked on making 3D games such as golf, fishing, racing... Turning the company into a leading technology company in the development of Metaverse in Vietnam."
+      }
+    },
+    "core_values": {
+      "title": " Core values",
+
+      "BAT": {
+        "1": " Devoted to customers",
+        "2": " Dedication to work",
+        "3": " Unity makes strength"
+      },
+      "TECH": {
+        "1": "“T” - Technology",
+        "2": "“E” - Ecosystem",
+        "3": "“C” - Connect",
+        "4": "“H” - Happiness"
+      },
+      "description": {
+        "1": "BATTECH, also known as BATTECH Technology Company, is a company under BATGROUP that was born in the core value of the word :“D”",
+        "2": "Technology is increasingly developing, with the introduction of the Metaverse virtual world bringing people together, BATTECH hopes to open up an interactive online space with more multi-dimensionality than current technologies , instead of just viewing digital content, users in the Metaverse will be able to immerse themselves in the virtual digital world."
+      }
+    },
+    "working_principle": {
+      "title": " WORKING PRINCIPLE",
+
+      "team_work": {
+        "title": "Teamwork: ",
+        "description": " Team spirit - each separate individual gathers together, providing support and unites for the common goal of building a strong organization"
+      },
+      "trust": {
+        "title": "Trust: ",
+        "description": " Keep credibility, keep promises."
+      },
+      "innovation": {
+        "title": "Innovation: ",
+        "description": " Never stop learning, exchanging and updating new knowledge to apply in work, always improving and adapt to the latest technologies to create the best products."
+      },
+      "ethics": {
+        "title": "Ethics: ",
+        "description": " Our ethics including honesty, understanding and complying with company regulations, taking responsibility for our own work and treating others with respects."
+      },
+      "customers": {
+        "title": "Customers: ",
+        "description": " With customers being the heart of development, Battech is always willing to listen and tailor in a positive direction to offer suitable products."
+      },
+      "goals": {
+        "title": "Goals: ",
+        "description": " Complete virtual meeting room product and bring to market. Widely used by large enterprises."
+      }
+    }
   }
 }

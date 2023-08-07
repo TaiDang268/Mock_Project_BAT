@@ -7,17 +7,17 @@ const HomeNewsFromBAT = () => {
   const { t } = useTranslation()
 
   return (
-    <div className='w-full bg-[#E9F9D6] h-430'>
-      <div className='w-1200 mx-auto flex'>
+    <div className='w-full bg-[#E9F9D6] min-h-[430px]'>
+      <div className='max-w-[1200px] mx-auto grid grid-cols-12 px-4'>
         {/* text */}
-        <div className='w-3/5 mt-10'>
+        <div className='col-span-7 mt-10 max-[700px]:col-span-12 max-[700px]:px-5 '>
           <div className='mb-4'>
             <p className='font-medium leading-6 text-[#606060] '> {t('homepage.news.title')}</p>
           </div>
           <div className='mb-3'>
             <p className='font-bold text-[24px] leading-7'> {t('homepage.news.solution')}</p>
           </div>
-          <div className='h-32'>
+          <div className='h-40 '>
             <p className='font-medium leading-6 text-[#606060]'> {t('homepage.news.description')}</p>
           </div>
           <div className='mt-10'>
@@ -25,7 +25,7 @@ const HomeNewsFromBAT = () => {
           </div>
         </div>
         {/* image */}
-        <div className='  relative w-2/5 '>
+        <div className='  relative col-span-5 max-[700px]:hidden'>
           <div className=' absolute z-10 top-14 left-5'>
             <img src={images.image_home_3} />
           </div>

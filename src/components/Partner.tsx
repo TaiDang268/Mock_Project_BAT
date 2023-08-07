@@ -23,14 +23,21 @@ const Partner = () => {
   return (
     <>
       <div className='w-full'>
-        <div className='w-[1200px]   mx-auto my-20'>
+        <div className='max-w-[1200px]   mx-auto my-20'>
           <div>
             <p className='uppercase font-bold text-[24px] text-center mb-3'>{t('homepage.partner_title')}</p>
           </div>
-          <div>
+          <div className=''>
             <Swiper
-              slidesPerView={4}
-              spaceBetween={30}
+              breakpoints={{
+                320: { slidesPerView: 1, spaceBetween: 20 },
+                480: { slidesPerView: 2, spaceBetween: 30 },
+                768: { slidesPerView: 3, spaceBetween: 40 },
+                1024: { slidesPerView: 4, spaceBetween: 50 },
+                1536: { slidesPerView: 4, spaceBetween: 150 }
+              }}
+              // slidesPerView={4}
+              // spaceBetween={30}
               freeMode={true}
               autoplay={{ delay: 2500, disableOnInteraction: false }}
               pagination={{

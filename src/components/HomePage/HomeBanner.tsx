@@ -8,8 +8,8 @@ const HomeBanner = () => {
 
   return (
     <>
-      <div className='w-full  h-638 bg-home-gradent flex'>
-        <div className='w-1/2 box-border p-32'>
+      <div className='w-full  min-h-[638px] bg-home-gradent grid grid-cols-12'>
+        <div className='xl:col-span-6 col-span-12 box-border xl:p-32 lg:p-[180px]  p-[100px] pt-[180px]  '>
           <div className='mb-8 '>
             <p style={{ color: 'rgba(245, 122, 33, 1)', fontSize: '40px' }} className='font-bold '>
               BATTECH ERP
@@ -27,7 +27,7 @@ const HomeBanner = () => {
             <Button children={t('homepage.banner.button')} className='h-12 px-8 text-xl font-semibold' />
           </div>
         </div>
-        <div className='w-1/2'>
+        <div className='xl:col-span-6  xl:block hidden'>
           <img src={images.image_home_1}></img>
         </div>
       </div>
