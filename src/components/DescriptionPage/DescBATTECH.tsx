@@ -15,15 +15,11 @@ const DescBATTECH = () => {
             <p className='font-bold text-[24px] uppercase max-lg:text-center'>
               {t('description_page.introduce_about_BATTECH.title')}
             </p>
-            <p className='font-medium text-[#444444] my-4'>
-              {t('description_page.introduce_about_BATTECH.description.1')}
-            </p>
-            <p className='font-medium text-[#444444] my-4'>
-              {t('description_page.introduce_about_BATTECH.description.2')}
-            </p>
-            <p className='font-medium text-[#444444] my-4'>
-              {t('description_page.introduce_about_BATTECH.description.3')}
-            </p>
+            {['1', '2', '3'].map((item) => (
+              <p key={item} className='font-medium text-[#444444] my-4'>
+                {t(`description_page.introduce_about_BATTECH.description.${item}`)}
+              </p>
+            ))}
           </div>
         </div>
       </div>
@@ -37,12 +33,11 @@ const DescBATTECH = () => {
             <p className='font-medium italic my-4  text-right'>
               {t('description_page.vision_and_mission.description.1')}
             </p>
-            <p className='font-medium text-[#444444] my-4  text-right'>
-              {t('description_page.vision_and_mission.description.2')}
-            </p>
-            <p className='font-medium text-[#444444] my-4  text-right'>
-              {t('description_page.vision_and_mission.description.3')}
-            </p>
+            {['1', '2'].map((item) => (
+              <p key={item} className='font-medium text-[#444444] my-4 text-right'>
+                {t(`description_page.introduce_about_BATTECH.description.${item}`)}
+              </p>
+            ))}
           </div>
           <div className='col-span-6  m-auto max-lg:col-span-12'>
             <img src={images.desc_banner_4} />
@@ -57,35 +52,25 @@ const DescBATTECH = () => {
             <div className='w-1/2 mr-6 max-lg:w-full '>
               <p className='font-bold text-[20px] text-[#F57A21]'>BAT</p>
 
-              <div className='rounded-lg my-4 bg-[#ffffff] shadow-lg min-h-[42px] flex items-center'>
-                <p className='pl-4'> {t('description_page.core_values.BAT.1')}</p>
-              </div>
-              <div className='rounded-lg my-4 bg-[#ffffff] shadow-lg min-h-[42px] flex items-center'>
-                <p className='pl-4'> {t('description_page.core_values.BAT.2')}</p>
-              </div>
-              <div className='rounded-lg my-4 bg-[#ffffff] shadow-lg min-h-[42px] flex items-center'>
-                <p className='pl-4'> {t('description_page.core_values.BAT.3')}</p>
-              </div>
+              {['1', '2', '3'].map((item) => (
+                <div className='rounded-lg my-4 bg-[#ffffff] shadow-lg min-h-[42px] flex items-center'>
+                  <p className='pl-4'> {t(`description_page.core_values.BAT.${item}`)}</p>
+                </div>
+              ))}
             </div>
             <div className='w-1/2 mr-6 max-lg:w-full '>
               <p className='font-bold text-[20px] text-[#F57A21]'>TECH</p>
-              <div className='rounded-lg my-4 bg-[#ffffff] shadow-lg min-h-[42px] flex items-center'>
-                <p className='pl-4'> {t('description_page.core_values.TECH.1')}</p>
-              </div>
-              <div className='rounded-lg my-4 bg-[#ffffff] shadow-lg min-h-[42px] flex items-center'>
-                <p className='pl-4'> {t('description_page.core_values.TECH.2')}</p>
-              </div>
-              <div className='rounded-lg my-4 bg-[#ffffff] shadow-lg min-h-[42px] flex items-center'>
-                <p className='pl-4'> {t('description_page.core_values.TECH.3')}</p>
-              </div>
-              <div className='rounded-lg my-4 bg-[#ffffff] shadow-lg min-h-[42px] flex items-center'>
-                <p className='pl-4'> {t('description_page.core_values.TECH.4')}</p>
-              </div>
+              {['1', '2', '3', '4'].map((item) => (
+                <div className='rounded-lg my-4 bg-[#ffffff] shadow-lg min-h-[42px] flex items-center'>
+                  <p className='pl-4'> {t(`description_page.core_values.TECH.${item}`)}</p>
+                </div>
+              ))}
             </div>
           </div>
           <div className=' w-1/2 px-14  py-14 bg-[#E9F9D6] rounded-[20px] max-lg:w-full max-lg:px-16'>
-            <p className='font-medium text-[#444444] my-4'>{t('description_page.core_values.description.1')}</p>
-            <p className='font-medium text-[#444444] my-4'>{t('description_page.core_values.description.2')}</p>
+            {['1', '2'].map((item) => (
+              <p className='font-medium text-[#444444] my-4'>{t(`description_page.core_values.description.${item}`)}</p>
+            ))}
           </div>
         </div>
       </div>
