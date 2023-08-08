@@ -35,8 +35,14 @@ import setting_icon from './images/HomePage/setting_icon.svg'
 import desc_banner_1 from './images/DescriptionPage/banner_1.svg'
 import desc_banner_2 from './images/DescriptionPage/banner_2.svg'
 import desc_banner_3 from './images/DescriptionPage/banner_3.svg'
-
 import desc_banner_4 from './images/DescriptionPage/banner_4.svg'
+import desc_banner_5 from './images/DescriptionPage/banner_5.svg'
+import principle_1 from './images/DescriptionPage/principle_1.svg'
+import principle_2 from './images/DescriptionPage/principle_2.svg'
+import principle_3 from './images/DescriptionPage/principle_3.svg'
+import principle_4 from './images/DescriptionPage/principle_4.svg'
+import principle_5 from './images/DescriptionPage/principle_5.svg'
+import principle_6 from './images/DescriptionPage/principle_6.svg'
 
 const images = {
   BAT_logo_white,
@@ -72,6 +78,13 @@ const images = {
   desc_banner_1,
   desc_banner_2,
   desc_banner_3,
-  desc_banner_4
+  desc_banner_4,
+  desc_banner_5,
+  principle_1,
+  principle_2,
+  principle_3,
+  principle_4,
+  principle_5,
+  principle_6
 }
 export default images

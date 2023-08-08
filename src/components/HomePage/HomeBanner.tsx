@@ -9,7 +9,7 @@ const HomeBanner = () => {
   return (
     <>
       <div className='w-full  min-h-[638px] bg-home-gradent grid grid-cols-12'>
-        <div className='xl:col-span-6 col-span-12 box-border xl:p-32 lg:p-[180px]  p-[100px] pt-[180px]  '>
+        <div className='xl:col-span-6 col-span-12 box-border xl:p-32 lg:p-[100px]  p-[20px] pt-[180px]  '>
           <div className='mb-8 '>
             <p style={{ color: 'rgba(245, 122, 33, 1)', fontSize: '40px' }} className='font-bold '>
               BATTECH ERP

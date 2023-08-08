@@ -9,7 +9,7 @@ const HomeDescriptionBAT = () => {
         <div className='xl:col-span-6 xl:block hidden'>
           <img src={images.image_home_2}></img>
         </div>
-        <div className='xl:col-span-6 col-span-12 max-xl:px-[180px] max-lg:px-[100px]'>
+        <div className='xl:col-span-6 col-span-12 max-xl:px-[100px] max-lg:px-[20px]'>
           <div>
             <p className='font-bold text-2xl'>{t('homepage.descriptionBAT.title')}</p>
           </div>

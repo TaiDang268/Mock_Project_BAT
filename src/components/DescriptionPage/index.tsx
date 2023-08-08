@@ -3,6 +3,7 @@ import Partner from '../Partner'
 import DescBATTECH from './DescBATTECH'
 import DescBanner from './DescBanner'
 import DescPrinciple from './DescPrinciple'
+import DescStaff from './DescStaff'
 
 const DescriptionPage = () => {
   return (
@@ -10,6 +11,7 @@ const DescriptionPage = () => {
       <DescBanner />
       <DescBATTECH />
       <DescPrinciple />
+      <DescStaff />
       <FormRegister />
       <Partner />
     </>

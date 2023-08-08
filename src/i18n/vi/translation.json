@@ -7,7 +7,7 @@
     "contact": "Liên hệ"
   },
   "footer": {
-    "description": "Tại BATTECH, chúng tôi luôn cố gắng giúp doanh nghiệp tái cơ cấu quản trị doanh nghiệp để hoạt động tốt hơn, cải thiện hiệu quả kinh doanh và cải thiện cuộc sống thông qua việc kết nối con người và công nghệ hiện đại.",
+    "description": "Tại BATTECH chúng tôi luôn cố gắng giúp doanh nghiệp tái cơ cấu quản trị doanh nghiệp để hoạt động tốt hơn, cải thiện hiệu quả kinh doanh và cải thiện cuộc sống thông qua việc kết nối con người và công nghệ hiện đại.",
     "contact": {
       "tilte": "Liên hệ ",
       "phone": "Điện thoại: 024 85 896 999",
@@ -155,29 +155,36 @@
     "working_principle": {
       "title": " TÔN CHỈ LÀM VIỆC",
 
-      "team_work": {
+      "principle_1": {
         "title": "Teamwork: ",
         "description": " Tinh thần đồng đội - mỗi cá nhân nhỏ tập hợp gắn kết, nâng đỡ đoàn kết vì mục tiêu chung xây dựng công ty phát triển vững mạnh."
       },
-      "trust": {
+      "principle_2": {
         "title": "Trust: ",
         "description": " Tin cậy - giữ chữ tín, giữ đúng lời hứa."
       },
-      "innovation": {
+      "principle_3": {
         "title": "Innovation: ",
         "description": " Sáng tạo, đổi mới - luôn học tập trao đổi cập nhật kiến thức mới để đưa vào ứng dụng trong công việc, luôn cải tiến áp dụng những công nghệ mới nhất để tạo ra sản phẩm tốt nhất."
       },
-      "ethics": {
+      "principle_4": {
         "title": "Ethics: ",
         "description": " Đạo đức - trung thực khi phục vụ khách hàng, hiểu và tuân thủ các quy định của công ty, trách nhiệm với công việc, bình đẳng và tôn trọng mọi người."
       },
-      "customers": {
+      "principle_5": {
         "title": "Customers: ",
         "description": " Khách hàng - đặt khách hàng là trung tâm phát triển, Battech luôn sẵn sàng lắng nghe và thay đổi theo chiều hướng tích cực để đưa ra sản phẩm phù hợp"
       },
-      "goals": {
+      "principle_6": {
         "title": "Goals: ",
         "description": " Mục tiêu - hoàn thành sản phòng họp ảo và đưa ra thị trường. Được các doanh nghiệp lớn tin cậy sử dụng rộng rãi."
+      }
+    },
+    "staff": {
+      "title": "ĐỘI NGŨ NHÂN SỰ",
+      "description": {
+        "1": "Đội ngũ nhân sự của BATTECH là những con người giàu kinh nghiệm về công nghệ. Mỗi một thành viên đều có kiến thức và lĩnh vực công nghệ khác nhau, khi phát triển phần mềm đều đưa ra được những ý tưởng, lập luận chặt chẽ. Với tinh thần đoàn kêt, ham học hỏi cùng với sự nhiệt tình, có trách nhiệm trong công việc. Đội ngũ BATTECH luôn lắng nghe ý kiến đóng góp của khách hàng để ngày nâng cao chất lượng của sản phẩm phù hợp với nhu cầu người dùng.",
+        "2": "Nhân sự BATTECH luôn sẵn lòng phục vụ, lắng nghe, thấu hiểu."
       }
     }
   }
