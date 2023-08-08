@@ -155,29 +155,36 @@
     "working_principle": {
       "title": " WORKING PRINCIPLE",
 
-      "team_work": {
+      "principle_1": {
         "title": "Teamwork: ",
         "description": " Team spirit - each separate individual gathers together, providing support and unites for the common goal of building a strong organization"
       },
-      "trust": {
+      "principle_2": {
         "title": "Trust: ",
         "description": " Keep credibility, keep promises."
       },
-      "innovation": {
+      "principle_3": {
         "title": "Innovation: ",
         "description": " Never stop learning, exchanging and updating new knowledge to apply in work, always improving and adapt to the latest technologies to create the best products."
       },
-      "ethics": {
+      "principle_4": {
         "title": "Ethics: ",
         "description": " Our ethics including honesty, understanding and complying with company regulations, taking responsibility for our own work and treating others with respects."
       },
-      "customers": {
+      "principle_5": {
         "title": "Customers: ",
         "description": " With customers being the heart of development, Battech is always willing to listen and tailor in a positive direction to offer suitable products."
       },
-      "goals": {
+      "principle_6": {
         "title": "Goals: ",
         "description": " Complete virtual meeting room product and bring to market. Widely used by large enterprises."
+      }
+    },
+    "staff": {
+      "title": "STAFF",
+      "description": {
+        "1": "BATTECH's staff is all experienced in technology. Each member has different knowledge range and technology fields, when developing software, they all come up with creative ideas and rigorous arguments. With the spirit of solidarity, the eager to learn along with enthusiasm and responsibility at work, BATTECH team always listens to the feedback of customers to improve the quality of the product to suit the users' needs",
+        "2": "BATTECH personnel are always willing to serve, listen and understand."
       }
     }
   }

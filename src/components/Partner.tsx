@@ -48,8 +48,8 @@ const Partner = () => {
               className='mySwiper'
             >
               <div>
-                {listImage.map((image) => (
-                  <SwiperSlide key={image}>
+                {listImage.map((image, index) => (
+                  <SwiperSlide key={index}>
                     <div className='   rounded-xl shadow-lg  '>
                       <img src={image} className='mx-auto' />
                     </div>
