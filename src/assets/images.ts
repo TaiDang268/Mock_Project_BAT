@@ -1,4 +1,4 @@
-// footer icons
+// footer
 import nameBAT_icon from './images/footer/@_icon.svg'
 import BAT_logo_white from './images/footer/BAT_logo_white.svg'
 import bigger_icon from './images/footer/bigger_icon.svg'
@@ -10,12 +10,13 @@ import instagram_icon from './images/footer/instagram_icon.svg'
 import phone_icon from './images/footer/phone_icon.svg'
 import twitter_icon from './images/footer/twitter_icon.svg'
 import youtobe_icon from './images/footer/youtobe_icon.svg'
-// header icons
+// header
 import BAT_logo from './images/header/BAT_logo.svg'
 import US_flag from './images/header/USUK_flag.svg'
 import VN_Flag from './images/header/VN_flag.svg'
-// home icons
+// home page
 import acount_icon from './images/HomePage/acount_icon.svg'
+import calendar_gray from './images/HomePage/calendar_gray.svg'
 import check_v_icon from './images/HomePage/check_v_icon.svg'
 import clock_icon from './images/HomePage/clock.svg'
 import image_home_2 from './images/HomePage/image_home2.svg'
@@ -31,7 +32,8 @@ import partner_4 from './images/HomePage/partner_4.svg'
 import arrow_right from './images/HomePage/right-arrow.svg'
 import security_icon from './images/HomePage/security_icon.svg'
 import setting_icon from './images/HomePage/setting_icon.svg'
-// description icons
+
+// description page
 import desc_banner_1 from './images/DescriptionPage/banner_1.svg'
 import desc_banner_2 from './images/DescriptionPage/banner_2.svg'
 import desc_banner_3 from './images/DescriptionPage/banner_3.svg'
@@ -43,6 +45,16 @@ import principle_3 from './images/DescriptionPage/principle_3.svg'
 import principle_4 from './images/DescriptionPage/principle_4.svg'
 import principle_5 from './images/DescriptionPage/principle_5.svg'
 import principle_6 from './images/DescriptionPage/principle_6.svg'
+// news page
+import acount_white from './images/NewsPage/acount_white.svg'
+import calendar from './images/NewsPage/calendar.svg'
+import image_news from './images/NewsPage/itemnews.svg'
+import image_news_2 from './images/NewsPage/itemnews_2.svg'
+import image_news_3 from './images/NewsPage/itemnews_3.svg'
+import news_banner_1 from './images/NewsPage/news_banner_1.svg'
+import news_banner_2 from './images/NewsPage/news_banner_2.svg'
+import next_pagination from './images/NewsPage/next_pagination.svg'
+import prev_pagination from './images/NewsPage/prev_pagination.svg'
 
 const images = {
   BAT_logo_white,
@@ -85,6 +97,16 @@ const images = {
   principle_3,
   principle_4,
   principle_5,
-  principle_6
+  principle_6,
+  news_banner_1,
+  news_banner_2,
+  image_news,
+  image_news_2,
+  image_news_3,
+  acount_white,
+  calendar,
+  calendar_gray,
+  next_pagination,
+  prev_pagination
 }
 export default images

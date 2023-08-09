@@ -32,7 +32,7 @@ const HomeNewsAndEvent = () => {
     <>
       <div className='w-full mt-20 mb-4 '>
         <div className=''>
-          <p className='font-bold text-2xl leading-7 text-center uppercase'>{t('homepage.new_and_event')}</p>
+          <p className='font-bold text-2xl leading-7 text-center uppercase my-10'>{t('homepage.new_and_event')}</p>
         </div>
         <div className='max-w-[1200px] mx-auto '>
           <Swiper
@@ -43,10 +43,8 @@ const HomeNewsAndEvent = () => {
               1024: { slidesPerView: 4, spaceBetween: 10 }
             }}
             modules={[FreeMode, Pagination, Autoplay, Navigation]}
-            // slidesPerView={4}
-            // spaceBetween={10}
             freeMode={true}
-            // autoplay={{ delay: 2500, disableOnInteraction: false }}
+            autoplay={{ delay: 2500, disableOnInteraction: false }}
             pagination={{
               clickable: true
             }}

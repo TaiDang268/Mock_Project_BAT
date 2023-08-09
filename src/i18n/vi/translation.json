@@ -187,5 +187,9 @@
         "2": "Nhân sự BATTECH luôn sẵn lòng phục vụ, lắng nghe, thấu hiểu."
       }
     }
+  },
+  "news_page": {
+    "title": "Tin tức - sự kiện ",
+    "description": "Cung cấp cập nhật thông tin, sự kiện mới của công ty đến với khách hàng và đối tác."
   }
 }

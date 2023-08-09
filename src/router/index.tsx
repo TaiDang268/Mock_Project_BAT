@@ -3,6 +3,7 @@ import Layout from '~/components/Layout/Layout'
 import HomePage from '~/components/HomePage'
 import NotFound from '~/components/NotFound'
 import DescriptionPage from '~/components/DescriptionPage'
+import NewsPage from '~/components/NewsPage'
 
 const routers = [
   {
@@ -15,7 +16,7 @@ const routers = [
   },
   {
     path: '/news',
-    element: <HomePage />
+    element: <NewsPage />
   },
   {
     path: '/job_opportunity',

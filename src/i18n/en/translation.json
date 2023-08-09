@@ -187,5 +187,9 @@
         "2": "BATTECH personnel are always willing to serve, listen and understand."
       }
     }
+  },
+  "news_page": {
+    "title": "NEWS - EVENTS ",
+    "description": "Provide updated information, new company events to customers and partners."
   }
 }
