@@ -16,7 +16,7 @@ const ItemNews = (dataItem: IDataItem) => {
   const { image, author, date, title, description } = dataItem.data
   return (
     <>
-      <div className='w-276 h-430 shadow-lg my-16 rounded-2xl'>
+      <div className='w-276 h-430 shadow-lg my-2 rounded-2xl max-sm:w-[90%] '>
         {/* image */}
         <div className='h-52'>
           {/* <div style={{ backgroundImage: `${image}` }}></div> */}
@@ -28,8 +28,9 @@ const ItemNews = (dataItem: IDataItem) => {
             <img src={images.acount_icon} />
             <p className='font-medium ml-2'>{author}</p>
           </div>
-          <div>
-            <p className='font-medium text-[#929292]'>{date}</p>
+          <div className='flex'>
+            <img src={images.calendar_gray} />
+            <p className='font-medium text-[#929292] pl-2'>{date}</p>
           </div>
         </div>
         {/* title of news */}

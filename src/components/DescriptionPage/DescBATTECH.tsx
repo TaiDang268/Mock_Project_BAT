@@ -53,7 +53,7 @@ const DescBATTECH = () => {
               <p className='font-bold text-[20px] text-[#F57A21]'>BAT</p>
 
               {['1', '2', '3'].map((item) => (
-                <div className='rounded-lg my-4 bg-[#ffffff] shadow-lg min-h-[42px] flex items-center'>
+                <div key={item} className='rounded-lg my-4 bg-[#ffffff] shadow-lg min-h-[42px] flex items-center'>
                   <p className='pl-4'> {t(`description_page.core_values.BAT.${item}`)}</p>
                 </div>
               ))}
@@ -61,7 +61,7 @@ const DescBATTECH = () => {
             <div className='w-1/2 mr-6 max-lg:w-full '>
               <p className='font-bold text-[20px] text-[#F57A21]'>TECH</p>
               {['1', '2', '3', '4'].map((item) => (
-                <div className='rounded-lg my-4 bg-[#ffffff] shadow-lg min-h-[42px] flex items-center'>
+                <div key={item} className='rounded-lg my-4 bg-[#ffffff] shadow-lg min-h-[42px] flex items-center'>
                   <p className='pl-4'> {t(`description_page.core_values.TECH.${item}`)}</p>
                 </div>
               ))}
@@ -69,7 +69,9 @@ const DescBATTECH = () => {
           </div>
           <div className=' w-1/2 px-14  py-14 bg-[#E9F9D6] rounded-[20px] max-lg:w-full max-lg:px-16'>
             {['1', '2'].map((item) => (
-              <p className='font-medium text-[#444444] my-4'>{t(`description_page.core_values.description.${item}`)}</p>
+              <p key={item} className='font-medium text-[#444444] my-4'>
+                {t(`description_page.core_values.description.${item}`)}
+              </p>
             ))}
           </div>
         </div>
