@@ -1,22 +1,12 @@
-import '../css/Custom.css'
-
 import images from '~/assets/images'
+import { IItemNewsProps } from '~/components/common/ItemNews'
 
-interface IItemNewsProps {
-  image?: string
-  author?: string
-  date?: string
-  title?: string
-  description?: string
-}
-interface IDataItem {
-  data: IItemNewsProps
-}
-const ItemNews = (dataItem: IDataItem) => {
-  const { image, author, date, title, description } = dataItem.data
+const Item = (props: IItemNewsProps) => {
+  const { image, author, date, title, description } = props
+
   return (
     <>
-      <div className='w-276 h-430 shadow-lg my-2 rounded-2xl max-sm:w-[90%] '>
+      <div className='w-276 h-430 shadow-lg my-2 rounded-2xl max-sm:w-[90%] cursor-pointer'>
         {/* image */}
         <div className='h-52'>
           {/* <div style={{ backgroundImage: `${image}` }}></div> */}
@@ -45,4 +35,4 @@ const ItemNews = (dataItem: IDataItem) => {
     </>
   )
 }
-export default ItemNews
+export default Item

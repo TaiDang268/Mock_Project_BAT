@@ -1,22 +1,14 @@
 import { useEffect, useState } from 'react'
 import NewBanner from './NewsBanner'
-import NewsItem, { INewsProp } from './NewsItem'
-import axios from 'axios'
+import NewsThreeItemImage from './NewsThreeItemImage'
 import NewList from './NewsList'
-
-const url = 'http://localhost:3002'
+import { IItemNewsProps } from '~/components/common/ItemNews'
+import { get } from '~/API/api'
 
 const NewsPage = () => {
-  const [data, setData] = useState<Array<INewsProp>>([])
+  const [data, setData] = useState<IItemNewsProps[] | []>([])
   useEffect(() => {
-    axios
-      .get(`${url}/newsPage`)
-      .then(function (response) {
-        setData(response.data)
-      })
-      .catch(function (error) {
-        console.log(error)
-      })
+    get('newsPage', null, setData)
   }, [])
   return (
     <>
@@ -27,14 +19,14 @@ const NewsPage = () => {
         <p className='my-5 px-2 font-bold text-[20px] text-[#606060]'> Tin tức mới</p>
         <div className='flex max-md:block '>
           <div className='w-7/12 h-[560px]  mr-8 rounded-xl max-xl:mr-3 max-md:w-full max-md:mr-0'>
-            <NewsItem data={data[0]} />
+            <NewsThreeItemImage {...data[0]} />
           </div>
           <div className='w-5/12 min-h-[560px] max-md:w-full'>
             <div className='h-1/2 w-full  pb-8 max-xl:pb-3 max-md:h-[560px] max-md:py-6'>
-              <NewsItem data={data[1]} />
+              <NewsThreeItemImage {...data[1]} />
             </div>
             <div className='h-1/2 max-md:w-full max-md:h-[560px]'>
-              <NewsItem data={data[2]} />
+              <NewsThreeItemImage {...data[2]} />
             </div>
           </div>
         </div>
