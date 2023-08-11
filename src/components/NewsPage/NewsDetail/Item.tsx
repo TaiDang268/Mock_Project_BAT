@@ -2,34 +2,35 @@ import images from '~/assets/images'
 import { IItemNewsProps } from '~/components/common/ItemNews'
 
 const Item = (props: IItemNewsProps) => {
-  const { image, author, date, title, description } = props
+  const { image, author, date, title } = props
 
   return (
     <>
-      <div className='w-276 h-430 shadow-lg my-2 rounded-2xl max-sm:w-[90%] cursor-pointer'>
-        {/* image */}
-        <div className='h-52'>
-          {/* <div style={{ backgroundImage: `${image}` }}></div> */}
-          <img className='rounded-2xl  h-full w-full object-cover' src={`${image}`} />
-        </div>
-        {/* author and date */}
-        <div className='flex justify-between my-2 px-2'>
-          <div className='flex'>
-            <img src={images.acount_icon} />
-            <p className='font-medium ml-2'>{author}</p>
+      <div className='w-[380px] h-[113px] shadow-lg my-4 rounded-2xl  cursor-pointer relative max-lg:w-[95%]  max-lg:mx-auto'>
+        <div className='flex h-full '>
+          {/* image */}
+          <div className='w-1/3 h-full'>
+            <div className='w-full h-full'>
+              <img className='rounded-l-2xl  h-full w-full object-cover' src={`${image}`} />
+            </div>
           </div>
-          <div className='flex'>
-            <img src={images.calendar_gray} />
-            <p className='font-medium text-[#929292] pl-2'>{date}</p>
+          <div className='w-2/3'>
+            {/* title of news */}
+            <div>
+              <p className='font-medium text-[16px] px-2 leading-5'>{title}</p>
+            </div>
+            {/* author and date */}
+            <div className='flex w-2/3  justify-between my-2 px-2 absolute bottom-0 '>
+              <div className='flex '>
+                <img src={images.acount_icon} />
+                <p className='font-normal text-[11px] ml-2 '>{author}</p>
+              </div>
+              <div className='flex'>
+                <img src={images.calendar_gray} />
+                <p className='font-normal text-[11px] text-[#929292] pl-2'>{date}</p>
+              </div>
+            </div>
           </div>
-        </div>
-        {/* title of news */}
-        <div>
-          <p className='font-bold text-[18px] px-2'>{title}</p>
-        </div>
-        {/* description of news */}
-        <div>
-          <p className='px-2 mt-3 text-[#929292]  cut-text'>{description}</p>
         </div>
       </div>
     </>

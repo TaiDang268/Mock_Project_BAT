@@ -55,6 +55,11 @@ import news_banner_1 from './images/NewsPage/news_banner_1.svg'
 import news_banner_2 from './images/NewsPage/news_banner_2.svg'
 import next_pagination from './images/NewsPage/next_pagination.svg'
 import prev_pagination from './images/NewsPage/prev_pagination.svg'
+//job page
+import job_dolar from './images/JobPage/dolar_icon.svg'
+import job_clock from './images/JobPage/clock_icon.svg'
+
+import job_address from './images/JobPage/address_icon.svg'
 
 const images = {
   BAT_logo_white,
@@ -107,6 +112,9 @@ const images = {
   calendar,
   calendar_gray,
   next_pagination,
-  prev_pagination
+  prev_pagination,
+  job_dolar,
+  job_clock,
+  job_address
 }
 export default images

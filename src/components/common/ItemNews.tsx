@@ -2,16 +2,7 @@ import '../../css/Custom.css'
 
 import images from '~/assets/images'
 import { useNavigate } from 'react-router-dom'
-
-export interface IItemNewsProps {
-  id?: string
-  image?: string
-  author?: string
-  category?: string
-  date?: string
-  title?: string
-  description?: string
-}
+import { IItemNewsProps } from '~/@types/types'
 
 const ItemNewsCommon = (props: IItemNewsProps) => {
   const { image, author, date, title, description } = props

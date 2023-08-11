@@ -5,17 +5,14 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import images from '~/assets/images'
 
 import ItemNews, { IItemNewsProps } from '../common/ItemNews'
-import { api } from '~/API/api'
+import { get } from '~/API/api'
 
 const HomeNewsAndEvent = () => {
   const { t } = useTranslation()
   const [data, setData] = useState<IItemNewsProps[] | []>()
-
+  //get all news
   useEffect(() => {
-    api
-      .getAll('/news')
-      .then((response) => setData(response.data))
-      .catch((error) => console.log(error))
+    get('/news', null, setData)
   }, [])
   return (
     <>

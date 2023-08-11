@@ -1,10 +1,10 @@
 import { useRoutes } from 'react-router'
 import Layout from '~/components/Layout/Layout'
 import HomePage from '~/components/HomePage'
-import NotFound from '~/components/common/NotFound'
 import DescriptionPage from '~/components/DescriptionPage'
 import NewsPage from '~/components/NewsPage/News'
 import NewsDetail from '~/components/NewsPage/NewsDetail/NewsDetail'
+import JobPage from '~/components/JobPage'
 
 const routers = [
   {
@@ -21,7 +21,7 @@ const routers = [
   },
   {
     path: '/job_opportunity',
-    element: <NotFound />
+    element: <JobPage />
   },
   {
     path: '/contact',

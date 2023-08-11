@@ -1,10 +1,8 @@
-import axios from 'axios'
 import { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
-import ItemNews, { IItemNewsProps } from '../../common/ItemNews'
+import { get, getTotalRecords } from '~/API/api'
 import images from '~/assets/images'
-import { api, get } from '~/API/api'
-const url = 'http://localhost:3002'
+import ItemNews, { IItemNewsProps } from '../../common/ItemNews'
 const filterCategories = ['Phát triển phần mềm', 'Blockchain', 'Game NFT']
 const NewList = () => {
   const [data, setData] = useState<IItemNewsProps[] | []>() //data render
@@ -12,10 +10,7 @@ const NewList = () => {
   const [activeCategory, setActiveCategory] = useState<string>('Phát triển phần mềm') //active class
   //get tổng số trang
   useEffect(() => {
-    api
-      .getAll('news')
-      .then((response) => setTotalRecord(response.data.length))
-      .catch((error) => console.log(error))
+    getTotalRecords('news', setTotalRecord)
   }, [])
 
   const pageCount = Math.ceil((totalRecord as number) / 8)
@@ -23,7 +18,6 @@ const NewList = () => {
   useEffect(() => {
     get('news', { _page: 1, _limit: 7 }, setData)
   }, [])
-  console.log(data)
   //call api pagination
   const handlePageClick = ({ selected }: { selected: number }): void => {
     get('news', { _page: selected + 1, _limit: 6 }, setData)
@@ -31,14 +25,7 @@ const NewList = () => {
   //filter theo categories
   const handleClickFilterCategories = (item: string) => {
     setActiveCategory(item)
-    axios
-      .get(`${url}/news`, { params: { category: item, _limit: 8 } })
-      .then(function (response) {
-        setData(response.data)
-      })
-      .catch(function (error) {
-        console.log(error)
-      })
+    get('/news', { category: item, _limit: 8 }, setData)
   }
 
   return (
