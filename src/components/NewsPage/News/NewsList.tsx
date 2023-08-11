@@ -1,59 +1,31 @@
-import axios from 'axios'
 import { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
-import ItemNews from '../ItemNews'
+import { get, getTotalRecords } from '~/API/api'
 import images from '~/assets/images'
-const url = 'http://localhost:3002'
+import ItemNews, { IItemNewsProps } from '../../common/ItemNews'
 const filterCategories = ['Phát triển phần mềm', 'Blockchain', 'Game NFT']
 const NewList = () => {
-  const [data, setData] = useState<[]>() //data render
+  const [data, setData] = useState<IItemNewsProps[] | []>() //data render
   const [totalRecord, setTotalRecord] = useState<number>() //total record
   const [activeCategory, setActiveCategory] = useState<string>('Phát triển phần mềm') //active class
   //get tổng số trang
   useEffect(() => {
-    axios
-      .get(`${url}/news`)
-      .then(function (response) {
-        setTotalRecord(response.data.length)
-      })
-      .catch(function (error) {
-        console.log(error)
-      })
+    getTotalRecords('news', setTotalRecord)
   }, [])
+
   const pageCount = Math.ceil((totalRecord as number) / 8)
   //get 8 item
   useEffect(() => {
-    axios
-      .get(`${url}/news`, { params: { _page: 1, _limit: 8 } })
-      .then(function (response) {
-        setData(response.data)
-      })
-      .catch(function (error) {
-        console.log(error)
-      })
+    get('news', { _page: 1, _limit: 7 }, setData)
   }, [])
   //call api pagination
   const handlePageClick = ({ selected }: { selected: number }): void => {
-    axios
-      .get(`${url}/news`, { params: { _page: selected + 1, _limit: 8 } })
-      .then(function (response) {
-        setData(response.data)
-      })
-      .catch(function (error) {
-        console.log(error)
-      })
+    get('news', { _page: selected + 1, _limit: 6 }, setData)
   }
   //filter theo categories
   const handleClickFilterCategories = (item: string) => {
     setActiveCategory(item)
-    axios
-      .get(`${url}/news`, { params: { category: item, _limit: 8 } })
-      .then(function (response) {
-        setData(response.data)
-      })
-      .catch(function (error) {
-        console.log(error)
-      })
+    get('/news', { category: item, _limit: 8 }, setData)
   }
 
   return (
@@ -77,7 +49,7 @@ const NewList = () => {
         <div className='grid [400px]:grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4 min-h[600px] '>
           {data?.map((item, index) => (
             <div key={index} className='flex justify-center'>
-              <ItemNews data={item} />
+              <ItemNews {...item} />
             </div>
           ))}
         </div>

@@ -1,5 +1,5 @@
-import FormRegister from '../FormRegister'
-import Partner from '../Partner'
+import FormRegister from '../common/FormRegister'
+import Partner from '../common/Partner'
 import HomeBanner from './HomeBanner'
 import HomeDescriptionBAT from './HomeDescriptionBAT'
 import HomeDiffrentAndPioneer from './HomeDiffrentAndPioneer'

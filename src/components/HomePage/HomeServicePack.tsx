@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import images from '~/assets/images'
 
-import Button from '../Button'
+import Button from '../common/Button'
 
 const listPack = ['pack_1', 'pack_2', 'pack_3']
 const HomeServicePack = () => {

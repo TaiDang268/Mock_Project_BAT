@@ -217,7 +217,6 @@
       "image": "https://battech.vn/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fnaisucorner%2Fimage%2Fupload%2Fv1682500828%2FScreenshot_2023_04_26_161959_189f4fba97.png&w=1920&q=75",
       "author": "Hoang Van D",
       "category": "Blockchain",
-
       "date": "30/08/2023",
       "title": "Tương lai sản xuất thông minh với trí tuệ nhân tạo và Internet of Things",
       "description": "Bài viết dự đoán tương lai sản xuất thông minh sẽ sử dụng trí tuệ nhân tạo và Internet of Things để tự động hóa và tối ưu hoá quy trình sản xuất."
@@ -250,6 +249,150 @@
       "date": "20/08/2023",
       "title": "Nền tảng công nghệ thông tin trong cuộc cách mạng công nghiệp 4.0",
       "description": "Bài viết trình bày tầm quan trọng của công nghệ thông tin trong cách mạng công nghiệp 4.0 và ứng dụng trong các ngành sản xuất."
+    }
+  ],
+  "jobs": [
+    {
+      "id": "1",
+      "name": "Product Design",
+      "description": "Product Designer (Commercial)",
+      "salary": "Thoả thuận",
+      "address": "Hà Nội",
+      "type_of_work": "fulltime",
+      "deadline": "12-12-2023",
+      "work_group": "frontend"
+    },
+    {
+      "id": "2",
+      "name": "Frontend Developer",
+      "description": "Frontend Developer (React)",
+      "salary": "$60,000 - $80,000",
+      "address": "TP.HCM",
+      "type_of_work": "fulltime",
+      "deadline": "10-11-2023",
+      "work_group": "frontend"
+    },
+    {
+      "id": "3",
+      "name": "Backend Engineer",
+      "description": "Backend Engineer (Node.js)",
+      "salary": "$70,000 - $90,000",
+      "address": "Hà Nội",
+      "type_of_work": "fulltime",
+      "deadline": "15-12-2023",
+      "work_group": "backend"
+    },
+    {
+      "id": "4",
+      "name": "Data Scientist",
+      "description": "Data Scientist (Machine Learning)",
+      "salary": "$75,000 - $100,000",
+      "address": "Hồ Chí Minh",
+      "type_of_work": "fulltime",
+      "deadline": "20-11-2023",
+      "work_group": "data"
+    },
+    {
+      "id": "5",
+      "name": "UI/UX Designer",
+      "description": "UI/UX Designer (Web & Mobile)",
+      "salary": "$55,000 - $75,000",
+      "address": "Đà Nẵng",
+      "type_of_work": "fulltime",
+      "deadline": "25-11-2023",
+      "work_group": "design"
+    },
+    {
+      "id": "6",
+      "name": "Software Engineer",
+      "description": "Software Engineer (Java)",
+      "salary": "$65,000 - $85,000",
+      "address": "Hồ Chí Minh",
+      "type_of_work": "fulltime",
+      "deadline": "30-12-2023",
+      "work_group": "backend"
+    },
+    {
+      "id": "7",
+      "name": "Marketing Manager",
+      "description": "Marketing Manager (Digital)",
+      "salary": "$70,000 - $90,000",
+      "address": "Hà Nội",
+      "type_of_work": "fulltime",
+      "deadline": "5-1-2024",
+      "work_group": "marketing"
+    },
+    {
+      "id": "8",
+      "name": "Sales Executive",
+      "description": "Sales Executive (B2B)",
+      "salary": "$50,000 - $70,000",
+      "address": "TP.HCM",
+      "type_of_work": "fulltime",
+      "deadline": "8-1-2024",
+      "work_group": "sales"
+    }
+  ],
+  "work_groups": [
+    {
+      "id": "0",
+      "name": "Tất cả"
+    },
+    {
+      "id": "1",
+      "name": "Frontend"
+    },
+    {
+      "id": "2",
+      "name": "Backend"
+    },
+    {
+      "id": "3",
+      "name": "Data"
+    },
+    {
+      "id": "4",
+      "name": "Design"
+    },
+    {
+      "id": "5",
+      "name": "Marketing"
+    },
+    {
+      "id": "6",
+      "name": "Sales"
+    }
+  ],
+  "address": [
+    {
+      "id": "1",
+      "name": "Tất cả"
+    },
+    {
+      "id": "2",
+      "name": "Hà Nội"
+    },
+    {
+      "id": "3",
+      "name": "Hồ Chí Minh"
+    }
+  ],
+  "type_of_work": [
+    {
+      "id": "1",
+      "name": "Tất cả"
+    },
+    {
+      "id": "2",
+      "name": "Toàn thời gian"
+    },
+    {
+      "id": "3",
+      "name": "Bán thời gian"
+    },
+    {
+      "id": "4",
+      "name": "Thực tập sinh"
     }
   ]
 }

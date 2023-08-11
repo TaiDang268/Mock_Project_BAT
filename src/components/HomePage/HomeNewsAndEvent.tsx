@@ -1,33 +1,19 @@
-import 'swiper/css/autoplay'
-import 'swiper/css/navigation'
-import '../../css/Custom.css'
-
-import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Autoplay, FreeMode, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import images from '~/assets/images'
 
-import ItemNews from '../ItemNews'
-
-const url = 'http://localhost:3002'
+import ItemNews, { IItemNewsProps } from '../common/ItemNews'
+import { get } from '~/API/api'
 
 const HomeNewsAndEvent = () => {
   const { t } = useTranslation()
-
-  const [data, setData] = useState<[]>()
+  const [data, setData] = useState<IItemNewsProps[] | []>()
+  //get all news
   useEffect(() => {
-    axios
-      .get(`${url}/news`)
-      .then(function (response) {
-        setData(response.data)
-      })
-      .catch(function (error) {
-        console.log(error)
-      })
+    get('/news', null, setData)
   }, [])
-
   return (
     <>
       <div className='w-full mt-20 mb-4 '>
@@ -54,7 +40,7 @@ const HomeNewsAndEvent = () => {
           >
             {data?.map((item, index) => (
               <SwiperSlide key={index} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <ItemNews data={item} />
+                <ItemNews {...item} />
               </SwiperSlide>
             ))}
             <>

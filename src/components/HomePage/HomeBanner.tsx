@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import images from '~/assets/images'
 
-import Button from '../Button'
+import Button from '../common/Button'
 
 const HomeBanner = () => {
   const { t } = useTranslation()

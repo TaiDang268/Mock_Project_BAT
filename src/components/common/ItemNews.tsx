@@ -1,22 +1,18 @@
-import '../css/Custom.css'
+import '../../css/Custom.css'
 
 import images from '~/assets/images'
+import { useNavigate } from 'react-router-dom'
+import { IItemNewsProps } from '~/@types/types'
 
-interface IItemNewsProps {
-  image?: string
-  author?: string
-  date?: string
-  title?: string
-  description?: string
-}
-interface IDataItem {
-  data: IItemNewsProps
-}
-const ItemNews = (dataItem: IDataItem) => {
-  const { image, author, date, title, description } = dataItem.data
+const ItemNewsCommon = (props: IItemNewsProps) => {
+  const { image, author, date, title, description } = props
+  const navigate = useNavigate()
+  const handleOnClickItem = () => {
+    navigate('/detail', { state: props })
+  }
   return (
     <>
-      <div className='w-276 h-430 shadow-lg my-2 rounded-2xl max-sm:w-[90%] '>
+      <div className='w-276 h-430 shadow-lg my-2 rounded-2xl max-sm:w-[90%] cursor-pointer' onClick={handleOnClickItem}>
         {/* image */}
         <div className='h-52'>
           {/* <div style={{ backgroundImage: `${image}` }}></div> */}
@@ -45,4 +41,4 @@ const ItemNews = (dataItem: IDataItem) => {
     </>
   )
 }
-export default ItemNews
+export default ItemNewsCommon
