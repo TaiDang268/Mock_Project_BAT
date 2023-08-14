@@ -9,7 +9,7 @@ const apiService = axios.create({
 export const getTotalRecords = async (url: string, callback: any) => {
   try {
     const res = await apiService.get(url)
-    callback(res.data.length)
+    callback(res.data.length / 8)
   } catch (err) {
     console.log(err)
   }
