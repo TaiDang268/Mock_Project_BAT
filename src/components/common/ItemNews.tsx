@@ -8,7 +8,7 @@ const ItemNewsCommon = (props: IItemNewsProps) => {
   const { image, author, date, title, description } = props
   const navigate = useNavigate()
   const handleOnClickItem = () => {
-    navigate('/detail', { state: props })
+    navigate('/detailNews', { state: props })
   }
   return (
     <>
@@ -35,7 +35,11 @@ const ItemNewsCommon = (props: IItemNewsProps) => {
         </div>
         {/* description of news */}
         <div>
-          <p className='px-2 mt-3 text-[#929292]  cut-text'>{description}</p>
+          <p
+            style={{ fontStyle: 'italic', fontWeight: '300 !important' }}
+            className='px-2 mt-3 text-[#929292]  cut-text  '
+            dangerouslySetInnerHTML={{ __html: description || '' }}
+          ></p>
         </div>
       </div>
     </>

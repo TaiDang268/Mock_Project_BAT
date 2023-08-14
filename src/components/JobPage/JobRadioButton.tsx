@@ -1,11 +1,13 @@
-import { IWorkGroup } from '~/@types/types'
-
-const JobRadioButton = (props: IWorkGroup) => {
-  const { name } = props
+interface IJobRadioButton {
+  name: string
+  onClick: () => void
+}
+const JobRadioButton = (props: IJobRadioButton) => {
+  const { name, onClick } = props
   return (
     <>
-      <div className='flex'>
-        <input type='radio' className='mr-2 accent-BAT-primary' />
+      <div className='flex '>
+        <input type='radio' onClick={onClick} name='radio' value={name} className='mr-2 accent-BAT-primary' />
         <p>{name}</p>
       </div>
     </>

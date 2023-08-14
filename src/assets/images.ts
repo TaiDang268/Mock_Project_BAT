@@ -58,8 +58,20 @@ import prev_pagination from './images/NewsPage/prev_pagination.svg'
 //job page
 import job_dolar from './images/JobPage/dolar_icon.svg'
 import job_clock from './images/JobPage/clock_icon.svg'
-
 import job_address from './images/JobPage/address_icon.svg'
+import job_banner_1 from './images/JobPage/banner_1.svg'
+import job_banner_2 from './images/JobPage/banner_2.svg'
+//job detail
+import job_detait_acount from './images/JobPage/acount.svg'
+import job_detait_email from './images/JobPage/email.svg'
+import job_detait_phone from './images/JobPage/phone.svg'
+import job_detait_pdf from './images/JobPage/pdf.svg'
+import job_detait_a_icon from './images/JobPage/@.svg'
+import job_detait_hoi_icon from './images/JobPage/icon_hoi.svg'
+//contact page
+import contact_address from './images/ContactPage/address.svg'
+import contact_phone from './images/ContactPage/phone.svg'
+import contact_email from './images/ContactPage/email.svg'
 
 const images = {
   BAT_logo_white,
@@ -115,6 +127,17 @@ const images = {
   prev_pagination,
   job_dolar,
   job_clock,
-  job_address
+  job_address,
+  job_banner_1,
+  job_banner_2,
+  job_detait_acount,
+  job_detait_a_icon,
+  job_detait_hoi_icon,
+  job_detait_email,
+  job_detait_pdf,
+  job_detait_phone,
+  contact_address,
+  contact_email,
+  contact_phone
 }
 export default images

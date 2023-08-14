@@ -1,8 +1,8 @@
 import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Item from './Item'
-import { IItemNewsProps } from '~/components/common/ItemNews'
 import { get } from '~/API/api'
+import { IItemNewsProps } from '~/@types/types'
 const NewsDetail = () => {
   const [dataNew, setDataNew] = useState<IItemNewsProps[] | []>([]) //tin tức mới
   const [dataConnection, setDataConnection] = useState<IItemNewsProps[] | []>([]) //tin tức liên quan
@@ -30,7 +30,10 @@ const NewsDetail = () => {
               <p className='font-bold text-[32px] leading-9 mb-10'>{itemRender?.title}</p>
             </div>
             <div>
-              <p className='font-medium left-6 mb-10'>{itemRender?.description}</p>
+              <p
+                className='font-medium left-6 mb-10'
+                dangerouslySetInnerHTML={{ __html: itemRender?.description || '' }}
+              ></p>
             </div>
             <div className='w-full'>
               <img src={itemRender?.image} className='rounded-[20px] w-full' />
@@ -41,11 +44,12 @@ const NewsDetail = () => {
               <p className='font-bold text-[20px] max-lg:w-[95%] mx-auto max-lg:pt-10'>Tin tức mới</p>
             </div>
             <div>
-              {dataNew.map((item) => (
+              {dataNew.map((item, index) => (
                 <div
                   onClick={() => {
                     handleOnclickItem(item)
                   }}
+                  key={index}
                 >
                   <Item {...item} />
                 </div>
