@@ -11,19 +11,19 @@ const NewsDetail = () => {
   const data = location.state
   useEffect(() => {
     setItemRender(data)
-  }, [])
-  useEffect(() => {
     get('news', { _page: 1, _limit: 3 }, setDataNew)
-  }, [])
-  useEffect(() => {
     get('news', { _page: 2, _limit: 3 }, setDataConnection)
   }, [])
+
   const handleOnclickItem = (item: IItemNewsProps) => {
     setItemRender(item)
   }
   return (
     <>
       <div className='max-w-[1200px] mx-auto my-14 '>
+        <div>
+          <p className='text-BAT-primary'>Tin tức /</p>
+        </div>
         <div className='flex max-lg:block'>
           <div className='w-2/3  px-6 max-xl:w-[60%] max-lg:w-full'>
             <div>

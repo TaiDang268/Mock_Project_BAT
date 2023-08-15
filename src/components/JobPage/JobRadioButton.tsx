@@ -1,6 +1,6 @@
 interface IJobRadioButton {
   name: string
-  onClick: () => void
+  onClick?: () => void
 }
 const JobRadioButton = (props: IJobRadioButton) => {
   const { name, onClick } = props

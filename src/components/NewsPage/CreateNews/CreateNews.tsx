@@ -10,10 +10,8 @@ const CreateNews = () => {
   const { register, handleSubmit } = useForm<Inputs>()
   const [textCkEditor, setTextCkEditor] = useState<string>()
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    console.log(data.id)
-    // console.log(textCkEditor)
     axios
-      .post('http://localhost:3002/news', {
+      .post('http://localhost:3002/jobs', {
         id: data.id,
         author: data.author,
         image: data.image,

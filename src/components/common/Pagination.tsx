@@ -6,12 +6,12 @@ interface IPagination {
 }
 const Pagination = (props: IPagination) => {
   const { pageCount, onPageChange } = props
-  console.log(onPageChange)
   return (
     <ReactPaginate
       className='flex justify-center'
-      pageClassName='mx-1 bg-[#7A7A7A] w-[33px] h-[40px] flex justify-center items-center rounded-lg text-[20px] text-white font-bold'
-      activeClassName='bg-green-700 '
+      pageClassName='mx-1    w-[30px] h-[30px] flex justify-center items-center rounded-lg text-[20px] text-gray-700 font-bold border border-[#7a7a7a]'
+      activeClassName='bg-green-700  '
+      activeLinkClassName='text-white'
       breakLinkClassName='w-full h-full'
       breakLabel='...'
       nextLabel={<img src={images.next_pagination} />}
@@ -19,9 +19,9 @@ const Pagination = (props: IPagination) => {
       onPageChange={onPageChange}
       pageRangeDisplayed={5}
       pageCount={pageCount}
-      nextClassName='flex justify-center items-center mx-2 text-[24px] text-[#008345] '
-      previousClassName='flex justify-center items-center mx-2 text-[24px] text-[#008345] '
-      disabledClassName='fill-[#7A7A7A] '
+      nextClassName='mx-1 bg-[#7A7A7A]   w-[30px] h-[30px] flex justify-center items-center rounded-lg text-[20px] text-white font-bold'
+      previousClassName='mx-1 bg-[#7A7A7A] w-[30px] h-[30px] flex justify-center items-center rounded-lg text-[20px] text-white font-bold '
+      disabledClassName='bg-[#7A7A7A] '
       renderOnZeroPageCount={null}
       initialPage={0}
     />

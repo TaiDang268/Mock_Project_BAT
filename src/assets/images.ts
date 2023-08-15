@@ -53,8 +53,8 @@ import image_news_2 from './images/NewsPage/itemnews_2.svg'
 import image_news_3 from './images/NewsPage/itemnews_3.svg'
 import news_banner_1 from './images/NewsPage/news_banner_1.svg'
 import news_banner_2 from './images/NewsPage/news_banner_2.svg'
-import next_pagination from './images/NewsPage/next_pagination.svg'
-import prev_pagination from './images/NewsPage/prev_pagination.svg'
+import next_pagination from './images/Pagination/next.svg'
+import prev_pagination from './images/Pagination/prev.svg'
 //job page
 import job_dolar from './images/JobPage/dolar_icon.svg'
 import job_clock from './images/JobPage/clock_icon.svg'
@@ -72,7 +72,10 @@ import job_detait_hoi_icon from './images/JobPage/icon_hoi.svg'
 import contact_address from './images/ContactPage/address.svg'
 import contact_phone from './images/ContactPage/phone.svg'
 import contact_email from './images/ContactPage/email.svg'
-
+import contact_banner_1 from './images/ContactPage/banner_1.svg'
+import contact_banner_2 from './images/ContactPage/banner_2.svg'
+//icon scroll
+import scroll_to_top from './images/scrolltotop.svg'
 const images = {
   BAT_logo_white,
   fb_icon,
@@ -138,6 +141,9 @@ const images = {
   job_detait_phone,
   contact_address,
   contact_email,
-  contact_phone
+  contact_phone,
+  contact_banner_1,
+  contact_banner_2,
+  scroll_to_top
 }
 export default images
