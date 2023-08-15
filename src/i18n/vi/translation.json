@@ -191,5 +191,30 @@
   "news_page": {
     "title": "Tin tức - sự kiện ",
     "description": "Cung cấp cập nhật thông tin, sự kiện mới của công ty đến với khách hàng và đối tác."
+  },
+  "job_page": {
+    "title_1": "Công việc giấc mơ của bạn là đây",
+    "title_2": "BATTECH tin tưởng vào tiềm năng và sự vĩ đại của mỗi người. Chúng tôi coi trọng việc học hỏi, hợp tác và hỗ trợ lẫn nhau. Khám phá bản thân. Hãy cho chúng tôi biết bạn đã có những gì và chúng tôi sẽ liên hệ với bạn nếu có một vai trò nào đó có vẻ phù hợp.",
+    "title_3": "CƠ HỘI VIỆC LÀM HIỆN TẠI",
+    "title_4": "Nhóm công việc",
+    "title_5": "Địa điểm làm việc",
+    "title_6": "Loại công việc",
+    "button": "Tìm việc làm"
+  },
+
+  "contact_page": {
+    "title_1": "Liên hệ ",
+    "title_2": "Chúng tôi mang đến cho bạn một giải pháp CNTT hoàn chỉnh trong điều kiện cạnh tranh nhân sự ngày càng khắc nghiệt",
+    "contact_us": "LIÊN HỆ VỚI CHÚNG TÔI",
+    "description": "Hãy gọi cho chúng tôi hoặc ghé qua bất cứ lúc nào, chúng tôi sẽ cố gắng giải đáp mọi thắc mắc trong vòng 24 giờ vào các ngày làm việc. Rất hân hạnh được trả lời câu hỏi của bạn.",
+    "address_title": "Địa chỉ",
+    "address": "Tầng 2, Tòa HH02, Eco Lakeview, 32 Đại Từ, P. Đại Kim, Q. Hoàng Mai, TP. Hà Nội",
+    "phone_title": "Số điên thoại",
+    "ready_start_1": "SẴN SÀNG ĐỂ BẮT ĐẦU",
+    "ready_start_2": "Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu",
+    "placeholder_name": "Tên",
+    "placeholder_phone": "Số điện thoại",
+    "placeholder_content": "Nội dung tin nhắn ",
+    "button": "Gửi tinh nhắn"
   }
 }

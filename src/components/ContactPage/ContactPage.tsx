@@ -1,26 +1,31 @@
 import images from '~/assets/images'
 import ContactForm from './ContactForm'
-
-const arr = [
-  {
-    title: 'Địa chỉ',
-    icon: images.contact_address,
-    name: 'Tầng 2, Tòa HH02, Eco Lakeview, 32 Đại Từ, P. Đại Kim, Q. Hoàng Mai, TP. Hà Nội'
-  },
-  {
-    title: 'Email',
-    icon: images.contact_email,
-    name: 'cskh@battech.vn'
-  },
-  {
-    title: 'SDT',
-    icon: images.contact_phone,
-    name: '024 85 896 999'
-  }
-]
+import { useTranslation } from 'react-i18next'
+import ContactBanner from './ContactBanner'
 const ContactPage = () => {
+  const { t } = useTranslation()
+  const arr = [
+    {
+      title: `${t('contact_page.address_title')}`,
+      icon: images.contact_address,
+      name: `${t('contact_page.address')}`
+    },
+    {
+      title: 'Email',
+      icon: images.contact_email,
+      name: 'cskh@battech.vn'
+    },
+    {
+      title: `${t('contact_page.phone_title')}`,
+
+      icon: images.contact_phone,
+      name: '024 85 896 999'
+    }
+  ]
+
   return (
     <>
+      <ContactBanner />
       <div className='max-w-[1200px] mx-auto max-xl: px-3  '>
         <div className='flex my-20 max-md:flex-col'>
           <div className='w-1/2 max-md:w-full'>
@@ -35,11 +40,8 @@ const ContactPage = () => {
             ></iframe>
           </div>
           <div className='w-1/2 md:pl-8 max-md:w-full max-md:my-6 '>
-            <p className='uppercase font-bold text-[24px]'>Liên hệ với chúng tôi </p>
-            <p className='font-medium'>
-              Hãy gọi cho chúng tôi hoặc ghé qua bất cứ lúc nào, chúng tôi sẽ cố gắng giải đáp mọi thắc mắc trong vòng
-              24 giờ vào các ngày làm việc. Rất hân hạnh được trả lời câu hỏi của bạn.
-            </p>
+            <p className='uppercase font-bold text-[24px]'> {t('contact_page.contact_us')}</p>
+            <p className='font-medium'>{t('contact_page.description')}</p>
             <div className='my-5'>
               {arr.map((item) => (
                 <div className='rounded-xl shadow-md p-4 my-4'>
@@ -48,7 +50,7 @@ const ContactPage = () => {
                     <p className='text-[#7A7A7A] font-medium'>{item.title}</p>
                   </div>
                   <div>
-                    <p>{item.name}</p>
+                    <p className='pl-8'>{item.name}</p>
                   </div>
                 </div>
               ))}

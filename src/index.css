@@ -11,6 +11,11 @@
 body,
 html {
   font-size: 16px;
+  /* font-family: 'San francisco'; */
+}
+@font-face {
+  font-family: 'San francisco';
+  src: url(assets/fonts/SFNSDisplay-Medium.otf);
 }
 input,
 textarea {

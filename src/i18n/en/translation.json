@@ -191,5 +191,29 @@
   "news_page": {
     "title": "NEWS - EVENTS ",
     "description": "Provide updated information, new company events to customers and partners."
+  },
+  "job_page": {
+    "title_1": "Your dream work is here",
+    "title_2": "BATTECH believes in the potential and greatness of each person. We value learning, cooperation and mutual support. Discover yourself. Let us know what you've got and we'll contact you if there's a promising position that fits",
+    "title_3": "CURRENT JOB OPPORTUNITIES",
+    "title_4": "Work catagories",
+    "title_5": "Locations",
+    "title_6": "Type of Work",
+    "button": "Search for job"
+  },
+  "contact_page": {
+    "title_1": "CONTACT",
+    "title_2": "We bring you a complete IT solution in an increasingly competitive HR environment",
+    "contact_us": "Contact Us",
+    "description": "Please contact us or visit any time, we will try to answers all questions within 24 hours weekday. It's a pleasure to receive your questions",
+    "address_title": "Address",
+    "address": "2nd floor, Building HH02, Eco Lakeview, 32 Dai Tu, Dai Kim Ward, Hoang Mai District, City. Hanoi",
+    "phone_title": "Phone Number",
+    "ready_start_1": "READY TO START",
+    "ready_start_2": "Your email address will not be published. Required fields are marked with",
+    "placeholder_name": "Name",
+    "placeholder_phone": "Phone Number",
+    "placeholder_content": "Message content",
+    "button": "Send message"
   }
 }
