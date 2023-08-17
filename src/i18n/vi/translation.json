@@ -199,7 +199,22 @@
     "title_4": "Nhóm công việc",
     "title_5": "Địa điểm làm việc",
     "title_6": "Loại công việc",
-    "button": "Tìm việc làm"
+    "button": "Tìm việc làm",
+    "detail": {
+      "title": "Ứng tuyển trực tiếp",
+      "name": "Họ tên của bạn ",
+      "phone": "Số điện thoại",
+      "CV": "Đính kèm CV",
+      "fb": "Địa chỉ facebook/Skype/Linked",
+      "know_by": "Bạn biết BATTECH qua đâu?",
+      "button": "Đăng ký",
+      "placeholder": {
+        "name": "Bùi Văn A",
+        "know_by": "Qua bạn bè",
+        "note": "Ghi chú"
+      },
+      "similar_job": "Công việc tương tự"
+    }
   },
 
   "contact_page": {
@@ -215,6 +230,16 @@
     "placeholder_name": "Tên",
     "placeholder_phone": "Số điện thoại",
     "placeholder_content": "Nội dung tin nhắn ",
-    "button": "Gửi tinh nhắn"
+    "button": "Gửi tin nhắn"
+  },
+  "validate": {
+    "username_required": "Tên không được để trống",
+    "username_min_length": "Tên phải nhiều hơn 3 ký tự",
+    "username_max_length": "Tên không được vượt quá 20 ký tự",
+    "email_required": "Email không được để trống",
+    "email_invalid": "Email chưa đúng định dạng",
+    "phone_invalid": "Số điện thoại chưa đúng định dạng",
+    "phone_required": "Số điện thoại không được để trống",
+    "file_required": "File không được để trống"
   }
 }

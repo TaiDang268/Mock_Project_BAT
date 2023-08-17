@@ -11,7 +11,7 @@ const HomeDiffrentAndPioneer = () => {
           <p className='uppercase font-bold text-2xl text-center'>{t('homepage.diffrent_pioneer.tilte')}</p>
         </div>
         {/* khối div chứa 4 div con */}
-        <div className='grid grid-cols-12 gap-10  my-20 '>
+        <div className='grid grid-cols-12 gap-10  my-20 max-sm:gap-x-6 '>
           {list.map((item) => (
             <div
               key={item}
