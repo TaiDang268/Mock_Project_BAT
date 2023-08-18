@@ -1,8 +1,20 @@
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useInView } from 'react-intersection-observer'
+
+import { variants } from '~/animation/variants'
 const list = ['item1', 'item2', 'item3', 'item4']
 const HomeDiffrentAndPioneer = () => {
   const { t } = useTranslation()
 
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
   return (
     <>
       <div className='max-w-[1200px] mx-auto '>
@@ -13,8 +25,11 @@ const HomeDiffrentAndPioneer = () => {
         {/* khối div chứa 4 div con */}
         <div className='grid grid-cols-12 gap-10  my-20 max-sm:gap-x-6 '>
           {list.map((item) => (
-            <div
-              key={item}
+            <motion.div
+              ref={ref}
+              animate={controls}
+              initial='hidden'
+              variants={variants}
               className='xl:col-span-3 lg:col-span-6  col-span-12 rounded-2xl max-lg:mx-10  shadow-md shadow-slate-400	 py-5 relative'
             >
               <div className='absolute top-[-50px] ml-4'>
@@ -26,7 +41,7 @@ const HomeDiffrentAndPioneer = () => {
               <div className='text-center px-2'>
                 <p className='text-[#606060] leading-6 mt-3'>{t(`homepage.diffrent_pioneer.${item}.description`)}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+
 import images from '~/assets/images'
 const imageList: string[] = ['principle_1', 'principle_2', 'principle_3', 'principle_4', 'principle_5', 'principle_6']
 const DescPrinciple = () => {

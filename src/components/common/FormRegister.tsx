@@ -1,9 +1,10 @@
-import { useTranslation } from 'react-i18next'
-import { useForm, SubmitHandler } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
+import { SubmitHandler, useForm } from 'react-hook-form'
+import { useTranslation } from 'react-i18next'
 import * as Yup from 'yup'
-import { nameValidation, emailValidation } from '../../validate_rule/yupGlobal'
+
 import Button from './Button'
+import { emailValidation, nameValidation } from '../../validate_rule/yupGlobal'
 type Inputs = {
   name: string
   email: string

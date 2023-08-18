@@ -1,5 +1,6 @@
-import Button from '../common/Button'
 import { useTranslation } from 'react-i18next'
+
+import Button from '../common/Button'
 interface IJobInput {
   onInputChange: (value: string) => void
   onSearchClick: () => void

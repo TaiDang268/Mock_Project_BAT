@@ -1,10 +1,12 @@
-import images from '~/assets/images'
-import Button from '../common/Button'
-import { useForm, SubmitHandler } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-import * as Yup from 'yup'
-import { nameValidation, emailValidation, phoneValidation } from '../../validate_rule/yupGlobal'
+import { SubmitHandler, useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
+import * as Yup from 'yup'
+
+import images from '~/assets/images'
+
+import { emailValidation, nameValidation, phoneValidation } from '../../validate_rule/yupGlobal'
+import Button from '../common/Button'
 
 type Inputs = {
   name: string

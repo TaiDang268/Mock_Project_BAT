@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
+
+import { IAddress, IJob, ITypeOfWork, IWorkGroup } from '~/@types/types'
 import { get, getTotalRecords } from '~/API/api'
+
+import JobBanner from './JobBanner'
 import JobInput from './JobInput'
 import JobItem from './JobItem'
 import JobRadioButton from './JobRadioButton'
-import { IAddress, IJob, ITypeOfWork, IWorkGroup } from '~/@types/types'
-import JobBanner from './JobBanner'
-import Pagination from '../common/Pagination'
-import { useTranslation } from 'react-i18next'
 import Button from '../common/Button'
+import Pagination from '../common/Pagination'
 const JobPage = () => {
   const [jobs, setJobs] = useState<IJob[] | []>([]) // jobs
   const [workGroup, setWorkGroup] = useState<IWorkGroup[] | []>() //nhóm công việc
@@ -53,7 +55,7 @@ const JobPage = () => {
     name === 'Tất cả' ? setSelectedTypeOfWork('') : setSelectedTypeOfWork(name)
   }
   const handleClickButtonFilter = () => {
-    const params: { address?: string; type_of_work?: string; work_group?: string } = {}
+    const params: { address?: string; type_of_work?: string; work_group?: string; _limit?: number } = {}
 
     if (selectedAddress) {
       params.address = selectedAddress
@@ -65,10 +67,10 @@ const JobPage = () => {
     if (selectedWorkGroup) {
       params.work_group = selectedWorkGroup
     }
-
+    params._limit = 8
     get('/jobs', params, setJobs)
+    getTotalRecords('jobs', params, setPageCount)
   }
-  console.log(selectedAddress, selectedWorkGroup, selectedTypeOfWork)
   return (
     <>
       <JobBanner />

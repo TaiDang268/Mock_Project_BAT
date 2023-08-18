@@ -1,10 +1,11 @@
-import Button from '../common/Button'
-import { useTranslation } from 'react-i18next'
-import { useForm, SubmitHandler } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
+import { motion } from 'framer-motion'
+import { SubmitHandler, useForm } from 'react-hook-form'
+import { useTranslation } from 'react-i18next'
 import * as Yup from 'yup'
 
-import { nameValidation, emailValidation, phoneValidation } from '../../validate_rule/yupGlobal'
+import { emailValidation, nameValidation, phoneValidation } from '../../validate_rule/yupGlobal'
+import Button from '../common/Button'
 type Inputs = {
   name: string
   email: string
@@ -67,9 +68,9 @@ const ContactForm = () => {
             placeholder={`${t('contact_page.placeholder_content')}`}
           />
         </div>
-        <div className='flex justify-center items-center my-10'>
+        <motion.div whileHover={{ scale: 1.1 }} className='flex justify-center items-center my-10'>
           <Button children={`${t('contact_page.button')}`} className='w-[276px]' onClick={handleSubmit(onSubmit)} />
-        </div>
+        </motion.div>
       </div>
     </>
   )

@@ -1,13 +1,30 @@
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useInView } from 'react-intersection-observer'
+
+import { variants } from '~/animation/variants'
 import images from '~/assets/images'
 
 import Button from '../common/Button'
 
 const HomeNewsFromBAT = () => {
   const { t } = useTranslation()
-
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
   return (
-    <div className='w-full bg-[#E9F9D6] min-h-[430px]'>
+    <motion.div
+      ref={ref}
+      animate={controls}
+      initial='hidden'
+      variants={variants}
+      className='w-full bg-[#E9F9D6] min-h-[430px]'
+    >
       <div className='max-w-[1200px] mx-auto grid grid-cols-12 px-4'>
         {/* text */}
         <div className='col-span-7 mt-10 max-[700px]:col-span-12 max-[700px]:px-5 '>
@@ -34,7 +51,7 @@ const HomeNewsFromBAT = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 export default HomeNewsFromBAT

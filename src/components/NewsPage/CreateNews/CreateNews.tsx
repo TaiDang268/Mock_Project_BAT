@@ -1,9 +1,10 @@
-import { CKEditor } from '@ckeditor/ckeditor5-react'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
-import { useForm, SubmitHandler } from 'react-hook-form'
-import { IItemNewsProps } from '~/@types/types'
-import { useState } from 'react'
+import { CKEditor } from '@ckeditor/ckeditor5-react'
 import axios from 'axios'
+import { useState } from 'react'
+import { SubmitHandler, useForm } from 'react-hook-form'
+
+import { IItemNewsProps } from '~/@types/types'
 
 interface Inputs extends IItemNewsProps {}
 const CreateNews = () => {

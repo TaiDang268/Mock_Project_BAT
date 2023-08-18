@@ -1,8 +1,11 @@
-import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import Item from './Item'
-import { get } from '~/API/api'
+import { useLocation } from 'react-router-dom'
+
 import { IItemNewsProps } from '~/@types/types'
+import { get } from '~/API/api'
+
+import Item from './Item'
+
 const NewsDetail = () => {
   const [dataNew, setDataNew] = useState<IItemNewsProps[] | []>([]) //tin tức mới
   const [dataConnection, setDataConnection] = useState<IItemNewsProps[] | []>([]) //tin tức liên quan

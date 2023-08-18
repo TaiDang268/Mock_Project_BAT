@@ -1,11 +1,14 @@
-import JobBanner from './JobBanner'
 import { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import { useLocation } from 'react-router-dom'
+
 import { IJob } from '~/@types/types'
 import { get } from '~/API/api'
-import JobItem from './JobItem'
-import { useLocation } from 'react-router-dom'
+
+import JobBanner from './JobBanner'
 import JobFormRegister from './JobFormRegister'
-import { useTranslation } from 'react-i18next'
+import JobItem from './JobItem'
+
 const JobDetail = () => {
   const { t } = useTranslation()
   const [jobs, setJobs] = useState<IJob[] | []>([]) // jobs

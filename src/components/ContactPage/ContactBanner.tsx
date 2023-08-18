@@ -1,10 +1,18 @@
-import images from '~/assets/images'
+import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
+
+import images from '~/assets/images'
+
 const ContactBanner = () => {
   const { t } = useTranslation()
   return (
     <>
-      <div className='w-full h-[334px] bg-[#E9F9D6] grid grid-cols-12 '>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className='w-full h-[334px] bg-[#E9F9D6] grid grid-cols-12 '
+      >
         <div className='xl:col-span-4 relative  '>
           <div className='absolute bottom-[-66px] left-[100px] '>
             <img src={images.contact_banner_1} />
@@ -19,7 +27,7 @@ const ContactBanner = () => {
             <img src={images.contact_banner_2} />
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+
 import images from '~/assets/images'
 
 const DescBATTECH = () => {

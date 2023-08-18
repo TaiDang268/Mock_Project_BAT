@@ -1,8 +1,9 @@
 import clsx from 'clsx'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { AiOutlineMenu } from 'react-icons/ai'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
+
 import images from '~/assets/images'
 
 const links = ['home', 'about_us', 'news', 'job_opportunity', 'contact']
@@ -12,6 +13,7 @@ const Header = () => {
   const [isItemMenuSelected, setItemMenuSelected] = useState<string>('home') // item menu được chọn
   const [showMenuResponsive, setShowMenuResponsive] = useState<boolean>(false)
   const { i18n, t } = useTranslation()
+  const location = useLocation()
   const navigate = useNavigate()
   //ẩn hiện ngôn ngữ thứ 2
   const handleOpenFlag = () => {
@@ -33,6 +35,16 @@ const Header = () => {
     }
     setShowMenuResponsive(false)
   }
+  //navigate page thì active item của header
+  useEffect(() => {
+    if (location.pathname.slice(1) === 'detail_news' || location.pathname.slice(1) === 'detailJob') {
+      return
+    } else if (location.pathname.slice(1) === '') {
+      setItemMenuSelected('home')
+    } else {
+      setItemMenuSelected(location.pathname.slice(1))
+    }
+  }, [location.pathname])
   //onclick icon hidden menu ở breakpoin < 1280px
   const handleOpenMenuIcon = () => {
     setShowMenuResponsive(!showMenuResponsive)

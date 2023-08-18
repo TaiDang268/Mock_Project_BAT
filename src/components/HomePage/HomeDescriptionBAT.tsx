@@ -1,11 +1,29 @@
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import images from '~/assets/images'
+import { useInView } from 'react-intersection-observer'
 
+import { variants } from '~/animation/variants'
+import images from '~/assets/images'
 const HomeDescriptionBAT = () => {
   const { t } = useTranslation()
+
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
   return (
     <>
-      <div className='max-w-[1190px]  mx-auto my-20 grid grid-cols-12'>
+      <motion.div
+        ref={ref}
+        animate={controls}
+        initial='hidden'
+        variants={variants}
+        className='max-w-[1190px]  mx-auto my-20 grid grid-cols-12'
+      >
         <div className='xl:col-span-6 xl:block hidden'>
           <img src={images.image_home_2}></img>
         </div>
@@ -59,8 +77,7 @@ const HomeDescriptionBAT = () => {
 
           <div></div>
         </div>
-      </div>
-      {/*  */}
+      </motion.div>
     </>
   )
 }

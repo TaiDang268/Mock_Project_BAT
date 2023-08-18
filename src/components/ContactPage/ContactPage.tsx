@@ -1,7 +1,10 @@
-import images from '~/assets/images'
-import ContactForm from './ContactForm'
 import { useTranslation } from 'react-i18next'
+
+import images from '~/assets/images'
+
 import ContactBanner from './ContactBanner'
+import ContactForm from './ContactForm'
+
 const ContactPage = () => {
   const { t } = useTranslation()
   const arr = [
