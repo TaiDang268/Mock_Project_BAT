@@ -200,6 +200,7 @@
     "title_5": "Locations",
     "title_6": "Type of Work",
     "button": "Search for job",
+    "no_job": "There are currently no jobs, please come back later",
     "detail": {
       "title": "Apply directly",
       "name": "Your full name",

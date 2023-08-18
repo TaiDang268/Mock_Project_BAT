@@ -115,11 +115,15 @@ const JobPage = () => {
             </div>
           </div>
           <div className='w-3/4 max-md:w-full max-md:my-10'>
-            {jobs?.map((job, index) => (
-              <div key={index}>
-                <JobItem {...job} showButton={true} backgroundColor='bg-[#eeeeee]' />
-              </div>
-            ))}
+            {jobs.length !== 0 ? (
+              jobs?.map((job, index) => (
+                <div key={index}>
+                  <JobItem {...job} showButton={true} backgroundColor='bg-[#eeeeee]' />
+                </div>
+              ))
+            ) : (
+              <p className='text-center'>{t('job_page.no_job')}</p>
+            )}
           </div>
         </div>
         <div className='w-full  my-10'>

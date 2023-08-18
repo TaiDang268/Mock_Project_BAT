@@ -9,7 +9,7 @@ const ItemNewsCommon = (props: IItemNewsProps) => {
   const { image, author, date, title, description } = props
   const navigate = useNavigate()
   const handleOnClickItem = () => {
-    navigate('/detail_news', { state: props })
+    navigate('/news/detail_news', { state: props })
   }
   return (
     <>

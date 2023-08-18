@@ -2,7 +2,10 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import { motion } from 'framer-motion'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
+import { ToastContainer } from 'react-toastify'
 import * as Yup from 'yup'
+
+import { successMessage } from '~/toast-message/Toast'
 
 import { emailValidation, nameValidation, phoneValidation } from '../../validate_rule/yupGlobal'
 import Button from '../common/Button'
@@ -23,7 +26,10 @@ const ContactForm = () => {
     handleSubmit,
     formState: { errors }
   } = useForm<Inputs>({ resolver: yupResolver(validationSchema) })
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    successMessage()
+    console.log(data)
+  }
   return (
     <>
       <div className='max-w-[1200px] mx-auto'>
@@ -34,22 +40,28 @@ const ContactForm = () => {
         </div>
         <div className='flex justify-between max-md:block'>
           <div className='w-[30%] max-md:w-full'>
-            <p className='font-medium '>{t('contact_page.placeholder_name')}</p>
+            <div className='flex gap-1'>
+              <p className='font-medium '>{t('contact_page.placeholder_name')}</p>
+              <p className='text-red-500'>*</p>
+            </div>
             <input
               className=' w-full  border border-gray-400 rounded-lg h-[48px] px-3 my-2 '
               placeholder={`${t('contact_page.placeholder_name')}`}
               {...register('name')}
             />
-            {errors.name && <p className='text-red-500 pl-4 text-[14px]'>{`${errors.name.message}`}</p>}
+            {errors.name && <p className='text-red-500 pl-3 text-[14px]'>{`${errors.name.message}`}</p>}
           </div>
           <div className='w-[30%] max-md:w-full'>
-            <p className='font-medium'>Email</p>
+            <div className='flex gap-1'>
+              <p className='font-medium'>Email</p>
+              <p className='text-red-500'>*</p>
+            </div>
             <input
               className=' w-full  border border-gray-400 rounded-lg h-[48px] px-3 my-2 '
               placeholder='Email'
               {...register('email')}
             />
-            {errors.email && <p className='text-red-500 pl-4 text-[14px]'>{`${errors.email.message}`}</p>}
+            {errors.email && <p className='text-red-500 pl-3 text-[14px]'>{`${errors.email.message}`}</p>}
           </div>
           <div className='w-[30%] max-md:w-full'>
             <p className='font-medium '>{t('contact_page.placeholder_phone')}</p>
@@ -59,7 +71,7 @@ const ContactForm = () => {
               placeholder={`${t('contact_page.placeholder_phone')}`}
               {...register('phone')}
             />
-            {errors.phone && <p className='text-red-500 pl-4 text-[14px]'>{`${errors.phone.message}`}</p>}
+            {errors.phone && <p className='text-red-500 pl-3 text-[14px]'>{`${errors.phone.message}`}</p>}
           </div>
         </div>
         <div className='my-3'>
@@ -71,6 +83,7 @@ const ContactForm = () => {
         <motion.div whileHover={{ scale: 1.1 }} className='flex justify-center items-center my-10'>
           <Button children={`${t('contact_page.button')}`} className='w-[276px]' onClick={handleSubmit(onSubmit)} />
         </motion.div>
+        <ToastContainer />
       </div>
     </>
   )

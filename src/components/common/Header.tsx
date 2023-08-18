@@ -37,25 +37,29 @@ const Header = () => {
   }
   //navigate page thì active item của header
   useEffect(() => {
-    if (location.pathname.slice(1) === 'detail_news' || location.pathname.slice(1) === 'detailJob') {
-      return
-    } else if (location.pathname.slice(1) === '') {
-      setItemMenuSelected('home')
-    } else {
-      setItemMenuSelected(location.pathname.slice(1))
-    }
+    location.pathname.split('/')[1] === ''
+      ? setItemMenuSelected('home')
+      : setItemMenuSelected(location.pathname.split('/')[1])
   }, [location.pathname])
   //onclick icon hidden menu ở breakpoin < 1280px
   const handleOpenMenuIcon = () => {
     setShowMenuResponsive(!showMenuResponsive)
     setIsHidenOptionLanguage(false)
   }
+  //onclick logo
+  const handleClickLogo = () => {
+    navigate('home')
+  }
 
   return (
     <div className='px-6 py-4 max-xl:relative'>
       <div className='flex justify-between items-center '>
         {/* logo */}
-        <div style={{ backgroundImage: `url(${images.BAT_logo})` }} className='w-40 h-16  bg-no-repeat '></div>
+        <div
+          style={{ backgroundImage: `url(${images.BAT_logo})` }}
+          className='w-40 h-16  bg-no-repeat cursor-pointer '
+          onClick={handleClickLogo}
+        ></div>
         {/* menu */}
 
         <div className='flex items-center  '>

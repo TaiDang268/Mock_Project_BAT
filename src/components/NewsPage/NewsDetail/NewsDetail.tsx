@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 import { IItemNewsProps } from '~/@types/types'
 import { get } from '~/API/api'
@@ -7,6 +7,7 @@ import { get } from '~/API/api'
 import Item from './Item'
 
 const NewsDetail = () => {
+  const navigate = useNavigate()
   const [dataNew, setDataNew] = useState<IItemNewsProps[] | []>([]) //tin tức mới
   const [dataConnection, setDataConnection] = useState<IItemNewsProps[] | []>([]) //tin tức liên quan
   const [itemRender, setItemRender] = useState<IItemNewsProps | null>()
@@ -21,11 +22,20 @@ const NewsDetail = () => {
   const handleOnclickItem = (item: IItemNewsProps) => {
     setItemRender(item)
   }
+  const handleClickTextNew = () => {
+    navigate('/news')
+  }
   return (
     <>
       <div className='max-w-[1200px] mx-auto my-14 '>
-        <div>
-          <p className='text-BAT-primary'>Tin tức /</p>
+        <div className='px-6 flex gap-1 mb-2'>
+          <p className='text-BAT-primary cursor-pointer  uppercase' onClick={handleClickTextNew}>
+            Tin tức
+          </p>
+          <p>/</p>
+          <p className='text-BAT-primary cursor-pointer uppercase'>{itemRender?.category}</p>
+          <p>/</p>
+          <p className='cursor-pointer'>{itemRender?.title}</p>
         </div>
         <div className='flex max-lg:block'>
           <div className='w-2/3  px-6 max-xl:w-[60%] max-lg:w-full'>

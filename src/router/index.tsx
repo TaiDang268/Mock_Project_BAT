@@ -9,42 +9,57 @@ import Layout from '~/components/Layout/Layout'
 import CreateNews from '~/components/NewsPage/CreateNews/CreateNews'
 import NewsPage from '~/components/NewsPage/News'
 import NewsDetail from '~/components/NewsPage/NewsDetail/NewsDetail'
+import routePaths from '~/constant/routePaths'
 
 const routers = [
-  {
-    path: '/home',
-    element: <HomePage />
-  },
   {
     path: '/',
     element: <HomePage />
   },
   {
-    path: '/about_us',
+    path: routePaths.home,
+    element: <HomePage />
+  },
+  {
+    path: routePaths.about_us,
     element: <DescriptionPage />
   },
   {
-    path: '/news',
-    element: <NewsPage />
+    path: routePaths.news,
+    children: [
+      {
+        index: true,
+        path: '',
+        element: <NewsPage />
+      },
+      {
+        path: 'detail_news',
+        element: <NewsDetail />
+      }
+    ]
   },
+
   {
-    path: '/detail_news',
-    element: <NewsDetail />
+    path: routePaths.job_opportunity,
+    children: [
+      {
+        index: true,
+        path: '',
+        element: <JobPage />
+      },
+      {
+        path: routePaths.detail_job,
+        element: <JobDetail />
+      }
+    ]
   },
+
   {
-    path: '/job_opportunity',
-    element: <JobPage />
-  },
-  {
-    path: '/contact',
+    path: routePaths.contact,
     element: <ContactPage />
   },
   {
-    path: '/detailJob',
-    element: <JobDetail />
-  },
-  {
-    path: '/create_news',
+    path: routePaths.create_news,
     element: <CreateNews />
   }
 ]

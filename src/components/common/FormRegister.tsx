@@ -1,7 +1,11 @@
 import { yupResolver } from '@hookform/resolvers/yup'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
+import { ToastContainer } from 'react-toastify'
 import * as Yup from 'yup'
+import 'react-toastify/dist/ReactToastify.css'
+
+import { successMessage } from '~/toast-message/Toast'
 
 import Button from './Button'
 import { emailValidation, nameValidation } from '../../validate_rule/yupGlobal'
@@ -19,9 +23,15 @@ const FormRegister = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors }
   } = useForm<Inputs>({ resolver: yupResolver(validationSchema) })
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
+
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    console.log(data)
+    successMessage()
+    reset()
+  }
   return (
     <>
       <div className='w-full min-h-[388px] bg-[#E9F9D6] mt-28 px-4 py-4'>
@@ -50,6 +60,7 @@ const FormRegister = () => {
           </div>
           <div className='flex justify-center items-center mt-14'>
             <Button children={t(`homepage.form_register.button`)} onClick={handleSubmit(onSubmit)} className='px-6' />
+            <ToastContainer />
           </div>
         </form>
       </div>
