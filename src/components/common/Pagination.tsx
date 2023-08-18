@@ -1,4 +1,5 @@
 import ReactPaginate from 'react-paginate'
+
 import images from '~/assets/images'
 interface IPagination {
   pageCount: number

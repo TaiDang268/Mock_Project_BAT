@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+
 import images from '~/assets/images'
 const imageList: string[] = ['principle_1', 'principle_2', 'principle_3', 'principle_4', 'principle_5', 'principle_6']
 const DescPrinciple = () => {
@@ -16,7 +17,7 @@ const DescPrinciple = () => {
             {imageList.map((item, index) => (
               <div
                 key={index}
-                className='col-span-4  shadow-lg rounded-2xl py-8 mx-4 max-lg:col-span-6 max-sm:col-span-12 '
+                className='col-span-4  shadow-lg rounded-2xl py-8 mx-4 px-2 max-lg:col-span-6 max-sm:col-span-12 '
               >
                 <div className='min-h-[100px] flex justify-center'>
                   <img src={images[item]} />

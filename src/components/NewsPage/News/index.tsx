@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
-import NewBanner from './NewsBanner'
-import NewsThreeItemImage from './NewsThreeItemImage'
-import NewList from './NewsList'
-import { get } from '~/API/api'
+
 import { IItemNewsProps } from '~/@types/types'
+import { get } from '~/API/api'
+
+import NewBanner from './NewsBanner'
+import NewList from './NewsList'
+import NewsThreeItemImage from './NewsThreeItemImage'
 
 const NewsPage = () => {
   const [data, setData] = useState<IItemNewsProps[] | []>([])

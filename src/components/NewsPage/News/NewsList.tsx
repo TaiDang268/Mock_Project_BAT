@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+
 import { IItemNewsProps } from '~/@types/types'
 import { get, getTotalRecords } from '~/API/api'
 import ItemNewsCommon from '~/components/common/ItemNews'

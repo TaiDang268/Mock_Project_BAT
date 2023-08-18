@@ -1,7 +1,9 @@
-import images from '~/assets/images'
-import Button from '../common/Button'
-import { IJob } from '~/@types/types'
 import { useNavigate } from 'react-router-dom'
+
+import { IJob } from '~/@types/types'
+import images from '~/assets/images'
+
+import Button from '../common/Button'
 interface IJobItem extends IJob {
   showButton?: boolean
   backgroundColor?: string

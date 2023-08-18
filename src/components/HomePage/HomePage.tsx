@@ -1,11 +1,11 @@
-import FormRegister from '../common/FormRegister'
-import Partner from '../common/Partner'
 import HomeBanner from './HomeBanner'
 import HomeDescriptionBAT from './HomeDescriptionBAT'
 import HomeDiffrentAndPioneer from './HomeDiffrentAndPioneer'
 import HomeNewsAndEvent from './HomeNewsAndEvent'
 import HomeNewsFromBAT from './HomeNewsFromBAT'
 import HomeServicePack from './HomeServicePack'
+import FormRegister from '../common/FormRegister'
+import Partner from '../common/Partner'
 
 const Home = () => {
   return (

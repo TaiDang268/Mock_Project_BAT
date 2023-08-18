@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Autoplay, FreeMode, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+
+import { IItemNewsProps } from '~/@types/types'
+import { get } from '~/API/api'
 import images from '~/assets/images'
 
-import ItemNews, { IItemNewsProps } from '../common/ItemNews'
-import { get } from '~/API/api'
+import ItemNews from '../common/ItemNews'
 
 const HomeNewsAndEvent = () => {
   const { t } = useTranslation()

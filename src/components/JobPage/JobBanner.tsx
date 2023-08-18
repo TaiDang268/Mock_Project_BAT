@@ -1,5 +1,6 @@
-import images from '~/assets/images'
 import { useTranslation } from 'react-i18next'
+
+import images from '~/assets/images'
 const JobBanner = () => {
   const { t } = useTranslation()
   return (

@@ -199,7 +199,22 @@
     "title_4": "Work catagories",
     "title_5": "Locations",
     "title_6": "Type of Work",
-    "button": "Search for job"
+    "button": "Search for job",
+    "detail": {
+      "title": "Apply directly",
+      "name": "Your full name",
+      "phone": "Phone",
+      "CV": "Attach CV",
+      "fb": "Facebook/Skype/Linked Address",
+      "know_by": "Do you know where BATTECH passed??",
+      "button": "Apply",
+      "placeholder": {
+        "name": "Bùi Văn A",
+        "know_by": "Through friends",
+        "note": "Note"
+      },
+      "similar_job": "Similar Job"
+    }
   },
   "contact_page": {
     "title_1": "CONTACT",
@@ -215,5 +230,15 @@
     "placeholder_phone": "Phone Number",
     "placeholder_content": "Message content",
     "button": "Send message"
+  },
+  "validate": {
+    "username_required": "Username is required",
+    "username_min_length": "Username must be at least 3 characters",
+    "username_max_length": "Username must not exceed 20 characters",
+    "email_required": "Email is required",
+    "email_invalid": "Email is invalid",
+    "phone_invalid": "Phone is invalid",
+    "phone_required": "Phone is required",
+    "file_required": "File is required"
   }
 }

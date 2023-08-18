@@ -5,6 +5,7 @@ import 'swiper/css/navigation'
 import { useTranslation } from 'react-i18next'
 import { Autoplay, FreeMode, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+
 import images from '~/assets/images'
 
 const listImage = [

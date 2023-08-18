@@ -18,7 +18,7 @@ const Input = (props: IPropsInput) => {
         name={name}
         disabled={disabled}
         onChange={onChange}
-        className='h-9 text-base bg-white rounded border outline-none border-blue-500 px-2  '
+        className='h-9 text-base bg-white rounded border  border-blue-500 px-2  '
       />
     </div>
   )

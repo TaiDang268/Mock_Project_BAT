@@ -1,5 +1,6 @@
-import Button from '../common/Button'
 import { useTranslation } from 'react-i18next'
+
+import Button from '../common/Button'
 interface IJobInput {
   onInputChange: (value: string) => void
   onSearchClick: () => void
@@ -20,7 +21,7 @@ const JobInput = (props: IJobInput) => {
           <input
             onChange={handleChange}
             placeholder='Tên công việc'
-            className='w-full rounded-xl pl-2 pr-10 mb-10 border h-[42px] border-BAT-primary outline-none'
+            className='w-full rounded-xl pl-2 pr-10 mb-10 border h-[42px] border-BAT-primary '
           />
           <Button
             children={`${t('job_page.button')}`}

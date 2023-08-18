@@ -1,9 +1,9 @@
-import FormRegister from '../common/FormRegister'
-import Partner from '../common/Partner'
-import DescBATTECH from './DescBATTECH'
 import DescBanner from './DescBanner'
+import DescBATTECH from './DescBATTECH'
 import DescPrinciple from './DescPrinciple'
 import DescStaff from './DescStaff'
+import FormRegister from '../common/FormRegister'
+import Partner from '../common/Partner'
 
 const DescriptionPage = () => {
   return (
