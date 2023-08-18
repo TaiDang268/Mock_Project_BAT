@@ -12,7 +12,7 @@ const JobItem = (props: IJobItem) => {
   const { name, description, salary, address, deadline, showButton, backgroundColor } = props
   const navigate = useNavigate()
   const handleOnClickItem = () => {
-    navigate('/detailJob', { state: props })
+    navigate('/job_opportunity/detailJob', { state: props })
   }
   return (
     <>

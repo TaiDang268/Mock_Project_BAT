@@ -16,6 +16,7 @@ const HomeNewsAndEvent = () => {
   useEffect(() => {
     get('/news', null, setData)
   }, [])
+
   return (
     <>
       <div className='w-full mt-20 mb-4 '>
@@ -45,6 +46,7 @@ const HomeNewsAndEvent = () => {
                 <ItemNews {...item} />
               </SwiperSlide>
             ))}
+
             <>
               <div className='  arrow arrow-left  '>
                 <button>

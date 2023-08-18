@@ -7,7 +7,6 @@ import ScrollToTopLibrary from 'react-scroll-to-top'
 
 import ScrollToTop from './config/ScrollToTop'
 import Routers from './router'
-
 function App() {
   return (
     <div className='h-screen bg-white dark:bg-blue-900'>

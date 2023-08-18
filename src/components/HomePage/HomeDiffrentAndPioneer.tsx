@@ -24,8 +24,9 @@ const HomeDiffrentAndPioneer = () => {
         </div>
         {/* khối div chứa 4 div con */}
         <div className='grid grid-cols-12 gap-10  my-20 max-sm:gap-x-6 '>
-          {list.map((item) => (
+          {list.map((item, index) => (
             <motion.div
+              key={index}
               ref={ref}
               animate={controls}
               initial='hidden'
