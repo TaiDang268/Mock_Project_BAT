@@ -23,7 +23,7 @@ const HomeNewsAndEvent = () => {
         <div className=''>
           <p className='font-bold text-2xl leading-7 text-center uppercase my-10'>{t('homepage.new_and_event')}</p>
         </div>
-        <div className='max-w-[1200px] mx-auto '>
+        <div className='max-w-[1200px] mx-auto mySwiper '>
           <Swiper
             breakpoints={{
               320: { slidesPerView: 1, spaceBetween: 10 },
@@ -47,18 +47,16 @@ const HomeNewsAndEvent = () => {
               </SwiperSlide>
             ))}
 
-            <>
-              <div className='  arrow arrow-left  '>
-                <button>
-                  <img src={images.arrow_left} />
-                </button>
-              </div>
-              <div className=' arrow arrow-right'>
-                <button>
-                  <img src={images.arrow_right} />
-                </button>
-              </div>
-            </>
+            <div className='arrow arrow-left  '>
+              <button>
+                <img className='arrow_img' src={images.arrow_left} />
+              </button>
+            </div>
+            <div className='arrow arrow-right'>
+              <button>
+                <img src={images.arrow_right} />
+              </button>
+            </div>
           </Swiper>
         </div>
       </div>

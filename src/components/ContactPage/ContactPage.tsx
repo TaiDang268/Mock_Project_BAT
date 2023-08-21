@@ -52,8 +52,8 @@ const ContactPage = () => {
             <p className='uppercase font-bold text-[24px]'> {t('contact_page.contact_us')}</p>
             <p className='font-medium'>{t('contact_page.description')}</p>
             <div className='my-5'>
-              {arr.map((item) => (
-                <div className='rounded-xl shadow-md p-4 my-4'>
+              {arr.map((item, index) => (
+                <div key={index} className='rounded-xl shadow-md p-4 my-4'>
                   <div className='flex pb-2'>
                     <img src={item.icon} className='mr-3' />
                     <p className='text-[#7A7A7A] font-medium'>{item.title}</p>

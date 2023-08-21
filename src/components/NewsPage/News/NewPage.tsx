@@ -5,7 +5,7 @@ import { IItemNewsProps } from '~/@types/types'
 import { get } from '~/API/api'
 import images from '~/assets/images'
 import Banner from '~/components/common/Banner'
-import routePaths from '~/constant/routePaths'
+import routePaths from '~/router/routePaths'
 
 import NewList from './NewsList'
 import NewsThreeItemImage from './NewsThreeItemImage'

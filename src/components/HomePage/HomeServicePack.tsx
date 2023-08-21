@@ -18,8 +18,7 @@ const HomeServicePack = () => {
           <p className='text-center font-bold text-[24px] uppercase mb-6'>{t('homepage.service_pack.title')}</p>
         </div>
         {/* 3 item */}
-        {/* <div className='flex w-full'> */}
-        {/* <div className='grid grid-cols-1 '> */}
+
         <div className='grid w-full grid-cols-12 gap-5  px-4   '>
           {listPack.map((item, index) => (
             <div
@@ -38,8 +37,9 @@ const HomeServicePack = () => {
               <div className='my-8 w-full box-border'>
                 <Button
                   children={t(`homepage.service_pack.button`)}
+                  height='48px'
                   className={clsx(
-                    'w-[80%] mx-auto box-border',
+                    'w-[80%] mx-auto box-border text-[24px] font-semibold',
                     activePack === item ? 'bg-BAT-primary' : 'bg-[#7a7a7a]  '
                   )}
                 />

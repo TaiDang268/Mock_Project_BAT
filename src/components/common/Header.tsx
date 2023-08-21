@@ -5,7 +5,7 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 import images from '~/assets/images'
-import routePaths from '~/constant/routePaths'
+import routePaths from '~/router/routePaths'
 
 const links = ['home', 'about_us', 'news', 'job_opportunity', 'contact']
 const Header = () => {
@@ -74,7 +74,7 @@ const Header = () => {
               <p
                 key={index}
                 className={clsx(
-                  'mr-8 text-xl font-normal cursor-pointer hover:text-green-600 uppercase',
+                  'mr-8 text-[24px] font-normal cursor-pointer hover:text-green-600 uppercase',
                   'max-xl:text-[16px] max-xl:font-bold max-xl:z-20 max-xl:hover:bg-slate-500 max-xl:hover:text-white max-xl:rounded   max-xl:mr-0  max-xl:px-2 max-xl:py-2',
                   isItemMenuSelected === link ? 'text-green-600 ' : 'text-black ',
                   showMenuResponsive ? 'block' : 'max-xl:hidden'

@@ -113,7 +113,12 @@ const JobPage = () => {
               </div>
             </div>
             <div className=' max-md:w-full max-md:my-10 w-[90%]'>
-              <Button children='Áp dụng bộ lọc' className='mt-14 w-full' onClick={handleClickButtonFilter} />
+              <Button
+                children='Áp dụng bộ lọc'
+                className='mt-14 w-full text-[20px] '
+                height='48px'
+                onClick={handleClickButtonFilter}
+              />
             </div>
           </div>
           <div className='w-3/4 max-md:w-full max-md:my-10'>

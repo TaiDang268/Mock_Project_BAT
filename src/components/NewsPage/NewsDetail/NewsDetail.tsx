@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 
 import { IItemNewsProps } from '~/@types/types'
 import { get } from '~/API/api'
-import routePaths from '~/constant/routePaths'
+import routePaths from '~/router/routePaths'
 
 import Item from './Item'
 

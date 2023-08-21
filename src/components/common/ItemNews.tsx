@@ -1,23 +1,23 @@
 import '../../css/Custom.css'
 
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import { IItemNewsProps } from '~/@types/types'
 import images from '~/assets/images'
-import routePaths from '~/constant/routePaths'
+import routePaths from '~/router/routePaths'
 
 const ItemNewsCommon = (props: IItemNewsProps) => {
   const { image, author, date, title, description } = props
-  const navigate = useNavigate()
-  const handleOnClickItem = () => {
-    navigate(`${routePaths.detail_news}`, { state: props })
-  }
+
   return (
     <>
-      <div className='w-276 h-430 shadow-lg my-2 rounded-2xl max-sm:w-[90%] cursor-pointer' onClick={handleOnClickItem}>
+      <Link
+        to={`${routePaths.news}/${routePaths.detail_news}`}
+        state={props}
+        className='w-276 h-430 shadow-lg my-2 rounded-2xl max-sm:w-[90%] cursor-pointer'
+      >
         {/* image */}
         <div className='h-52'>
-          {/* <div style={{ backgroundImage: `${image}` }}></div> */}
           <img className='rounded-2xl  h-full w-full object-cover' src={`${image}`} />
         </div>
         {/* author and date */}
@@ -42,7 +42,7 @@ const ItemNewsCommon = (props: IItemNewsProps) => {
             dangerouslySetInnerHTML={{ __html: description || '' }}
           ></p>
         </div>
-      </div>
+      </Link>
     </>
   )
 }

@@ -5,6 +5,7 @@ import 'swiper/css/pagination'
 import { BrowserRouter } from 'react-router-dom'
 import ScrollToTopLibrary from 'react-scroll-to-top'
 
+import { ReactComponent as ScrollIcon } from './assets/images/scrolltotop.svg'
 import ScrollToTop from './config/ScrollToTop'
 import Routers from './router'
 function App() {
@@ -15,8 +16,7 @@ function App() {
         <Routers />
         <ScrollToTopLibrary
           smooth
-          width='20'
-          height='20'
+          component={<ScrollIcon />}
           style={{
             borderRadius: '50%',
             display: 'flex',

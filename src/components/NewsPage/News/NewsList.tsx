@@ -52,9 +52,9 @@ const NewList = () => {
           ))}
         </div>
         {/* 8 item */}
-        <div className='grid [400px]:grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4 min-h[600px] '>
+        <div className='grid [400px]:grid-cols-1  sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-4 min-h[600px] mx-auto '>
           {dataRender?.map((item, index) => (
-            <div key={index}>
+            <div key={index} className='flex justify-center'>
               <ItemNewsCommon {...item} />
             </div>
           ))}

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 
 import images from '~/assets/images'
-import routePaths from '~/constant/routePaths'
+import routePaths from '~/router/routePaths'
 
 import Button from '../common/Button'
 
@@ -56,7 +56,8 @@ const HomeBanner = () => {
           >
             <Button
               children={t('homepage.banner.button')}
-              className='h-12 px-8 text-base font-semibold'
+              className='px-8 text-[24px] font-semibold'
+              height='48px'
               onClick={handleClick}
             />
           </motion.div>

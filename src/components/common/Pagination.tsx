@@ -10,10 +10,10 @@ const Pagination = (props: IPagination) => {
   return (
     <ReactPaginate
       className='flex justify-center'
-      pageClassName='mx-1    w-[30px] h-[30px] flex justify-center items-center rounded-lg text-[20px] text-gray-700 font-bold border border-[#7a7a7a]'
+      pageClassName='mx-1 w-[30px] h-[30px] flex justify-center items-center rounded-lg text-[20px] text-gray-700 font-bold border border-[#7a7a7a]'
       activeClassName='bg-green-700  '
       activeLinkClassName='text-white'
-      breakLinkClassName='w-full h-full'
+      breakLinkClassName='breakLinkClassName '
       breakLabel='...'
       nextLabel={<img src={images.next_pagination} />}
       previousLabel={<img src={images.prev_pagination} />}

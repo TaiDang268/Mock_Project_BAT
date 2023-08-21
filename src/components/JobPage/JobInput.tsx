@@ -21,11 +21,12 @@ const JobInput = (props: IJobInput) => {
           <input
             onChange={handleChange}
             placeholder='Tên công việc'
-            className='w-full rounded-xl pl-2 pr-10 mb-10 border h-[42px] border-BAT-primary '
+            className='w-full rounded-xl pl-2 pr-10 mb-10 border h-[48px] border-BAT-primary  '
           />
           <Button
             children={`${t('job_page.button')}`}
-            className='absolute right-0 top-0 h-[42px] w-32'
+            className='absolute right-0 top-0  w-32'
+            height='48px'
             onClick={onSearchClick}
           />
         </div>

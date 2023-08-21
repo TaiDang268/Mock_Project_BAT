@@ -9,7 +9,7 @@ import Layout from '~/components/Layout/Layout'
 import CreateNews from '~/components/NewsPage/CreateNews/CreateNews'
 import NewsPage from '~/components/NewsPage/News/NewPage'
 import NewsDetail from '~/components/NewsPage/NewsDetail/NewsDetail'
-import routePaths from '~/constant/routePaths'
+import routePaths from '~/router/routePaths'
 
 const routers = [
   {

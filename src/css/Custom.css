@@ -8,16 +8,16 @@
   position: static !important;
   margin-top: 25px;
 }
-/*custom arrows cho slider  */
+/*custom arrows button cho slider  */
 .arrow {
+  display: none;
   position: absolute;
-
   top: 270px;
   border-radius: 50%;
   width: 45px;
   height: 45px;
   border: none;
-  z-index: 100;
+  z-index: 1;
 }
 .arrow button {
   background-color: transparent;
@@ -29,6 +29,22 @@
 .arrow-left {
   left: 10px;
 }
+/* animation cho button arrow */
+.mySwiper:hover .arrow {
+  display: block;
+  animation: change-color 2s infinite;
+}
+@keyframes change-color {
+  0% {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
 
 /* custom three dots khi over height */
 .cut-text {
@@ -36,4 +52,12 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+/* width height của thẻ a trong pagination quá bé khó bấm */
+.breakLinkClassName {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }

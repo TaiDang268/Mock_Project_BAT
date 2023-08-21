@@ -38,7 +38,7 @@ const HomeNewsFromBAT = () => {
             <p className='font-medium leading-6 text-[#606060]'> {t('homepage.news.description')}</p>
           </div>
           <div className='mt-10'>
-            <Button children={t('homepage.news.button')} className='h-12 px-8 text-xl font-semibold' />
+            <Button children={t('homepage.news.button')} className=' px-8 text-[24px] font-semibold' height='48px' />
           </div>
         </div>
         {/* image */}
