@@ -48,7 +48,6 @@ import partner_4 from './images/HomePage/partner_4.svg'
 import arrow_right from './images/HomePage/right-arrow.svg'
 import security_icon from './images/HomePage/security_icon.svg'
 import setting_icon from './images/HomePage/setting_icon.svg'
-
 // description page
 // news page
 import job_detait_a_icon from './images/JobPage/@.svg'

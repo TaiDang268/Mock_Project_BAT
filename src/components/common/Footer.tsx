@@ -1,6 +1,5 @@
 import clsx from 'clsx'
 import '../../i18n/config'
-
 import { useTranslation } from 'react-i18next'
 
 import images from '~/assets/images'

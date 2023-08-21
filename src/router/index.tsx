@@ -7,7 +7,7 @@ import JobDetail from '~/components/JobPage/JobDetail'
 import JobPage from '~/components/JobPage/JobPage'
 import Layout from '~/components/Layout/Layout'
 import CreateNews from '~/components/NewsPage/CreateNews/CreateNews'
-import NewsPage from '~/components/NewsPage/News'
+import NewsPage from '~/components/NewsPage/News/NewPage'
 import NewsDetail from '~/components/NewsPage/NewsDetail/NewsDetail'
 import routePaths from '~/constant/routePaths'
 
@@ -33,7 +33,7 @@ const routers = [
         element: <NewsPage />
       },
       {
-        path: 'detail_news',
+        path: routePaths.detail_news,
         element: <NewsDetail />
       }
     ]

@@ -5,6 +5,12 @@ import { useInView } from 'react-intersection-observer'
 
 import { variants } from '~/animation/variants'
 import images from '~/assets/images'
+const arr = [
+  { id: 1, image: images.clock_icon, name: 'quick_response' },
+  { id: 2, image: images.setting_icon, name: 'development_system' },
+  { id: 3, image: images.padlock_icon, name: 'information_security' },
+  { id: 4, image: images.security_icon, name: 'automation' }
+]
 const HomeDescriptionBAT = () => {
   const { t } = useTranslation()
 
@@ -36,42 +42,19 @@ const HomeDescriptionBAT = () => {
           </div>
           <div className='mt-8'>
             <div className='grid grid-cols-12 gap-5'>
-              {/* clock icon */}
-              <div className='col-span-3 max-md:col-span-6 max-sm:col-span-12 h-144  border  four_icon   '>
-                <div className='h-1/2 flex items-center justify-center'>
-                  <img src={images.clock_icon} />
+              {arr.map((item, index) => (
+                <div
+                  key={index}
+                  className='col-span-3 max-md:col-span-6 max-sm:col-span-12 h-144  border  four_icon   '
+                >
+                  <div className='h-1/2 flex items-center justify-center'>
+                    <img src={item.image} />
+                  </div>
+                  <div className=' h-1/2 mx-auto text-center px-4 flex items-center justify-center'>
+                    <p className='font-semibold'>{t(`homepage.descriptionBAT.${item.name}`)}</p>
+                  </div>
                 </div>
-                <div className=' h-1/2 mx-auto text-center px-4 flex items-center justify-center'>
-                  <p className='font-semibold'>{t('homepage.descriptionBAT.quick_response')}</p>
-                </div>
-              </div>
-              {/* setting icon */}
-              <div className='col-span-3 max-md:col-span-6 max-sm:col-span-12  h-144 border  four_icon  '>
-                <div className='h-1/2 flex items-center justify-center'>
-                  <img src={images.setting_icon} />
-                </div>
-                <div className=' h-1/2 mx-auto text-center px-4 flex items-center justify-center'>
-                  <p className='font-semibold'>{t('homepage.descriptionBAT.development_system')}</p>
-                </div>
-              </div>
-              {/* padlock icon */}
-              <div className='col-span-3 max-md:col-span-6 max-sm:col-span-12  h-144 border  four_icon  '>
-                <div className='h-1/2 flex items-center justify-center'>
-                  <img src={images.padlock_icon} />
-                </div>
-                <div className=' h-1/2 mx-auto text-center px-4 flex items-center justify-center'>
-                  <p className='font-semibold'>{t('homepage.descriptionBAT.information_security')}</p>
-                </div>
-              </div>
-              {/* security icon */}
-              <div className='col-span-3 max-md:col-span-6 max-sm:col-span-12  h-144 border  four_icon  '>
-                <div className='h-1/2 flex items-center justify-center'>
-                  <img src={images.security_icon} />
-                </div>
-                <div className=' h-1/2 mx-auto text-center px-4 flex items-center justify-center'>
-                  <p className='font-semibold'>{t('homepage.descriptionBAT.automation')}</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 

@@ -2,8 +2,8 @@ import { useTranslation } from 'react-i18next'
 
 import images from '~/assets/images'
 
-import ContactBanner from './ContactBanner'
 import ContactForm from './ContactForm'
+import Banner from '../common/Banner'
 
 const ContactPage = () => {
   const { t } = useTranslation()
@@ -28,7 +28,13 @@ const ContactPage = () => {
 
   return (
     <>
-      <ContactBanner />
+      <Banner
+        img1={images.contact_banner_1}
+        img2={images.contact_banner_2}
+        text1='contact_page.title_1'
+        text2='contact_page.title_2'
+      />
+
       <div className='max-w-[1200px] mx-auto max-xl: px-3  '>
         <div className='flex my-20 max-md:flex-col'>
           <div className='w-1/2 max-md:w-full'>

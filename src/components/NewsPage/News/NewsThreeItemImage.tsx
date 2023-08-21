@@ -1,12 +1,15 @@
+import { IItemNewsProps } from '~/@types/types'
 import images from '~/assets/images'
-import { IItemNewsProps } from '~/components/common/ItemNews'
 
-const NewsThreeItemImage = (props: IItemNewsProps) => {
-  const { image, author, date, title, category } = props
+interface INewsThreeItem extends IItemNewsProps {
+  onClick?: () => void
+}
+const NewsThreeItemImage = (props: INewsThreeItem) => {
+  const { image, author, date, title, category, onClick } = props
 
   return (
     <>
-      <div className=' w-full h-full '>
+      <div className=' w-full h-full cursor-pointer' onClick={onClick}>
         <div
           style={{ backgroundImage: `url(${image})`, WebkitBorderRadius: '20px' }}
           className=' text-white w-full h-full relative  '

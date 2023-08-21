@@ -1,4 +1,5 @@
 import { yupResolver } from '@hookform/resolvers/yup'
+import { motion } from 'framer-motion'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
 import { ToastContainer } from 'react-toastify'
@@ -58,12 +59,12 @@ const FormRegister = () => {
               {errors.email && <p className='text-red-500 pl-4 text-[14px]  '>{`${errors.email.message}`}</p>}
             </div>
           </div>
-          <div className='flex justify-center items-center mt-14'>
+          <motion.div whileHover={{ scale: 1.1 }} className='flex justify-center items-center mt-14'>
             <Button children={t(`homepage.form_register.button`)} onClick={handleSubmit(onSubmit)} className='px-6' />
-            <ToastContainer />
-          </div>
+          </motion.div>
         </form>
       </div>
+      <ToastContainer />
     </>
   )
 }

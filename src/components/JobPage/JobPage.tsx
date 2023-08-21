@@ -3,11 +3,12 @@ import { useTranslation } from 'react-i18next'
 
 import { IAddress, IJob, ITypeOfWork, IWorkGroup } from '~/@types/types'
 import { get, getTotalRecords } from '~/API/api'
+import images from '~/assets/images'
 
-import JobBanner from './JobBanner'
 import JobInput from './JobInput'
 import JobItem from './JobItem'
 import JobRadioButton from './JobRadioButton'
+import Banner from '../common/Banner'
 import Button from '../common/Button'
 import Pagination from '../common/Pagination'
 const JobPage = () => {
@@ -73,7 +74,8 @@ const JobPage = () => {
   }
   return (
     <>
-      <JobBanner />
+      {/* <JobBanner /> */}
+      <Banner img1={images.job_banner_1} img2={images.job_banner_2} text1='job_page.title_1' text2='job_page.title_2' />
       <div className='max-w-[1200px] mx-auto my-10 max-xl:w-[90%]'>
         <JobInput onInputChange={handleInputChange} onSearchClick={handleSearchClick} />
         <div className='flex max-md:flex-col '>

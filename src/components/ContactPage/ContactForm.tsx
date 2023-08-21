@@ -83,8 +83,8 @@ const ContactForm = () => {
         <motion.div whileHover={{ scale: 1.1 }} className='flex justify-center items-center my-10'>
           <Button children={`${t('contact_page.button')}`} className='w-[276px]' onClick={handleSubmit(onSubmit)} />
         </motion.div>
-        <ToastContainer />
       </div>
+      <ToastContainer />
     </>
   )
 }

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 
 import images from '~/assets/images'
+import routePaths from '~/constant/routePaths'
 
 import Button from '../common/Button'
 
@@ -10,7 +11,7 @@ const HomeBanner = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const handleClick = () => {
-    navigate('/contact')
+    navigate(`${routePaths.contact}`)
   }
   return (
     <>

@@ -5,6 +5,7 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 import images from '~/assets/images'
+import routePaths from '~/constant/routePaths'
 
 const links = ['home', 'about_us', 'news', 'job_opportunity', 'contact']
 const Header = () => {
@@ -48,7 +49,7 @@ const Header = () => {
   }
   //onclick logo
   const handleClickLogo = () => {
-    navigate('home')
+    navigate(`${routePaths.home}`)
   }
 
   return (

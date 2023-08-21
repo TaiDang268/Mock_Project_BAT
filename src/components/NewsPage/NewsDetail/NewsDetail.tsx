@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 
 import { IItemNewsProps } from '~/@types/types'
 import { get } from '~/API/api'
+import routePaths from '~/constant/routePaths'
 
 import Item from './Item'
 
@@ -23,7 +24,7 @@ const NewsDetail = () => {
     setItemRender(item)
   }
   const handleClickTextNew = () => {
-    navigate('/news')
+    navigate(`${routePaths.news}`)
   }
   return (
     <>

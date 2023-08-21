@@ -4,12 +4,13 @@ import { useNavigate } from 'react-router-dom'
 
 import { IItemNewsProps } from '~/@types/types'
 import images from '~/assets/images'
+import routePaths from '~/constant/routePaths'
 
 const ItemNewsCommon = (props: IItemNewsProps) => {
   const { image, author, date, title, description } = props
   const navigate = useNavigate()
   const handleOnClickItem = () => {
-    navigate('/news/detail_news', { state: props })
+    navigate(`${routePaths.detail_news}`, { state: props })
   }
   return (
     <>
