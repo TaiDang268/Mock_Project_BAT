@@ -35,7 +35,7 @@ const Partner = () => {
                 480: { slidesPerView: 2, spaceBetween: 30 },
                 768: { slidesPerView: 3, spaceBetween: 40 },
                 1024: { slidesPerView: 4, spaceBetween: 50 },
-                1536: { slidesPerView: 4, spaceBetween: 150 }
+                1536: { slidesPerView: 4, spaceBetween: 50 }
               }}
               // slidesPerView={4}
               // spaceBetween={30}
