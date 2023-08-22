@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL = 'http://192.168.3.162:3001'
+const baseURL = 'http://192.168.3.162:3006'
 
 const apiService = axios.create({
   baseURL
