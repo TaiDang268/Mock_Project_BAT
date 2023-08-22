@@ -16,7 +16,7 @@ html {
 }
 @font-face {
   font-family: 'San francisco';
-  src: url(assets/fonts/SFNSDisplay-Regular.otf);
+  src: url(assets/fonts/SFNSDisplay-Medium.otf);
 }
 input,
 textarea {
