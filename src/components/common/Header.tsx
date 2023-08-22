@@ -74,9 +74,9 @@ const Header = () => {
               <p
                 key={index}
                 className={clsx(
-                  'mr-8 text-[24px] font-normal cursor-pointer hover:text-green-600 uppercase',
+                  'mr-8 text-[24px]  cursor-pointer hover:text-green-600 ',
                   'max-xl:text-[16px] max-xl:font-bold max-xl:z-20 max-xl:hover:bg-slate-500 max-xl:hover:text-white max-xl:rounded   max-xl:mr-0  max-xl:px-2 max-xl:py-2',
-                  isItemMenuSelected === link ? 'text-green-600 ' : 'text-black ',
+                  isItemMenuSelected === link ? 'text-green-600 font-bold ' : 'text-black font-normal ',
                   showMenuResponsive ? 'block' : 'max-xl:hidden'
                 )}
                 onClick={() => handleClickItemHeader(link)}
