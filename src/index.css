@@ -16,7 +16,7 @@ html {
 }
 @font-face {
   font-family: 'San francisco';
-  src: url(assets/fonts/SFNSDisplay-Medium.otf);
+  src: url(assets/fonts/SFNSDisplay-Regular.otf);
 }
 input,
 textarea {
@@ -37,4 +37,3 @@ input[type='file']::file-selector-button {
 input[type='file']::file-selector-button:hover {
   background: #20aa6a;
 }
-

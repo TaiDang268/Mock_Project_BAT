@@ -1,8 +1,10 @@
 import clsx from 'clsx'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useNavigate } from 'react-router-dom'
 
 import images from '~/assets/images'
+import routePaths from '~/router/routePaths'
 
 import Button from '../common/Button'
 
@@ -10,6 +12,10 @@ const listPack = ['pack_1', 'pack_2', 'pack_3']
 const HomeServicePack = () => {
   const { t } = useTranslation()
   const [activePack, setActivePark] = useState<string>('pack_2')
+  const navigate = useNavigate()
+  const handleClick = () => {
+    navigate(`${routePaths.contact}`)
+  }
   return (
     <>
       <div className='max-w-[1200px]  mx-auto '>
@@ -38,6 +44,7 @@ const HomeServicePack = () => {
                 <Button
                   children={t(`homepage.service_pack.button`)}
                   height='48px'
+                  onClick={handleClick}
                   className={clsx(
                     'w-[80%] mx-auto box-border text-[24px] font-semibold',
                     activePack === item ? 'bg-BAT-primary' : 'bg-[#7a7a7a]  '
