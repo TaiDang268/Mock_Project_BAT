@@ -36,6 +36,7 @@ const CreateNews = () => {
             editor={ClassicEditor}
             onChange={(event, editor) => {
               setTextCkEditor(editor.getData())
+              console.log(event)
             }}
           />
         </div>

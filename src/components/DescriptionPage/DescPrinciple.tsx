@@ -1,7 +1,32 @@
 import { useTranslation } from 'react-i18next'
 
 import images from '~/assets/images'
-const imageList: string[] = ['principle_1', 'principle_2', 'principle_3', 'principle_4', 'principle_5', 'principle_6']
+const arr = [
+  {
+    name: 'principle_1',
+    img: images.principle_1
+  },
+  {
+    name: 'principle_2',
+    img: images.principle_2
+  },
+  {
+    name: 'principle_3',
+    img: images.principle_3
+  },
+  {
+    name: 'principle_4',
+    img: images.principle_4
+  },
+  {
+    name: 'principle_5',
+    img: images.principle_5
+  },
+  {
+    name: 'principle_6',
+    img: images.principle_6
+  }
+]
 const DescPrinciple = () => {
   const { t } = useTranslation()
   return (
@@ -14,23 +39,23 @@ const DescPrinciple = () => {
           </div>
           {/* 6 card item */}
           <div className=' grid grid-cols-12 gap-4 '>
-            {imageList.map((item, index) => (
+            {arr.map((item, index) => (
               <div
                 key={index}
                 className='col-span-4  shadow-lg rounded-2xl py-8 mx-4 px-2 max-lg:col-span-6 max-sm:col-span-12 '
               >
                 <div className='min-h-[100px] flex justify-center'>
-                  <img src={images[item]} />
+                  <img src={item.img} />
                 </div>
                 <div>
                   <p className='text-center font-bold text-[24px]'>
-                    {t(`description_page.working_principle.${item}.title`)}
+                    {t(`description_page.working_principle.${item.name}.title`)}
                   </p>
                 </div>
                 <div>
                   <p className='text-center font-medium text-[#444444]'>
                     {' '}
-                    {t(`description_page.working_principle.${item}.description`)}
+                    {t(`description_page.working_principle.${item.name}.description`)}
                   </p>
                 </div>
               </div>
