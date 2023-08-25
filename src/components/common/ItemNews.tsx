@@ -2,11 +2,11 @@ import '../../css/Custom.css'
 
 import { Link } from 'react-router-dom'
 
-import { IItemNewsProps } from '~/@types/types'
+import { INews } from '~/@types/types'
 import images from '~/assets/images'
 import routePaths from '~/router/routePaths'
 
-const ItemNewsCommon = (props: IItemNewsProps) => {
+const ItemNewsCommon = (props: INews) => {
   const { image, author, date, title, description } = props
 
   return (

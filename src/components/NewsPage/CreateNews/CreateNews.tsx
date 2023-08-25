@@ -4,9 +4,9 @@ import axios from 'axios'
 import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 
-import { IItemNewsProps } from '~/@types/types'
+import { INews } from '~/@types/types'
 
-interface Inputs extends IItemNewsProps {}
+interface Inputs extends INews {}
 const CreateNews = () => {
   const { register, handleSubmit } = useForm<Inputs>()
   const [textCkEditor, setTextCkEditor] = useState<string>()

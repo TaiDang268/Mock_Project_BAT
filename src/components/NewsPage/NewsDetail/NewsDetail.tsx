@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
-import { IItemNewsProps } from '~/@types/types'
+import { INews } from '~/@types/types'
 import { get } from '~/API/api'
 import routePaths from '~/router/routePaths'
 
@@ -9,9 +9,9 @@ import Item from './Item'
 
 const NewsDetail = () => {
   const navigate = useNavigate()
-  const [dataNew, setDataNew] = useState<IItemNewsProps[] | []>([]) //tin tức mới
-  const [dataConnection, setDataConnection] = useState<IItemNewsProps[] | []>([]) //tin tức liên quan
-  const [itemRender, setItemRender] = useState<IItemNewsProps | null>()
+  const [dataNew, setDataNew] = useState<INews[] | []>([]) //tin tức mới
+  const [dataConnection, setDataConnection] = useState<INews[] | []>([]) //tin tức liên quan
+  const [itemRender, setItemRender] = useState<INews | null>()
   const location = useLocation()
   const data = location.state
   useEffect(() => {
@@ -20,7 +20,7 @@ const NewsDetail = () => {
     get('news', { _page: 2, _limit: 3 }, setDataConnection)
   }, [])
 
-  const handleOnclickItem = (item: IItemNewsProps) => {
+  const handleOnclickItem = (item: INews) => {
     setItemRender(item)
   }
   const handleClickTextNew = () => {

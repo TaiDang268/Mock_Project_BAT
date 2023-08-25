@@ -1,4 +1,4 @@
-export interface IItemNewsProps {
+export interface INews {
   id?: string
   image?: string
   author?: string

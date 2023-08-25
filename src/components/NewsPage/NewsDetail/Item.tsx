@@ -1,7 +1,7 @@
-import { IItemNewsProps } from '~/@types/types'
+import { INews } from '~/@types/types'
 import images from '~/assets/images'
 
-const Item = (props: IItemNewsProps) => {
+const Item = (props: INews) => {
   const { image, author, date, title } = props
 
   return (

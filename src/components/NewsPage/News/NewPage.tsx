@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { IItemNewsProps } from '~/@types/types'
+import { INews } from '~/@types/types'
 import { get } from '~/API/api'
 import images from '~/assets/images'
 import Banner from '~/components/common/Banner'
@@ -12,11 +12,11 @@ import NewsThreeItemImage from './NewsThreeItemImage'
 
 const NewsPage = () => {
   const navigate = useNavigate()
-  const [data, setData] = useState<IItemNewsProps[] | []>([])
+  const [data, setData] = useState<INews[] | []>([])
   useEffect(() => {
     get('news', null, setData)
   }, [])
-  const handleClickItem = (data: IItemNewsProps) => {
+  const handleClickItem = (data: INews) => {
     navigate(`${routePaths.detail_news}`, { state: data })
   }
   return (

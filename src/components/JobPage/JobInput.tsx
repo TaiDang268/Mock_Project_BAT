@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import Button from '../common/Button'
 interface IJobInput {
   onInputChange: (value: string) => void
-  onSearchClick: () => void
+  onSearchClick?: () => void
 }
 const JobInput = (props: IJobInput) => {
   const { t } = useTranslation()

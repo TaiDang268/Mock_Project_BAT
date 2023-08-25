@@ -1,7 +1,7 @@
-import { IItemNewsProps } from '~/@types/types'
+import { INews } from '~/@types/types'
 import images from '~/assets/images'
 
-interface INewsThreeItem extends IItemNewsProps {
+interface INewsThreeItem extends INews {
   onClick?: () => void
 }
 const NewsThreeItemImage = (props: INewsThreeItem) => {

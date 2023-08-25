@@ -1,21 +1,21 @@
-import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useQuery } from 'react-query'
 import { Autoplay, FreeMode, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import { IItemNewsProps } from '~/@types/types'
-import { get } from '~/API/api'
+import { INews } from '~/@types/types'
+import { fetchData } from '~/API/api'
 import images from '~/assets/images'
 
 import ItemNews from '../common/ItemNews'
 
 const HomeNewsAndEvent = () => {
   const { t } = useTranslation()
-  const [data, setData] = useState<IItemNewsProps[] | []>()
-  //get all news
-  useEffect(() => {
-    get('/news', null, setData)
-  }, [])
+  //call api get data
+  const { data, isError } = useQuery<INews[]>({
+    queryKey: 'news-homepage',
+    queryFn: () => fetchData('/news', null)
+  })
   return (
     <>
       <div className='w-full mt-20 mb-4 '>
@@ -40,6 +40,7 @@ const HomeNewsAndEvent = () => {
             loop={true}
             className='mySwiper'
           >
+            {isError && <p>error</p>}
             {data?.map((item, index) => (
               <SwiperSlide key={index} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <ItemNews {...item} />
