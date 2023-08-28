@@ -10,23 +10,27 @@ import routePaths from '~/router/routePaths'
 const links = ['home', 'about_us', 'news', 'job_opportunity', 'contact']
 const Header = () => {
   const [isHidenOptionLanguage, setIsHidenOptionLanguage] = useState<boolean>(false) // đóng/mở option language
-  const [isSelectedLanguage, setIsSelectedLanguage] = useState<boolean>(true) //ngôn ngữ được chọn
   const [isItemMenuSelected, setItemMenuSelected] = useState<string>('home') // item menu được chọn
   const [showMenuResponsive, setShowMenuResponsive] = useState<boolean>(false)
   const { i18n, t } = useTranslation()
   const location = useLocation()
   const navigate = useNavigate()
+
   //ẩn hiện ngôn ngữ thứ 2
   const handleOpenFlag = () => {
     setShowMenuResponsive(false)
-
     setIsHidenOptionLanguage(!isHidenOptionLanguage)
   }
+  //ngôn ngữ được lưu trong localstorage
+  const selectedLanguage = localStorage.getItem('selectedLanguage') || 'vi'
+  useEffect(() => {
+    i18n.changeLanguage(selectedLanguage)
+  }, [])
   //khi user click vào chọn ngôn ngữ khác
   const handleChangeLanguage = () => {
-    i18n.changeLanguage(!isSelectedLanguage ? 'vn' : 'en')
+    localStorage.setItem('selectedLanguage', selectedLanguage === 'vi' ? 'en' : 'vi')
+    i18n.changeLanguage(selectedLanguage === 'vi' ? 'en' : 'vi')
     setIsHidenOptionLanguage(false)
-    setIsSelectedLanguage(!isSelectedLanguage)
   }
   //xử lý onclick vào item  của header redirect page
   const handleClickItemHeader = (link: string) => {
@@ -92,10 +96,10 @@ const Header = () => {
             <div>
               <div className='flex cursor-pointer w-20' onClick={handleOpenFlag}>
                 <div
-                  style={{ backgroundImage: `url(${isSelectedLanguage ? images.VN_Flag : images.US_flag})` }}
+                  style={{ backgroundImage: `url(${selectedLanguage === 'vi' ? images.VN_Flag : images.US_flag})` }}
                   className='w-8 bg-no-repeat  bg-center '
                 ></div>
-                <span className='ml-2  text-2xl font-normal '>{isSelectedLanguage ? 'VN' : 'EN'}</span>
+                <span className='ml-2  text-2xl font-normal '>{selectedLanguage === 'vi' ? 'VN' : 'EN'}</span>
               </div>
               {isHidenOptionLanguage ? (
                 <div
@@ -103,10 +107,10 @@ const Header = () => {
                   onClick={handleChangeLanguage}
                 >
                   <div
-                    style={{ backgroundImage: `url(${!isSelectedLanguage ? images.VN_Flag : images.US_flag})` }}
+                    style={{ backgroundImage: `url(${selectedLanguage === 'en' ? images.VN_Flag : images.US_flag})` }}
                     className='w-8 bg-no-repeat  bg-center '
                   ></div>
-                  <span className='ml-2  text-2xl font-normal '>{!isSelectedLanguage ? 'VN' : 'EN'}</span>
+                  <span className='ml-2  text-2xl font-normal '>{selectedLanguage === 'en' ? 'VN' : 'EN'}</span>
                 </div>
               ) : null}
             </div>

@@ -6,5 +6,9 @@ export const queryKeys = {
     address: 'address_in_jobpage',
     typeOfWork: 'typeOfWork_in_jobpage',
     numberOfPagination: 'numberOfPage-jobpage'
+  },
+  news_page: {
+    news: 'news-newspage',
+    numberOfPagination: 'numberOfPage-newspage'
   }
 }

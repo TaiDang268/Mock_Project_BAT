@@ -3,21 +3,23 @@ import { useQuery, useQueryClient } from 'react-query'
 
 import { INews } from '~/@types/types'
 import { fetchData, fetchNumberPage } from '~/API/api'
+import { queryKeys } from '~/API/querykey'
 import ItemNewsCommon from '~/components/common/ItemNews'
 import Pagination from '~/components/common/Pagination'
+import routePaths from '~/router/routePaths'
 const filterCategories = ['All', 'Metaverse', 'Blockchain', 'Game NFT']
 const NewList = () => {
   const queryClient = useQueryClient()
   const [activeCategory, setActiveCategory] = useState<string>('All') //active color
   const { data: dataNews } = useQuery<INews[]>({
-    queryKey: 'news-newspage',
-    queryFn: () => fetchData('/news', { _page: 1, _limit: 8 }),
+    queryKey: queryKeys.news_page.news,
+    queryFn: () => fetchData(routePaths.news, { _page: 1, _limit: 8 }),
     staleTime: 6000,
     cacheTime: 7000
   })
   const { data: numberOfPage } = useQuery({
-    queryKey: 'numberOfPage-newspage',
-    queryFn: () => fetchNumberPage('/news', null),
+    queryKey: queryKeys.news_page.numberOfPagination,
+    queryFn: () => fetchNumberPage(routePaths.news, null),
     staleTime: 6000,
     cacheTime: 7000
   })
@@ -29,21 +31,21 @@ const NewList = () => {
       params.category = activeCategory
     }
 
-    const newData = await fetchData('/news', params)
-    queryClient.setQueryData('news-newspage', newData)
+    const newData = await fetchData(routePaths.news, params)
+    queryClient.setQueryData(queryKeys.news_page.news, newData)
   }
   const handleClickFilterCategories = async (item: string) => {
     setActiveCategory(item)
     if (item === 'All') {
-      const newData = await fetchData('/news', { _page: 1, _limit: 8 })
-      queryClient.setQueryData('news-newspage', newData)
-      const newNumber = await fetchNumberPage('/news', null)
-      queryClient.setQueryData('numberOfPage-newspage', newNumber)
+      const newData = await fetchData(routePaths.news, { _page: 1, _limit: 8 })
+      queryClient.setQueryData(queryKeys.news_page.news, newData)
+      const newNumber = await fetchNumberPage(routePaths.news, null)
+      queryClient.setQueryData(queryKeys.news_page.numberOfPagination, newNumber)
     } else {
-      const newData = await fetchData('/news', { category: item, _limit: 8 })
-      queryClient.setQueryData('news-newspage', newData)
-      const newNumber = await fetchNumberPage('/news', { category: item })
-      queryClient.setQueryData('numberOfPage-newspage', newNumber)
+      const newData = await fetchData(routePaths.news, { category: item, _limit: 8 })
+      queryClient.setQueryData(queryKeys.news_page.news, newData)
+      const newNumber = await fetchNumberPage(routePaths.news, { category: item })
+      queryClient.setQueryData(queryKeys.news_page.numberOfPagination, newNumber)
     }
   }
   return (

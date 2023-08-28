@@ -85,7 +85,7 @@ const JobPage = () => {
       params.work_group = selectedWorkGroup
     }
     params._limit = 8
-    // params._page = 1
+    params._page = 1
     console.log(params)
     const newData = await fetchData(endpoints.jobs, params)
     queryClient.setQueryData(queryKeys.job_page.jobs, newData)
@@ -161,62 +161,3 @@ const JobPage = () => {
   )
 }
 export default JobPage
-// const [jobs, setJobs] = useState<IJob[] | []>([]) // jobs
-// const [workGroup, setWorkGroup] = useState<IWorkGroup[] | []>() //nhóm công việc
-// const [address, setAddress] = useState<IAddress[] | []>() //địa điểm
-// const [typeOfWork, setTypeOfWork] = useState<ITypeOfWork[] | []>() //loại công việc
-// const [pageCount, setPageCount] = useState<number>()
-// const [inputValue, setInputValue] = useState<string>('')
-//state lưu các option filter
-// const [selectedWorkGroup, setSelectedWorkGroup] = useState<string>('')
-// const [selectedAddress, setSelectedAddress] = useState<string>('')
-// const [selectedTypeOfWork, setSelectedTypeOfWork] = useState<string>('')
-
-// useEffect(() => {
-//   get('jobs', { _page: 1, _limit: 8 }, setJobs)
-//   get('work_groups', null, setWorkGroup)
-//   get('address', null, setAddress)
-//   get('type_of_work', null, setTypeOfWork)
-//   getTotalRecords('/jobs', null, setPageCount)
-// }, [])
-
-// const handlePageChange = ({ selected }: { selected: number }): void => {
-//   get('jobs', { _page: selected + 1, _limit: 8 }, setJobs)
-// }
-// const handleInputChange = (value: string) => {
-//   setInputValue(value)
-//   if (value.trim() === '') {
-//     get('jobs', null, setJobs)
-//   } else {
-//     get('jobs', { name_like: inputValue }, setJobs)
-//   }
-// }
-// const handleSearchClick = () => {
-//   get('jobs', { name_like: inputValue }, setJobs)
-// }
-// const handleChangeWorkGroup = (name: string) => {
-//   name === 'Tất cả' ? setSelectedWorkGroup('') : setSelectedWorkGroup(name)
-// }
-// const handleChangeAddress = (name: string) => {
-//   name === 'Tất cả' ? setSelectedAddress('') : setSelectedAddress(name)
-// }
-// const handleChangeTypeOfWork = (name: string) => {
-//   name === 'Tất cả' ? setSelectedTypeOfWork('') : setSelectedTypeOfWork(name)
-// }
-// const handleClickButtonFilter = () => {
-//   const params: { address?: string; type_of_work?: string; work_group?: string; _limit?: number } = {}
-
-//   if (selectedAddress) {
-//     params.address = selectedAddress
-//   }
-
-//   if (selectedTypeOfWork) {
-//     params.type_of_work = selectedTypeOfWork
-//   }
-//   if (selectedWorkGroup) {
-//     params.work_group = selectedWorkGroup
-//   }
-//   params._limit = 8
-//   get('/jobs', params, setJobs)
-//   getTotalRecords('jobs', params, setPageCount)
-// }
