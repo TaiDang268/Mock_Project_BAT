@@ -1,5 +1,7 @@
+import { debounce } from 'lodash'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import Skeleton from 'react-loading-skeleton'
 import { useQuery, useQueryClient } from 'react-query'
 
 import { IAddress, IJob, ITypeOfWork, IWorkGroup } from '~/@types/types'
@@ -8,6 +10,7 @@ import { endpoints } from '~/API/endpoint'
 import { queryKeys } from '~/API/querykey'
 import images from '~/assets/images'
 
+import 'react-loading-skeleton/dist/skeleton.css'
 import JobInput from './JobInput'
 import JobItem from './JobItem'
 import JobRadioButton from './JobRadioButton'
@@ -22,9 +25,23 @@ const JobPage = () => {
   const [selectedTypeOfWork, setSelectedTypeOfWork] = useState<string>('')
   const [inputValue, setInputValue] = useState<string>('')
 
-  const { data: jobs } = useQuery<IJob[]>({
+  const { data: jobs, isFetching: jobsFetching } = useQuery<IJob[]>({
     queryKey: queryKeys.job_page.jobs,
-    queryFn: () => fetchData(endpoints.jobs, { _page: 1, _limit: 8 }),
+    queryFn: () => fetchData(endpoints.jobs, { _page: 1, _limit: 8 })
+  })
+  const { data: workGroup, isLoading: workGroupLoading } = useQuery<IWorkGroup[]>({
+    queryKey: queryKeys.job_page.workGroup,
+    queryFn: () => fetchData(endpoints.work_groups, null),
+    staleTime: 100 * 1000
+  })
+  const { data: address, isLoading: addressLoading } = useQuery<IAddress[]>({
+    queryKey: queryKeys.job_page.address,
+    queryFn: () => fetchData(endpoints.address, null),
+    staleTime: 100 * 1000
+  })
+  const { data: typeOfWork, isLoading: typeOfWorkLoading } = useQuery<ITypeOfWork[]>({
+    queryKey: queryKeys.job_page.typeOfWork,
+    queryFn: () => fetchData(endpoints.type_of_work, null),
     staleTime: 100 * 1000
   })
   const handlePageChange = async ({ selected }: { selected: number }) => {
@@ -32,21 +49,6 @@ const JobPage = () => {
     queryClient.setQueryData(queryKeys.job_page.jobs, newData)
   }
 
-  const { data: workGroup } = useQuery<IWorkGroup[]>({
-    queryKey: queryKeys.job_page.workGroup,
-    queryFn: () => fetchData(endpoints.work_groups, null),
-    staleTime: 100 * 1000
-  })
-  const { data: address } = useQuery<IAddress[]>({
-    queryKey: queryKeys.job_page.address,
-    queryFn: () => fetchData(endpoints.address, null),
-    staleTime: 100 * 1000
-  })
-  const { data: typeOfWork } = useQuery<ITypeOfWork[]>({
-    queryKey: queryKeys.job_page.typeOfWork,
-    queryFn: () => fetchData(endpoints.type_of_work, null),
-    staleTime: 100 * 1000
-  })
   const handleChangeWorkGroup = (name: string) => {
     name === 'Tất cả' ? setSelectedWorkGroup('') : setSelectedWorkGroup(name)
   }
@@ -61,7 +63,7 @@ const JobPage = () => {
     queryFn: () => fetchNumberPage(endpoints.jobs, null),
     staleTime: 100 * 1000
   })
-  const handleInputChange = async (value: string) => {
+  const handleInputChange = debounce(async (value: string) => {
     setInputValue(value)
     if (value.trim() === '') {
       const newData = await fetchData(endpoints.jobs, null)
@@ -70,7 +72,8 @@ const JobPage = () => {
       const newData = await fetchData(endpoints.jobs, { name_like: inputValue })
       queryClient.setQueryData(queryKeys.job_page.jobs, newData)
     }
-  }
+  }, 1000)
+
   const handleClickButtonFilter = async () => {
     const params: { address?: string; type_of_work?: string; work_group?: string; _limit?: number; _page?: number } = {}
 
@@ -86,23 +89,34 @@ const JobPage = () => {
     }
     params._limit = 8
     params._page = 1
-    console.log(params)
     const newData = await fetchData(endpoints.jobs, params)
-    queryClient.setQueryData(queryKeys.job_page.jobs, newData)
     const newPageCount = await fetchNumberPage(endpoints.jobs, params)
+    queryClient.setQueryData(queryKeys.job_page.jobs, newData)
     queryClient.setQueryData(queryKeys.job_page.numberOfPagination, newPageCount)
+  }
+  const handleSearchClick = async (value: string) => {
+    console.log(value)
+    if (value.trim() === '') {
+      const newData = await fetchData(endpoints.jobs, null)
+      queryClient.setQueryData(queryKeys.job_page.jobs, newData)
+    } else {
+      const newData = await fetchData(endpoints.jobs, { name_like: inputValue })
+      queryClient.setQueryData(queryKeys.job_page.jobs, newData)
+    }
   }
   return (
     <>
       {/* <JobBanner /> */}
       <Banner img1={images.job_banner_1} img2={images.job_banner_2} text1='job_page.title_1' text2='job_page.title_2' />
       <div className='max-w-[1200px] mx-auto my-10 max-xl:w-[90%]'>
-        <JobInput onInputChange={handleInputChange} />
+        <JobInput onInputChange={handleInputChange} onClickSearch={handleSearchClick} />
         <div className='flex max-md:flex-col '>
           <div className='w-1/4 mr-10 min-h-[600px] max-lg:mr-0 max-lg:border-none max-md:w-full'>
-            <div className=' border-r-2  border-BAT-primary'>
+            <div className=' border-r-2  border-BAT-primary max-lg:border-none'>
               <div>
                 <p className='font-bold text-[20px]'>{t('job_page.title_4')}</p>
+                {workGroupLoading ? <Skeleton height={13} count={7} width={150} className='mt-1' /> : null}
+
                 <div>
                   {workGroup?.map((item, index) => (
                     <div key={index}>
@@ -113,6 +127,8 @@ const JobPage = () => {
               </div>
               <div className='my-10'>
                 <p className='font-bold text-[20px]'>{t('job_page.title_5')}</p>
+                {addressLoading ? <Skeleton height={13} count={3} width={150} className='mt-1' /> : null}
+
                 <div>
                   {address?.map((item, index) => (
                     <div key={index}>
@@ -123,6 +139,8 @@ const JobPage = () => {
               </div>
               <div>
                 <p className='font-bold text-[20px]'>{t('job_page.title_6')}</p>
+                {typeOfWorkLoading ? <Skeleton height={13} count={3} width={150} className='mt-1' /> : null}
+
                 <div>
                   {typeOfWork?.map((item, index) => (
                     <div key={index}>
@@ -142,6 +160,8 @@ const JobPage = () => {
             </div>
           </div>
           <div className='w-3/4 max-md:w-full max-md:my-10'>
+            {jobsFetching ? <Skeleton height={80} count={8} className='mt-4' /> : null}
+
             {jobs?.length !== 0 ? (
               jobs?.map((job, index) => (
                 <div key={index}>
