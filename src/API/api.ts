@@ -8,8 +8,15 @@ const apiService = axios.create({
 //react query
 
 export const fetchData = async (endpoint: string, params: any) => {
-  const res = await axios.get(`${baseURL}${endpoint}`, { params })
-  return res.data
+  try {
+    const res = await axios.get(`${baseURL}${endpoint}`, { params })
+    return res.data
+  } catch (error) {
+    const customError = {
+      message: 'Có lỗi xảy ra khi lấy dữ liệu.'
+    }
+    return customError
+  }
 }
 export const fetchNumberPage = async (endpoint: string, params: any) => {
   const res = await axios.get(`${baseURL}${endpoint}`, { params })
