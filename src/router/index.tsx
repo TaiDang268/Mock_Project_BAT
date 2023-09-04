@@ -1,15 +1,19 @@
+import { Suspense, lazy } from 'react'
 import { useRoutes } from 'react-router'
 
-import ContactPage from '~/components/ContactPage/ContactPage'
-import DescriptionPage from '~/components/DescriptionPage/DescriptionPage'
-import HomePage from '~/components/HomePage/HomePage'
-import JobDetail from '~/components/JobPage/JobDetail'
-import JobPage from '~/components/JobPage/JobPage'
-import Layout from '~/components/Layout/Layout'
-import CreateNews from '~/components/NewsPage/CreateNews/CreateNews'
-import NewsPage from '~/components/NewsPage/News/NewPage'
-import NewsDetail from '~/components/NewsPage/NewsDetail/NewsDetail'
-import routePaths from '~/router/routePaths'
+import Loading from '~/components/common/Loading'
+
+import routePaths from './routePaths'
+
+const ContactPage = lazy(() => import('~/components/ContactPage/ContactPage'))
+const DescriptionPage = lazy(() => import('~/components/DescriptionPage/DescriptionPage'))
+const HomePage = lazy(() => import('~/components/HomePage/HomePage'))
+const JobDetail = lazy(() => import('~/components/JobPage/JobDetail'))
+const JobPage = lazy(() => import('~/components/JobPage/JobPage'))
+const Layout = lazy(() => import('~/components/Layout/Layout'))
+const CreateNews = lazy(() => import('~/components/NewsPage/CreateNews/CreateNews'))
+const NewsPage = lazy(() => import('~/components/NewsPage/News/NewPage'))
+const NewsDetail = lazy(() => import('~/components/NewsPage/NewsDetail/NewsDetail'))
 
 const routers = [
   {
@@ -66,5 +70,9 @@ const routers = [
 
 export default function Routers() {
   const routing = useRoutes(routers)
-  return <Layout>{routing}</Layout>
+  return (
+    <Suspense fallback={<Loading />}>
+      <Layout>{routing}</Layout>
+    </Suspense>
+  )
 }

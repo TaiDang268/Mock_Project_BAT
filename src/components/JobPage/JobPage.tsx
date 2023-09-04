@@ -25,10 +25,15 @@ const JobPage = () => {
   const [selectedTypeOfWork, setSelectedTypeOfWork] = useState<string>('')
   const [inputValue, setInputValue] = useState<string>('')
 
-  const { data: jobs, isFetching: jobsFetching } = useQuery<IJob[]>({
+  const {
+    data: jobs,
+    isFetching: jobsFetching,
+    error
+  } = useQuery<IJob[]>({
     queryKey: queryKeys.job_page.jobs,
     queryFn: () => fetchData(endpoints.jobs, { _page: 1, _limit: 8 })
   })
+  console.log(error)
   const { data: workGroup, isLoading: workGroupLoading } = useQuery<IWorkGroup[]>({
     queryKey: queryKeys.job_page.workGroup,
     queryFn: () => fetchData(endpoints.work_groups, null),

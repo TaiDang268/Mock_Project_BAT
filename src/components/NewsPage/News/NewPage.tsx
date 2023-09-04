@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Skeleton from 'react-loading-skeleton'
 import { useNavigate } from 'react-router-dom'
 
 import { INews } from '~/@types/types'
@@ -16,6 +17,7 @@ const NewsPage = () => {
   useEffect(() => {
     get('news', null, setData)
   }, [])
+
   const handleClickItem = (data: INews) => {
     navigate(`${routePaths.detail_news}`, { state: data })
   }
@@ -36,17 +38,41 @@ const NewsPage = () => {
             className='w-7/12 h-[560px]  mr-8 rounded-xl max-xl:mr-3 max-md:w-full max-md:mr-0'
             onClick={() => handleClickItem(data[0])}
           >
-            <NewsThreeItemImage {...data[0]} />
+            {data.length > 0 ? (
+              <NewsThreeItemImage {...data[0]} />
+            ) : (
+              <div>
+                <Skeleton height={400} />
+                <Skeleton height={30} />
+                <Skeleton height={30} />
+              </div>
+            )}
           </div>
           <div className='w-5/12 min-h-[560px] max-md:w-full'>
             <div
               className='h-1/2 w-full  pb-8 max-xl:pb-3 max-md:h-[560px] max-md:py-6'
               onClick={() => handleClickItem(data[1])}
             >
-              <NewsThreeItemImage {...data[1]} />
+              {data.length > 0 ? (
+                <NewsThreeItemImage {...data[1]} />
+              ) : (
+                <div>
+                  <Skeleton height={150} />
+                  <Skeleton height={30} />
+                  <Skeleton height={30} />
+                </div>
+              )}
             </div>
             <div className='h-1/2 max-md:w-full max-md:h-[560px]' onClick={() => handleClickItem(data[2])}>
-              <NewsThreeItemImage {...data[2]} />
+              {data.length > 0 ? (
+                <NewsThreeItemImage {...data[2]} />
+              ) : (
+                <div>
+                  <Skeleton height={118} />
+                  <Skeleton height={30} />
+                  <Skeleton height={30} />
+                </div>
+              )}
             </div>
           </div>
         </div>
